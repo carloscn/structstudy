@@ -231,6 +231,60 @@ LinkedList.cpp.s:
 	$(MAKE) -f CMakeFiles/STRUCTOR.dir/build.make CMakeFiles/STRUCTOR.dir/LinkedList.cpp.s
 .PHONY : LinkedList.cpp.s
 
+LinkedListQueue.o: LinkedListQueue.cpp.o
+
+.PHONY : LinkedListQueue.o
+
+# target to build an object file
+LinkedListQueue.cpp.o:
+	$(MAKE) -f CMakeFiles/STRUCTOR.dir/build.make CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.o
+.PHONY : LinkedListQueue.cpp.o
+
+LinkedListQueue.i: LinkedListQueue.cpp.i
+
+.PHONY : LinkedListQueue.i
+
+# target to preprocess a source file
+LinkedListQueue.cpp.i:
+	$(MAKE) -f CMakeFiles/STRUCTOR.dir/build.make CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.i
+.PHONY : LinkedListQueue.cpp.i
+
+LinkedListQueue.s: LinkedListQueue.cpp.s
+
+.PHONY : LinkedListQueue.s
+
+# target to generate assembly for a file
+LinkedListQueue.cpp.s:
+	$(MAKE) -f CMakeFiles/STRUCTOR.dir/build.make CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.s
+.PHONY : LinkedListQueue.cpp.s
+
+LinkedListStack.o: LinkedListStack.cpp.o
+
+.PHONY : LinkedListStack.o
+
+# target to build an object file
+LinkedListStack.cpp.o:
+	$(MAKE) -f CMakeFiles/STRUCTOR.dir/build.make CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.o
+.PHONY : LinkedListStack.cpp.o
+
+LinkedListStack.i: LinkedListStack.cpp.i
+
+.PHONY : LinkedListStack.i
+
+# target to preprocess a source file
+LinkedListStack.cpp.i:
+	$(MAKE) -f CMakeFiles/STRUCTOR.dir/build.make CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.i
+.PHONY : LinkedListStack.cpp.i
+
+LinkedListStack.s: LinkedListStack.cpp.s
+
+.PHONY : LinkedListStack.s
+
+# target to generate assembly for a file
+LinkedListStack.cpp.s:
+	$(MAKE) -f CMakeFiles/STRUCTOR.dir/build.make CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.s
+.PHONY : LinkedListStack.cpp.s
+
 LoopQueue.o: LoopQueue.cpp.o
 
 .PHONY : LoopQueue.o
@@ -333,6 +387,12 @@ help:
 	@echo "... LinkedList.o"
 	@echo "... LinkedList.i"
 	@echo "... LinkedList.s"
+	@echo "... LinkedListQueue.o"
+	@echo "... LinkedListQueue.i"
+	@echo "... LinkedListQueue.s"
+	@echo "... LinkedListStack.o"
+	@echo "... LinkedListStack.i"
+	@echo "... LinkedListStack.s"
 	@echo "... LoopQueue.o"
 	@echo "... LoopQueue.i"
 	@echo "... LoopQueue.s"

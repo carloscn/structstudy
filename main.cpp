@@ -12,6 +12,9 @@
 #include "ArrayQueue.h"
 #include "LoopQueue.h"
 #include "LinkedList.h"
+#include "LinkedListStack.h"
+#include "LinkedListQueue.h"
+
 
 using namespace std;
 
@@ -132,8 +135,34 @@ void testLinkedList(void)
 
     list->del(7);
     list->toString();
+}
 
+void testLinkedLineStack(void)
+{
+    LinkedListStack *stack = new LinkedListStack();
 
+    for (int i = 0; i < 5; i ++) {
+        stack->push(i);
+        stack->toString();
+    }
+    stack->pop();
+    stack->toString();
+
+}
+
+void testLinkedListQueue(void)
+{
+    LinkedListQueue *queue = new LinkedListQueue();
+
+    for ( int i = 1; i < 40; i ++) {
+        if ( i % 3 != 0) {
+            queue->queue(i);
+            queue->toString();
+        }else {
+            queue->dequeue();
+            queue->toString();
+        }
+    }
 }
 
 int main(void)
@@ -142,7 +171,9 @@ int main(void)
     //testArrayStack();
     //testArrayQueue();
     //testLoopQueue();
-    testLinkedList();
+    //testLinkedList();
+    //testLinkedLineStack();
+    testLinkedListQueue();
     return 0;
 }
 

@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/delvis/workspace/CLion/STRUCTOR/ArrayStack.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/ArrayStack.cpp.o"
   "/home/delvis/workspace/CLion/STRUCTOR/DyArray.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/DyArray.cpp.o"
   "/home/delvis/workspace/CLion/STRUCTOR/LinkedList.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/LinkedList.cpp.o"
+  "/home/delvis/workspace/CLion/STRUCTOR/LinkedListQueue.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.o"
+  "/home/delvis/workspace/CLion/STRUCTOR/LinkedListStack.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.o"
   "/home/delvis/workspace/CLion/STRUCTOR/LoopQueue.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/LoopQueue.cpp.o"
   "/home/delvis/workspace/CLion/STRUCTOR/Solution.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/Solution.cpp.o"
   "/home/delvis/workspace/CLion/STRUCTOR/main.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/main.cpp.o"

@@ -114,10 +114,25 @@
 		<Unit filename="/home/delvis/workspace/CLion/STRUCTOR/LinkedList.h">
 			<Option target="STRUCTOR"/>
 		</Unit>
+		<Unit filename="/home/delvis/workspace/CLion/STRUCTOR/LinkedListQueue.cpp">
+			<Option target="STRUCTOR"/>
+		</Unit>
+		<Unit filename="/home/delvis/workspace/CLion/STRUCTOR/LinkedListQueue.h">
+			<Option target="STRUCTOR"/>
+		</Unit>
+		<Unit filename="/home/delvis/workspace/CLion/STRUCTOR/LinkedListStack.cpp">
+			<Option target="STRUCTOR"/>
+		</Unit>
+		<Unit filename="/home/delvis/workspace/CLion/STRUCTOR/LinkedListStack.h">
+			<Option target="STRUCTOR"/>
+		</Unit>
 		<Unit filename="/home/delvis/workspace/CLion/STRUCTOR/LoopQueue.cpp">
 			<Option target="STRUCTOR"/>
 		</Unit>
 		<Unit filename="/home/delvis/workspace/CLion/STRUCTOR/LoopQueue.h">
+			<Option target="STRUCTOR"/>
+		</Unit>
+		<Unit filename="/home/delvis/workspace/CLion/STRUCTOR/Node.h">
 			<Option target="STRUCTOR"/>
 		</Unit>
 		<Unit filename="/home/delvis/workspace/CLion/STRUCTOR/Solution.cpp">

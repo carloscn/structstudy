@@ -17,6 +17,18 @@ CMakeFiles/STRUCTOR.dir/DyArray.cpp.o
 CMakeFiles/STRUCTOR.dir/LinkedList.cpp.o
  /home/delvis/workspace/CLion/STRUCTOR/LinkedList.cpp
  /home/delvis/workspace/CLion/STRUCTOR/LinkedList.h
+ /home/delvis/workspace/CLion/STRUCTOR/Node.h
+CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.o
+ /home/delvis/workspace/CLion/STRUCTOR/LineQueue.h
+ /home/delvis/workspace/CLion/STRUCTOR/LinkedListQueue.cpp
+ /home/delvis/workspace/CLion/STRUCTOR/LinkedListQueue.h
+ /home/delvis/workspace/CLion/STRUCTOR/Node.h
+CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.o
+ /home/delvis/workspace/CLion/STRUCTOR/LineStack.h
+ /home/delvis/workspace/CLion/STRUCTOR/LinkedList.h
+ /home/delvis/workspace/CLion/STRUCTOR/LinkedListStack.cpp
+ /home/delvis/workspace/CLion/STRUCTOR/LinkedListStack.h
+ /home/delvis/workspace/CLion/STRUCTOR/Node.h
 CMakeFiles/STRUCTOR.dir/LoopQueue.cpp.o
  /home/delvis/workspace/CLion/STRUCTOR/DyArray.h
  /home/delvis/workspace/CLion/STRUCTOR/LineQueue.h
@@ -31,5 +43,8 @@ CMakeFiles/STRUCTOR.dir/main.cpp.o
  /home/delvis/workspace/CLion/STRUCTOR/LineQueue.h
  /home/delvis/workspace/CLion/STRUCTOR/LineStack.h
  /home/delvis/workspace/CLion/STRUCTOR/LinkedList.h
+ /home/delvis/workspace/CLion/STRUCTOR/LinkedListQueue.h
+ /home/delvis/workspace/CLion/STRUCTOR/LinkedListStack.h
  /home/delvis/workspace/CLion/STRUCTOR/LoopQueue.h
+ /home/delvis/workspace/CLion/STRUCTOR/Node.h
  /home/delvis/workspace/CLion/STRUCTOR/main.cpp

@@ -7,18 +7,13 @@
 
 #include <iostream>
 #include <string>
-#define         nihao  123
+
 using namespace std;
 
 class LineStack {
-struct nihaof {
 
-
-};
 public :
 
-    LineStack() {}
-    ~LineStack() {}
     virtual void push(int) = 0;
     virtual int pop() = 0;
     virtual int peek() = 0;

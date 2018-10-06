@@ -16,6 +16,18 @@ CMakeFiles/STRUCTOR.dir/DyArray.cpp.o: ../DyArray.h
 
 CMakeFiles/STRUCTOR.dir/LinkedList.cpp.o: ../LinkedList.cpp
 CMakeFiles/STRUCTOR.dir/LinkedList.cpp.o: ../LinkedList.h
+CMakeFiles/STRUCTOR.dir/LinkedList.cpp.o: ../Node.h
+
+CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.o: ../LineQueue.h
+CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.o: ../LinkedListQueue.cpp
+CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.o: ../LinkedListQueue.h
+CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.o: ../Node.h
+
+CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.o: ../LineStack.h
+CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.o: ../LinkedList.h
+CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.o: ../LinkedListStack.cpp
+CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.o: ../LinkedListStack.h
+CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.o: ../Node.h
 
 CMakeFiles/STRUCTOR.dir/LoopQueue.cpp.o: ../DyArray.h
 CMakeFiles/STRUCTOR.dir/LoopQueue.cpp.o: ../LineQueue.h
@@ -30,6 +42,9 @@ CMakeFiles/STRUCTOR.dir/main.cpp.o: ../DyArray.h
 CMakeFiles/STRUCTOR.dir/main.cpp.o: ../LineQueue.h
 CMakeFiles/STRUCTOR.dir/main.cpp.o: ../LineStack.h
 CMakeFiles/STRUCTOR.dir/main.cpp.o: ../LinkedList.h
+CMakeFiles/STRUCTOR.dir/main.cpp.o: ../LinkedListQueue.h
+CMakeFiles/STRUCTOR.dir/main.cpp.o: ../LinkedListStack.h
 CMakeFiles/STRUCTOR.dir/main.cpp.o: ../LoopQueue.h
+CMakeFiles/STRUCTOR.dir/main.cpp.o: ../Node.h
 CMakeFiles/STRUCTOR.dir/main.cpp.o: ../main.cpp
 

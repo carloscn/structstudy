@@ -7,34 +7,14 @@
 
 #include <iostream>
 #include <string>
+#include "Node.h"
 
 using namespace std;
 
 class LinkedList {
 
 public :
-    class Node {
-    public:
 
-        int e;
-        Node *next;
-
-        Node(int e, Node *next) {
-            this->e = e;
-            this->next = next;
-        }
-
-        Node(int e) {
-            this->e = e;
-            this->next = NULL;
-        }
-
-        Node() {
-            this->e = NULL;
-            this->next = NULL;
-        }
-
-    };
 
     LinkedList();
     int getSize();

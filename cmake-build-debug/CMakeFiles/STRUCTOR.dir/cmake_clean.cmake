@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/STRUCTOR.dir/ArrayQueue.cpp.o"
   "CMakeFiles/STRUCTOR.dir/LoopQueue.cpp.o"
   "CMakeFiles/STRUCTOR.dir/LinkedList.cpp.o"
+  "CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.o"
+  "CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.o"
   "STRUCTOR.pdb"
   "STRUCTOR"
 )
