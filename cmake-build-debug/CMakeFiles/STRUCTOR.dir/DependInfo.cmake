@@ -4,15 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/delvis/workspace/CLion/STRUCTOR/ArrayQueue.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/ArrayQueue.cpp.o"
-  "/home/delvis/workspace/CLion/STRUCTOR/ArrayStack.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/ArrayStack.cpp.o"
-  "/home/delvis/workspace/CLion/STRUCTOR/DyArray.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/DyArray.cpp.o"
-  "/home/delvis/workspace/CLion/STRUCTOR/LinkedList.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/LinkedList.cpp.o"
-  "/home/delvis/workspace/CLion/STRUCTOR/LinkedListQueue.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.o"
-  "/home/delvis/workspace/CLion/STRUCTOR/LinkedListStack.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.o"
-  "/home/delvis/workspace/CLion/STRUCTOR/LoopQueue.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/LoopQueue.cpp.o"
-  "/home/delvis/workspace/CLion/STRUCTOR/Solution.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/Solution.cpp.o"
-  "/home/delvis/workspace/CLion/STRUCTOR/main.cpp" "/home/delvis/workspace/CLion/STRUCTOR/cmake-build-debug/CMakeFiles/STRUCTOR.dir/main.cpp.o"
+  "/home/delvis/workspace/clion/structstudy/ArrayQueue.cpp" "/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/STRUCTOR.dir/ArrayQueue.cpp.o"
+  "/home/delvis/workspace/clion/structstudy/ArrayStack.cpp" "/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/STRUCTOR.dir/ArrayStack.cpp.o"
+  "/home/delvis/workspace/clion/structstudy/DyArray.cpp" "/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/STRUCTOR.dir/DyArray.cpp.o"
+  "/home/delvis/workspace/clion/structstudy/LinkedList.cpp" "/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/STRUCTOR.dir/LinkedList.cpp.o"
+  "/home/delvis/workspace/clion/structstudy/LinkedListQueue.cpp" "/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.o"
+  "/home/delvis/workspace/clion/structstudy/LinkedListStack.cpp" "/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.o"
+  "/home/delvis/workspace/clion/structstudy/LoopQueue.cpp" "/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/STRUCTOR.dir/LoopQueue.cpp.o"
+  "/home/delvis/workspace/clion/structstudy/Solution.cpp" "/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/STRUCTOR.dir/Solution.cpp.o"
+  "/home/delvis/workspace/clion/structstudy/main.cpp" "/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/STRUCTOR.dir/main.cpp.o"
+  "/home/delvis/workspace/clion/structstudy/recurrence/sum.cpp" "/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/STRUCTOR.dir/recurrence/sum.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

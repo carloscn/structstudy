@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/STRUCTOR.dir/LinkedList.cpp.o"
   "CMakeFiles/STRUCTOR.dir/LinkedListStack.cpp.o"
   "CMakeFiles/STRUCTOR.dir/LinkedListQueue.cpp.o"
+  "CMakeFiles/STRUCTOR.dir/recurrence/sum.cpp.o"
   "STRUCTOR.pdb"
   "STRUCTOR"
 )
