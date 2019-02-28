@@ -1,3 +1,0 @@
-/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/STRUCTOR.dir
-/home/delvis/workspace/clion/structstudy/cmake-build-debug/CMakeFiles/edit_cache.dir
