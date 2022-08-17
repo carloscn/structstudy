@@ -10,6 +10,16 @@
 >
 >当然，我们并不追求，花很多时间，要把某个题目，把效率从 0.9999 提高到 1 ，对于每个人来说，时间都是宝贵的。在时间和某个知识点面前，我想每个人都有自己平衡的策略，if you happy，you do. 但是我们做的目的是把某个题目解决，至少在限定的条件下把它解决，大部分人能想到的优化，也能够提出来。
 
+以上引用文献[^1]所说作为我学习算法的目的。我本身不否定算法的意义，甚至在某种程度上肯定算法作为**程序员自我修养的重要组成部分**。但是在工作中，尤其是嵌入式底层，很难使用到算法，而这部分已经成为“各个厂”面试的标配。这一切都是客观存在的，并不能用合理与否解释。正好也借着求职2022的这个机会好好的整理好算法与数据结构的知识框架。（实际上，ALGO并不是在[study-2022](https://github.com/carloscn/study-2022)计划范围之内）
+
+我们以剑指offer为学习顺序：
+
+*   挖掘背后所用的算法模型和思想【这部分需要参考《算法导论》】，理解模型的应用场景；
+*   训练和总结问题的分析方法和流程，懂得使用技巧；
+*   训练编程能力；
+*   以C语言开发为主；
+*   要坚持不懈的坚持训练，体会其中的乐趣。
+
 ## 数组
 
 *   [x] :[剑指Offer（二）--二维数组中的查找](https://link.segmentfault.com/?enc=vYP2uwXLaJSZxSNCpaqf%2BA%3D%3D.MaDwDLwMTnxP8RcsRwBu%2FcQYjOeXWmjfA7rh3noZtfNUtpzmPc6TzC9NrzMTkxn1RUt56Ng6t%2BJOuDehBdkSmBKYNDLRyDbNt7toWfJIFoQMZokmrwdPHxXKP2YRWOr9TNBPlA3y36rCSrNJSJi7LYuN8hlGxa5tBj4MxZ9SJLYmecyAIYNquUrF6SlNbXh%2F7tyhorBSD58xri6KlUX96u6xiuPqGmFtPkRhu5oXpRzMxW2zDT%2FU89FZzD%2FWlv6eQKYzDgaEqh%2FEtIAOM5Y8fmoULiiPzNoZpaEaiOQDOoRwBXc5qWh0dpt1cl34Sil3tIkoBeqjk7s%2BY28P6TgaVA%3D%3D)
