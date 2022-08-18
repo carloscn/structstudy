@@ -33,6 +33,7 @@ static int method_1(void)
     } else {
         printf("no value. \n");
     }
+    free(test_array);
     return 0;
 }
 
