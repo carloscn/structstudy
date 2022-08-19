@@ -5,8 +5,9 @@
 *   数组查找 [01_find_array_element.c](https://github.com/carloscn/structstudy/blob/master/algo/array/src/01_find_array_element.c)
 *   冒泡排序 [02_odd_find.c](https://github.com/carloscn/structstudy/blob/master/algo/array/src/02_odd_find.c)
 *   摩尔投票法找到数组主要元素 [03_find_multi_ele.c](https://github.com/carloscn/structstudy/blob/master/algo/array/src/03_find_multi_ele.c)
-*   在数组中找出重复元素https://github.com/carloscn/structstudy/blob/master/algo/array/src/05_find_repeat_value_in_array.c（可以修改数组）
-*   在数组中找出重复元素https://github.com/carloscn/structstudy/blob/master/algo/array/src/06_find_repeat_values_in_array.c（不可以修改数组）
+*   在数组中找出重复元素https://github.com/carloscn/structstudy/blob/master/algo/array/src/05_find_repeat_value_in_array.c （可以修改数组）
+*   在数组中找出重复元素https://github.com/carloscn/structstudy/blob/master/algo/array/src/06_find_repeat_values_in_array.c （不可以修改数组）
+*   在二维数组中查找数组
 
 ## 题1：二维数组中的查找
 
@@ -59,15 +60,15 @@ https://github.com/carloscn/structstudy/blob/master/algo/array/src/05_find_repea
 
 我拿到这个题的时候没有任何的思路，按照暴力的方法只能进行o(n^2)的遍历。
 
-#### 方法一：暴力破解法
+### 方法一：暴力破解法
 
-#### 方法二：元素和索引置换法a[i] == a[a[i]]
+### 方法二：元素和索引置换法a[i] == a[a[i]]
 
 参考：https://blog.csdn.net/csdn_wangchen/article/details/107124902
 
 ![在这里插入图片描述](https://raw.githubusercontent.com/carloscn/images/main/typora20200704152334738.gif)
 
-## 题5： 数组中的重复数字（不可以修改数组）
+## 题5：数组中的重复数字（不可以修改数组）
 
 上一题的数组修改了数组，这个题目要求不修改数组，可以使用二分查找法对重复数组进行运算。
 
@@ -85,3 +86,39 @@ https://github.com/carloscn/structstudy/blob/master/algo/array/src/06_find_repea
 *   出现次数3次大于数组个数，则右数组有重复。
 *   继续从右数组开始判定 模板数组 {3} {4}
 *   从左数组开始判定，3出现了2次，大于元素个数，因此重复数字就是3。
+
+## 题6：在二维数组中查找数字
+
+![image-20220819171735395](https://raw.githubusercontent.com/carloscn/images/main/typoraimage-20220819171735395.png)
+
+### 方法一： 二维数组线性化
+
+很容易想到，二维数组在内存中排列也是线性化的，使用线性查找法找到想要的元素，这个复杂度为O(n*m)。
+
+### 方法二：技巧性
+
+数组无论是x方向，还是y方向都是递增的，因此可以这样，从某个边角开始，和要查的元素进行对比，（这里以右上角的4为例子）如果小于这个元素，向左移动，然后和左面的值查找，如果大于这个元素，向下移动，直到有一方到了边界为止。
+
+这里面有几个知识点：
+
+*   二维数组作为参数传递https://www.jianshu.com/p/d7f2afe08f41
+    *   注意二维数组`a[][p]`p的位置不能空；或者作为参数`int (*a)[]`也可以
+
+## 题7：替换字符串空格
+
+`We are happy.` -> `We%20are%20happy.`
+
+### 方法一：普通方法
+
+*   创建一个能够容纳最新字符串的新数组
+*   开始从第一个字节遍历。
+*   如果不是空格直接复制过去
+*   如果是空格把`%20`三个字符复制过去新的数组。
+
+### 方法二：双指针同步复制方法
+
+如果这个问题不允许修改原始的数组，最大的考量就是不要有内存覆盖，因此必须有数组扩充，我们需要知道扩充后的数组是多大的（要统计空格数目）。其次，如果我们从前面每次都移动数据，后面的信息就会被覆盖，我们还要花精力去保护数据，所以从后面移动是一个很好的选择。
+
+这里利用C语言的指针方便的特性，定义双指针，p2和p1同步移动复制，完成字符串的搬移，然后切换指针的值。
+
+![image-20220819173828152](https://raw.githubusercontent.com/carloscn/images/main/typoraimage-20220819173828152.png)
