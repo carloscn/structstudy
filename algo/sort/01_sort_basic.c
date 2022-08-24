@@ -4,7 +4,7 @@
 #include <string.h>
 #include <time.h>
 
-static int32_t origin_array[17] = {1,9,55,6,5,1,8,10,66,0,3,8,7,12,11,22,4};
+static int32_t origin_array[17] = {1,9,55,6,5,88,8,10,66,0,3,8,7,12,11,22,4};
 
 static inline void swap(int32_t *a, int32_t *b)
 {
@@ -22,7 +22,7 @@ static int32_t sort_array_by_bubble(const int32_t *array, int32_t *out, size_t l
         goto error;
     }
     int32_t *test_array = out;
-    size_t i = 0, j = 0;
+    size_t i = 0, j = 0;i
 
     memcpy(test_array, array, len * sizeof(int32_t));
     printf("\npre : ");
@@ -138,43 +138,46 @@ error:
     return -1;
 }
 
-
-static int32_t sort_quick_partion(int32_t *array, size_t start, size_t end)
+static int32_t sort_quick_partion(int32_t *array, int32_t start, int32_t end)
 {
     int32_t x_pivot = 0, y_pivot = 0;
-    srand(time(NULL));
-    do {
-        x_pivot = rand()%(end - start) + start;
-    } while (x_pivot <= 0 || x_pivot > end);
+
+    x_pivot = (rand()%(end - start + 1)) + start;
     y_pivot = array[x_pivot];
-
-    printf("set pivot = %d, pivot[] = %d, start = %zd, end = %zd\n", x_pivot, y_pivot, start, end);
+#ifdef DEBUG
+    printf("set x_pivot = %d, y_pivot = %d, start = %d, end = %d\n", x_pivot, y_pivot, start, end);
     size_t j = 0;
-
-    int32_t *p1 = array + start - 1;
-    int32_t *p2 = array + start;
+#endif
+    int32_t small = start - 1;
+    int32_t *p2 = array;
     size_t i = 0;
-    printf("loop: ");
+#ifdef DEBUG
+    printf("init: ");
     for (j = start; j < end + 1; j ++) {
         printf("%d, ", array[j]);
     }
+#endif
     swap(array + x_pivot, array + end);
-    for (i = 0; i < end - start + 1; i ++) {
-        if (p2[i] < y_pivot) {
-            p1 ++;
-            swap(&p2[i+1], p1);
+
+    for (i = start; i < end; ++i) {
+        if (p2[i] < p2[end]) {
+            small ++;
+            swap(p2 + i, p2 + small);
         }
     }
-
-    printf("\ndebu: ");
+    small ++;
+    swap(p2 + small, p2 + end);
+#ifdef DEBUG
+    printf("x_pivot renew to (%d, %d)\noutd: ", small, array[small]);
     for (j = start; j < end + 1; j ++) {
         printf("%d, ", array[j]);
     }
     printf("\n\n");
-    return x_pivot;
+#endif
+    return small;
 }
 
-static int32_t sort_quick(int32_t *array, size_t start, size_t end)
+static int32_t sort_quick(int32_t *array, int32_t start, int32_t end)
 {
     int pivot_pos = 0;
     if (end > start) {
@@ -198,7 +201,7 @@ static int32_t sort_array_by_quick(const int32_t *array, int32_t *out, size_t le
     }
     printf("\npost: ");
     memcpy(out, array, sizeof(int32_t) * len);
-    sort_quick(out, 0, len - 1);
+    sort_quick(out, 0, (int32_t)len - 1);
 
     for (i = 0; i < len; i ++) {
         printf("%d, ", out[i]);
