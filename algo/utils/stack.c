@@ -50,7 +50,7 @@ int32_t stack_push(STACK_T *stack, int64_t val)
         return -1;
     }
     if (stack->top_index >= stack->size) {
-        LOG("stack overflow. (full)\n");
+        LOG("stack overflow. size == %zu (full)\n", stack->size);
         return -1;
     }
     p = stack->space;
@@ -127,6 +127,23 @@ void stack_print(STACK_T *stack)
     printf("top [ ");
     do {
         printf("%lld, ", (stack->space)[i--]);
+    } while (i >= 0);
+    printf("] bottom.  -- stack len = %zu\n", stack->top_index);
+}
+
+void stack_print_as_char(STACK_T *stack)
+{
+    if (NULL == stack || NULL == stack->space) {
+        LOG("input parameter error\n");
+        return;
+    }
+    if (0 == stack->top_index || 0 == stack->size) {
+        return;
+    }
+    int32_t i = stack->top_index - 1;
+    printf("top [ ");
+    do {
+        printf("%c, ", (char)(stack->space)[i--]);
     } while (i >= 0);
     printf("] bottom.  -- stack len = %zu\n", stack->top_index);
 }
