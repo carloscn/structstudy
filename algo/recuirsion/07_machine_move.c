@@ -3,18 +3,17 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <stdbool.h>
 #include "stack.h"
 #include "utils.h"
 
-static int32_t can_move(int32_t x, int32_t y, int32_t k, int32_t (*visited)[4])
+static bool can_move(int32_t x, int32_t y, int32_t k)
 {
     int32_t sum = 0;
-    int32_t ret = 0;
 
     if (x < 0 || y < 0) {
-        return 1;
+        return false;
     }
-
     while(x) {
         sum += x%10;
         x = x/10;
@@ -23,47 +22,55 @@ static int32_t can_move(int32_t x, int32_t y, int32_t k, int32_t (*visited)[4])
         sum += y%10;
         y = y/10;
     }
-    ret = (sum > k);
-    ret |= visited[y][x];
+    if(sum >= k) {
+        return false;
+    }
 
-    return ret;
+    return true;
 }
 
-static int32_t bt(int32_t x, int32_t y, int32_t k, int32_t (*visited)[4])
+static int32_t bt(int32_t x, int32_t y, int32_t k, bool *visited, int32_t n, int32_t m)
 {
-    int32_t ret = 0;
+    int32_t count = 0;
 
     // end condition:
-    if (can_move(x, y, k, visited) != 0) {
-        LOG("can;t move %d, %d\n", x, y);
-        return -1;
+    if (can_move(x, y, k) == false) {
+        //LOG("can't move %d, %d, sum_value k = %d\n", x, y, k);
+        return 0;
     }
-    LOG("bt %d, %d\n", x, y);
-    //*(*(visited + y) + x) = 1;
-    visited[y][x] = 1;
-    ret = bt(x+1, y, k, visited);
-    ret += bt(x-1, y, k, visited);
-    ret += bt(x, y+1, k, visited);
-    ret += bt(x, y-1, k, visited);
+    // exclued visited
+    if (*(visited + y * m + x) == true) {
+        //LOG("can't move %d, %d, visited node\n", x, y);
+        return 0;
+    }
+    //LOG("bt %d, %d\n", x, y);
+    *(visited + y * m + x) = 1;
+    count = bt(x+1, y, k, visited, n, m) + 1;
+    count += bt(x-1, y, k, visited, n, m);
+    count += bt(x, y+1, k, visited, n, m);
+    count += bt(x, y-1, k, visited, n, m);
 
-    return ret;
+    return count;
 }
 
-static int32_t is_move(int32_t k, int32_t m, int32_t n)
+static bool is_move(int32_t k, int32_t n, int32_t m)
 {
     int32_t i = 0, j = 0;
-
+    int32_t count = 0;
     //gen visited rom
-    //int32_t *visited = (int32_t *)malloc(sizeof(int32_t)*m*n);
-    int32_t visited[4][4] = {0};
-    //memset(visited, 0, sizeof(int32_t) * m * n);
+    bool *visited = (bool *)malloc(sizeof(bool)*m*n);
+    memset(visited, false, sizeof(bool)*m*n);
     for (i = 0; i < n; i ++) {
         for (j = 0; j < m; j ++) {
-            bt(i, j, k, visited);
+            count = bt(i, j, k, visited, n, m);
+            if (count != 0) {
+                LOG("starting with (%d, %d) , move %d types position!\n", i, j, count);
+            }
+            memset(visited, false, sizeof(bool)*m*n);
         }
     }
 
-    //free(visited);
+    free(visited);
     return 0;
 }
 
@@ -82,7 +89,7 @@ int main(void)
         return -1;
     }
     //bt(&path, test_array, ARRAY_SIZE(test_array), 0, 8);
-    is_move(4, 4, 4);
+    is_move(3, 4, 4);
     stack_free(&path);
     return 0;
 }
