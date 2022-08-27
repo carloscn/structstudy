@@ -1,4 +1,15 @@
 # ALGO [^1] List
+## 数组：
+
+* [在数组中查找元素](https://github.com/carloscn/structstudy/issues/1)
+* [调整数组顺序使奇数位于偶数前面（冒泡排序）](https://github.com/carloscn/structstudy/issues/2)
+* [数组中次数出现超过一半的数字（摩尔投票法）](https://github.com/carloscn/structstudy/issues/3)
+* [连续子数组的最大和 （思维与技巧)](https://github.com/carloscn/structstudy/issues/4)
+* [数组中重复的数字（数组值在数组索引范围内）（思维与技巧）](https://github.com/carloscn/structstudy/issues/5)
+* [数组中重复的数字（不修改原始数组）（二分法）](https://github.com/carloscn/structstudy/issues/6)
+* [在二维数组中的查找（思维与技巧）](https://github.com/carloscn/structstudy/issues/7)
+
+------------------------
 
 >### 为什么要做这个刷题的仓库？
 >
@@ -19,7 +30,7 @@
 *   训练编程能力；
 *   以C语言开发为主；
 *   要坚持不懈的坚持训练，体会其中的乐趣。
-
+# Reference List
 ## 数组
 
 *   [x] :[剑指Offer（二）--二维数组中的查找](https://link.segmentfault.com/?enc=vYP2uwXLaJSZxSNCpaqf%2BA%3D%3D.MaDwDLwMTnxP8RcsRwBu%2FcQYjOeXWmjfA7rh3noZtfNUtpzmPc6TzC9NrzMTkxn1RUt56Ng6t%2BJOuDehBdkSmBKYNDLRyDbNt7toWfJIFoQMZokmrwdPHxXKP2YRWOr9TNBPlA3y36rCSrNJSJi7LYuN8hlGxa5tBj4MxZ9SJLYmecyAIYNquUrF6SlNbXh%2F7tyhorBSD58xri6KlUX96u6xiuPqGmFtPkRhu5oXpRzMxW2zDT%2FU89FZzD%2FWlv6eQKYzDgaEqh%2FEtIAOM5Y8fmoULiiPzNoZpaEaiOQDOoRwBXc5qWh0dpt1cl34Sil3tIkoBeqjk7s%2BY28P6TgaVA%3D%3D)

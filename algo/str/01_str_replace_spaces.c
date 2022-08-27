@@ -65,7 +65,7 @@ finish:
     return 0;
 }
 
-static print_str(char *str, size_t len)
+static void print_str(char *str, size_t len)
 {
     size_t i = 0;
     for (i = 0; i < len; i++) {
