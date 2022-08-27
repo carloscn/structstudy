@@ -91,5 +91,6 @@ int main(void)
     //bt(&path, test_array, ARRAY_SIZE(test_array), 0, 8);
     is_move(3, 4, 4);
     stack_free(&path);
+
     return 0;
 }
