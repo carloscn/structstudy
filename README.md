@@ -1,4 +1,9 @@
 # ALGO [^1] List
+
+注意，不要做一道忘记一道，一定要记得review。
+
+![](https://raw.githubusercontent.com/carloscn/images/main/typora20220827191513.png)
+
 ## 数组：
 
 * [在数组中查找元素](https://github.com/carloscn/structstudy/issues/1)
@@ -8,6 +13,9 @@
 * [数组中重复的数字（数组值在数组索引范围内）（思维与技巧）](https://github.com/carloscn/structstudy/issues/5)
 * [数组中重复的数字（不修改原始数组）（二分法）](https://github.com/carloscn/structstudy/issues/6)
 * [在二维数组中的查找（思维与技巧）](https://github.com/carloscn/structstudy/issues/7)
+
+## 字符串：
+* [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 
 ------------------------
 
