@@ -13,10 +13,16 @@
 * [数组中重复的数字（数组值在数组索引范围内）（思维与技巧）](https://github.com/carloscn/structstudy/issues/5)
 * [数组中重复的数字（不修改原始数组）（二分法）](https://github.com/carloscn/structstudy/issues/6)
 * [在二维数组中的查找（思维与技巧）](https://github.com/carloscn/structstudy/issues/7)
-
+* [排序][对数组内的元素进行排序（冒泡排序法)](https://github.com/carloscn/structstudy/issues/9)
+* [排序][对数组内的元素进行排序（选择排序法)](https://github.com/carloscn/structstudy/issues/10)
+* [排序][对数组内的元素进行排序（插入排序法)](https://github.com/carloscn/structstudy/issues/11)
+* [排序][递归][对数组内的元素进行排序（快速排序法)](https://github.com/carloscn/structstudy/issues/12)
 ## 字符串：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 
+## 数学：
+* [数值的整数次方](https://github.com/carloscn/structstudy/issues/13)
+* [含回溯方法][打印从1到最大的n位数](https://github.com/carloscn/structstudy/issues/14)
 ------------------------
 
 >### 为什么要做这个刷题的仓库？

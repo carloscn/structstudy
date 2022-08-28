@@ -22,7 +22,7 @@ static int32_t sort_array_by_bubble(const int32_t *array, int32_t *out, size_t l
         goto error;
     }
     int32_t *test_array = out;
-    size_t i = 0, j = 0;i
+    size_t i = 0, j = 0;
 
     memcpy(test_array, array, len * sizeof(int32_t));
     printf("\npre : ");
