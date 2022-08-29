@@ -2,7 +2,9 @@
 
 注意，不要做一道忘记一道，一定要记得review。
 
-![](https://raw.githubusercontent.com/carloscn/images/main/typora20220827191513.png)
+<div align="center">
+<img src="https://raw.githubusercontent.com/carloscn/images/main/typora20220827191513.png" alt="image-20220829141115959" width="66%"/>
+</div>
 
 ## 数组：
 
@@ -24,6 +26,9 @@
 ## 数学：
 * [数值的整数次方](https://github.com/carloscn/structstudy/issues/13)
 * [含回溯方法][打印从1到最大的n位数](https://github.com/carloscn/structstudy/issues/14)
+
+## 递归回溯问题
+* [斐波那契数列(Fibonacci)的第n项](https://github.com/carloscn/structstudy/issues/16)
 ------------------------
 
 >### 为什么要做这个刷题的仓库？
