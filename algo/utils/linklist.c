@@ -61,7 +61,7 @@ int32_t linklist_add_node(LINKLIST_T *list, LINKLIST_T *node)
     return 0;
 }
 
-#define O_1 1
+#define O_1 1ß
 #define O_N 0
 
 #if O_1

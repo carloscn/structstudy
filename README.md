@@ -29,6 +29,7 @@
 
 ## 递归回溯问题
 * [斐波那契数列(Fibonacci)的第n项](https://github.com/carloscn/structstudy/issues/16)
+* [生成匹配的括号 (Leetcode-22)](https://github.com/carloscn/structstudy/issues/17)
 ------------------------
 
 >### 为什么要做这个刷题的仓库？

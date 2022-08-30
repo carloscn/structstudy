@@ -17,7 +17,8 @@ int32_t stack_malloc(STACK_T *stack, size_t size)
         size = STACK_MAX_SIZE;
     }
 
-    stack->space = (int64_t*)calloc(0, sizeof(int64_t) * size);
+    stack->space = (int64_t*)malloc(sizeof(int64_t) * size);
+    memset(stack->space, 0, sizeof(int64_t) * size);
     if (NULL == stack->space) {
         LOG("stack space malloc failed\n");
         return -1;
@@ -125,7 +126,7 @@ void stack_print(STACK_T *stack)
     int32_t i = stack->top_index - 1;
     printf("top [ ");
     do {
-        printf("%lld, ", (stack->space)[i--]);
+        printf("0x%llx, ", stack->space[i--]);
     } while (i >= 0);
     printf("] bottom.  -- stack len = %zu\n", stack->top_index);
 }
