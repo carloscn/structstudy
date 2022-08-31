@@ -114,7 +114,7 @@ size_t stack_count(STACK_T *stack)
     return stack_get_top(stack);
 }
 
-void stack_print(STACK_T *stack)
+void stack_print_as_hex(STACK_T *stack)
 {
     if (NULL == stack || NULL == stack->space) {
         LOG("input parameter error\n");
@@ -131,6 +131,22 @@ void stack_print(STACK_T *stack)
     printf("] bottom.  -- stack len = %zu\n", stack->top_index);
 }
 
+void stack_print(STACK_T *stack)
+{
+    if (NULL == stack || NULL == stack->space) {
+        LOG("input parameter error\n");
+        return;
+    }
+    if (0 == stack->top_index || 0 == stack->size) {
+        return;
+    }
+    int32_t i = stack->top_index - 1;
+    printf("top [ ");
+    do {
+        printf("%llu, ", stack->space[i--]);
+    } while (i >= 0);
+    printf("] bottom.  -- stack len = %zu\n", stack->top_index);
+}
 void stack_print_as_char(STACK_T *stack)
 {
     if (NULL == stack || NULL == stack->space) {

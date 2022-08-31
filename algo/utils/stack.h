@@ -23,7 +23,7 @@ size_t stack_count(STACK_T *stack);
 size_t stack_get_size(STACK_T *stack);
 void stack_print(STACK_T *stack);
 void stack_print_as_char(STACK_T *stack);
-
+void stack_print_as_hex(STACK_T *stack);
 int stack_self_test(void);
 
 #endif
