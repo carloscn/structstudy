@@ -74,7 +74,7 @@ int main(void)
     int32_t step_len = 3;
 
     count = 0;
-    ret = stack_malloc(&path, STACK_DEFAULT_SIZE);
+    ret = stack_init(&path, STACK_DEFAULT_SIZE);
     if (ret != 0) {
         return -1;
     }
@@ -86,6 +86,6 @@ int main(void)
     if (ret != 0) {
         LOG("find failed\n");
     }
-    stack_free(&path);
+    stack_deinit(&path);
     return 0;
 }

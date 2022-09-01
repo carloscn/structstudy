@@ -44,7 +44,7 @@ int main(void)
     int64_t test_array[] = {2,2,2,4,3,3};
     STACK_T path;
 
-    ret = stack_malloc(&path, STACK_DEFAULT_SIZE);
+    ret = stack_init(&path, STACK_DEFAULT_SIZE);
     if (ret != 0) {
         return -1;
     }
@@ -54,6 +54,6 @@ int main(void)
     }
     bt(&path, test_array, ARRAY_SIZE(test_array), 0, 8);
 
-    stack_free(&path);
+    stack_deinit(&path);
     return 0;
 }

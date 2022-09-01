@@ -159,11 +159,11 @@ static int32_t method_1_gen_parenthesis(int32_t n)
 {
     STACK_T sk;
     STRLIST_T *str_list = strlist_malloc();
-    stack_malloc(&sk, STACK_DEFAULT_SIZE);
+    stack_init(&sk, STACK_DEFAULT_SIZE);
     method_1_gen_bt(str_list, &sk, 1, n);
     strlist_infolog(str_list);
     strlist_free(str_list);
-    stack_free(&sk);
+    stack_deinit(&sk);
     return 0;
 }
 
@@ -171,11 +171,11 @@ static int32_t method_2_gen_parenthesis(int32_t n)
 {
     STACK_T sk;
     STRLIST_T *str_list = strlist_malloc();
-    stack_malloc(&sk, STACK_DEFAULT_SIZE);
+    stack_init(&sk, STACK_DEFAULT_SIZE);
     method_2_gen_bt(str_list, &sk, n, n, n);
     strlist_infolog(str_list);
     strlist_free(str_list);
-    stack_free(&sk);
+    stack_deinit(&sk);
     return 0;
 }
 

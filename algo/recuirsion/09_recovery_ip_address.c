@@ -55,10 +55,10 @@ static int32_t recover_ip_address(const char* origin_str, STRLIST_T *out_ip_str_
     STACK_T stack;
     size_t origin_str_len = strlen(origin_str);
 
-    stack_malloc(&stack, STACK_DEFAULT_SIZE);
+    stack_init(&stack, STACK_DEFAULT_SIZE);
     bt(out_ip_str_list, &stack, origin_str, 1, 3, 0, 0);
 
-    stack_free(&stack);
+    stack_deinit(&stack);
     return 0;
 }
 

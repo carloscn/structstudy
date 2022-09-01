@@ -72,7 +72,7 @@ static int32_t method_2_print_value(int32_t n)
     if (n <= 0) {
         return 0;
     }
-    stack_malloc(ps, STACK_DEFAULT_SIZE);
+    stack_init(ps, STACK_DEFAULT_SIZE);
 
     for (i = 1; i <= n; i ++) {
         //printf("print %d posito value : \n", i);
@@ -80,7 +80,7 @@ static int32_t method_2_print_value(int32_t n)
         //printf("\n");
     }
 
-    stack_free(ps);
+    stack_deinit(ps);
     return 0;
 }
 

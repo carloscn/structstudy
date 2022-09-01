@@ -33,6 +33,7 @@
 * [所有子集(leetcode-78)](https://github.com/carloscn/structstudy/issues/18)
 * [复原IP地址(leetcode-93)](https://github.com/carloscn/structstudy/issues/19)
 * [包含k个元素的组合(leetcode-77)](https://github.com/carloscn/structstudy/issues/20)
+* [字典序排数(leetcode-386)](https://github.com/carloscn/structstudy/issues/21)
 ------------------------
 
 >### 为什么要做这个刷题的仓库？

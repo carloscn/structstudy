@@ -68,7 +68,7 @@ int main(void)
     int64_t test_array[][4] = {{'a','b','t','g'},{'c','f','c','s'},{'j','d','e','h'}};
     int64_t input_array[] = {'b', 'f', 'c', 'e'};
 
-    ret = stack_malloc(&stack, STACK_DEFAULT_SIZE);
+    ret = stack_init(&stack, STACK_DEFAULT_SIZE);
     if (ret != 0) {
         goto err;
     }
@@ -79,6 +79,6 @@ int main(void)
     }
 
 err:
-    stack_free(&stack);
+    stack_deinit(&stack);
     return 0;
 }

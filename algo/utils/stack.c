@@ -5,8 +5,7 @@
 #include "stack.h"
 #include "utils.h"
 
-
-int32_t stack_malloc(STACK_T *stack, size_t size)
+int32_t stack_init(STACK_T *stack, size_t size)
 {
     if (NULL == stack || 0 == size) {
         LOG("input parameter error\n");
@@ -31,7 +30,7 @@ int32_t stack_malloc(STACK_T *stack, size_t size)
     return 0;
 }
 
-void stack_free(STACK_T *stack)
+void stack_deinit(STACK_T *stack)
 {
     if (NULL == stack || NULL == stack->space) {
         return;
@@ -41,6 +40,25 @@ void stack_free(STACK_T *stack)
     free(stack->space);
     stack->space = NULL;
 }
+
+STACK_T *stack_malloc(size_t size)
+{
+    STACK_T *stack = (STACK_T *)malloc(sizeof(STACK_T));
+    if (stack_init(stack, size) != 0) {
+        return NULL;
+    }
+    return stack;
+}
+
+void stack_free(STACK_T *stack)
+{
+    if (NULL == stack) {
+        return;
+    }
+    stack_deinit(stack);
+    free(stack);
+}
+
 
 int32_t stack_push(STACK_T *stack, int64_t val)
 {
@@ -188,7 +206,7 @@ int stack_self_test(void)
     size_t i = 0;
 
     stack = &xstack;
-    ret = stack_malloc(stack, STACK_DEFAULT_SIZE);
+    ret = stack_init(stack, STACK_DEFAULT_SIZE);
     if (ret != 0) {
         LOG("failed stack malloc\n");
         goto err;
@@ -216,6 +234,6 @@ int stack_self_test(void)
     }
 err:
     LOG("stack self test failed! \n");
-    stack_free(stack);
+    stack_deinit(stack);
     return 0;
 }

@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include <time.h>
+#include <math.h>
 #include "utils.h"
 #include "strlist.h"
 #include "stack.h"
@@ -99,33 +100,49 @@ static int method_1(int32_t test_array[], size_t array_sz)
     return 0;
 }
 
+static int32_t count(int32_t n)
+{
+    int count = 0;
+    while(n != 0) {
+        n /= 10;
+        ++count;
+    }
+    return count;
+}
 
+static int32_t result_rom[1024] = {0};
 
 static void bt(STRLIST_T *result_list, STACK_T *stack, int32_t k, int32_t n, int32_t v)
 {
     char *str_result;
-    if (k > n) {
-        str_result = stack_to_str(stack);
-        strlist_add(result_list, str_result);
-        strlist_infolog(str_result);
+    // return condition
+    if (k > count(n) - 1) {
+         return;
+    }
+
+    // submat 0
+    if (stack_count(stack) == 1 && stack->space[0] == '0') {
         return;
     }
 
     int32_t i = 0;
-    for (i = 0; i < 9; i ++) {
-        stack_push(stack, (int64_t) (i + '0'));
-        bt(result_list, stack, k + 1, n, v);
+    int32_t value = 0;
+    for (i = 0; i <= 9; i ++) {
+        stack_push(stack, (int64_t) (i + 48));
+        str_result = stack_to_str(stack);
+        if (atoi(str_result) < n) {
+            strlist_add(result_list, str_result);
+        }
+        bt(result_list, stack, k + 1, n, (i + 48));
         stack_pop(stack, NULL);
     }
 }
 
-
 int main(void) {
-    int ret;
+    int ret, i;
     clock_t start, end;
     int32_t origin_test_array[] = {1, 9, 10, 3, 33, 2, 27, 99};
     size_t array_sz = sizeof(origin_test_array)/sizeof(int);
-    STRLIST_T *str = strlist_malloc();
 
     ret = is_compare_by_dictinary_order(100, 1, false);
     if (ret == true) {
@@ -134,16 +151,26 @@ int main(void) {
         LOG("need to change position\n");
     }
 
-
     start = clock();
     ret = method_1(origin_test_array, array_sz);
     end = clock();
     LOG("\nmethod 1 time = %f\n", (double)(end - start) / CLOCKS_PER_SEC);
 
+    STRLIST_T *str_list = strlist_malloc();
+    STACK_T *stack = stack_malloc(STACK_DEFAULT_SIZE);
+    if (stack == NULL || str_list == NULL) {
+        return -1;
+    }
     start = clock();
-    ret = bt();
+
+    bt(str_list, stack, 0, 35, '0');
+    strlist_infolog(str_list);
     end = clock();
     LOG("\nmethod 2 time = %f\n", (double)(end - start) / CLOCKS_PER_SEC);
+
+
+    strlist_free(str_list);
+    stack_free(stack);
 
     return ret;
 }
