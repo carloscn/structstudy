@@ -5,6 +5,7 @@
 #include "stack.h"
 #include "utils.h"
 
+
 int32_t stack_malloc(STACK_T *stack, size_t size)
 {
     if (NULL == stack || 0 == size) {
@@ -162,6 +163,21 @@ void stack_print_as_char(STACK_T *stack)
         printf("%c, ", (char)(stack->space)[i--]);
     } while (i >= 0);
     printf("] bottom.  -- stack len = %zu\n", stack->top_index);
+}
+
+char* stack_to_str(STACK_T *str_stack)
+{
+    size_t i = 0;
+    char* str = (char*)malloc(str_stack->top_index + 1);
+    if (NULL == str) {
+        return NULL;
+    }
+    memset(str, '\0', str_stack->top_index + 1);
+    for (i = 0; i < str_stack->top_index; i ++) {
+        str[i] = (char)str_stack->space[i];
+    }
+
+    return str;
 }
 
 int stack_self_test(void)

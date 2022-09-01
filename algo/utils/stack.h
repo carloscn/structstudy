@@ -24,6 +24,8 @@ size_t stack_get_size(STACK_T *stack);
 void stack_print(STACK_T *stack);
 void stack_print_as_char(STACK_T *stack);
 void stack_print_as_hex(STACK_T *stack);
+char* stack_to_str(STACK_T *str_stack);
+
 int stack_self_test(void);
 
 #endif

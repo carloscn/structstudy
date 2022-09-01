@@ -15,7 +15,7 @@
 #define LOG_LINE_WITH_DOUBLE_TR() ("\n------------------------------------------------------------------\n\n");
 
 /* Functions */
-inline void utils_swap(int64_t *a, int64_t *b);
+void utils_swap(int64_t *a, int64_t *b);
 inline int32_t utils_check_odd_even(int64_t base);
 
 #endif
