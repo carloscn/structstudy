@@ -198,7 +198,7 @@ char* stack_to_str(STACK_T *str_stack)
     return str;
 }
 
-int stack_self_test(void)
+int stack_selftest(void)
 {
     int32_t ret = 0;
     STACK_T xstack, *stack;

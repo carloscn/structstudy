@@ -11,8 +11,8 @@
 
 #define LOG printf("%s:%s:%d--",__FILE__, __FUNCTION__, __LINE__);printf
 #define LOG_LINE() printf("\n------------------------------------------------------------------")
-#define LOG_LINE_WITH_TR() ("\n------------------------------------------------------------------\n");
-#define LOG_LINE_WITH_DOUBLE_TR() ("\n------------------------------------------------------------------\n\n");
+#define LOG_LINE_WITH_TR() printf("\n------------------------------------------------------------------\n");
+#define LOG_LINE_WITH_DOUBLE_TR() printf("\n------------------------------------------------------------------\n\n");
 
 /* Functions */
 void utils_swap(int64_t *a, int64_t *b);

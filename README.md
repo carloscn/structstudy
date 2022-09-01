@@ -27,6 +27,8 @@
 * [数值的整数次方](https://github.com/carloscn/structstudy/issues/13)
 * [含回溯方法][打印从1到最大的n位数](https://github.com/carloscn/structstudy/issues/14)
 
+## 二叉树
+* [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 ## 递归回溯问题
 * [斐波那契数列(Fibonacci)的第n项](https://github.com/carloscn/structstudy/issues/16)
 * [生成匹配的括号(Leetcode-22)](https://github.com/carloscn/structstudy/issues/17)

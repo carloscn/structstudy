@@ -1,0 +1,28 @@
+#ifndef QUEUE_H
+#define QUEUE_H
+
+#include <stdint.h>
+#include <stdlib.h>
+
+#define QUEUE_DEFUALT_SIZE (1024UL)
+
+typedef struct queue_t {
+    int64_t *space;
+    int64_t *head;
+    int64_t *tail;
+    size_t current_len;
+    size_t total_len;
+} QUEUE_T;
+
+int32_t queue_init(QUEUE_T *queue, size_t size);
+void queue_deinit(QUEUE_T *queue);
+QUEUE_T *queue_malloc(size_t size);
+void queue_free(QUEUE_T *queue);
+int32_t queue_push(QUEUE_T *queue, int64_t e);
+int64_t queue_pop(QUEUE_T *queue, int64_t *e);
+void queue_print(QUEUE_T *queue);
+size_t queue_limit_len(QUEUE_T *queue);
+size_t queue_count(QUEUE_T *queue);
+int32_t queue_selftest(void);
+
+#endif /* QUEUE_H */
