@@ -11,3 +11,4 @@ CMakeFiles/*
 *.o
 *.elf
 cmake_install.cmake
+*.out*
