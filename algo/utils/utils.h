@@ -9,7 +9,7 @@
 #define MAX(_a_, _b_) (((_a_)>(_b_))?(_a_):(_b_))
 #define MIN(_a_, _b_) (((_a_)<(_b_))?(_a_):(_b_))
 
-#define LOG printf("%s:%s:%d--",__FILE__, __FUNCTION__, __LINE__);printf
+#define LOG printf("%s:%d on func:(%s) -- ",__FILE__,__LINE__,__FUNCTION__);printf
 #define LOG_LINE() printf("\n------------------------------------------------------------------")
 #define LOG_LINE_WITH_TR() printf("\n------------------------------------------------------------------\n");
 #define LOG_LINE_WITH_DOUBLE_TR() printf("\n------------------------------------------------------------------\n\n");

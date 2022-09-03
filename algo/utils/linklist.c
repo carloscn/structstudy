@@ -179,7 +179,7 @@ void linklist_print(LINKLIST_T *list)
     printf("NULL\n");
 }
 
-void linklist_prink_revert(LINKLIST_T *list)
+void linklist_print_revert(LINKLIST_T *list)
 {
     if (list == NULL) {
         printf("check paramters\n");
@@ -188,7 +188,7 @@ void linklist_prink_revert(LINKLIST_T *list)
     LINKLIST_T *p = list;
     if (p != NULL) {
         if (p->next != NULL) {
-            linklist_prink_revert(p->next);
+            linklist_print_revert(p->next);
         }
         printf("%lld -> ", p->val);
     }
@@ -207,7 +207,7 @@ int32_t linklist_selftest(void)
     linklist_add_value(&test_node, 5);
     linklist_remove_value(&test_node, 2);
     linklist_print(test_node);
-    linklist_prink_revert(test_node);
+    linklist_print_revert(test_node);
     printf("\n");
 
     /* test for adding and removing node. */

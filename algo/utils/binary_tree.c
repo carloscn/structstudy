@@ -32,6 +32,51 @@ void binarytree_free(BIN_TREE_NODE *tree)
         binarytree_free(next_right);
     }
 }
+int32_t binarytree_insert_value_to_left(BIN_TREE_NODE *tree, int64_t val)
+{
+    int32_t ret = 0;
+    if (NULL == tree) {
+        LOG("input tree pointer is error\n");
+        return -1;
+    }
+    if (NULL != tree->left) {
+        LOG("tree left child is not NULL\n");
+        return -1;
+    }
+    BIN_TREE_NODE *lt = NULL;
+    lt = binarytree_malloc();
+    if (lt == NULL) {
+        LOG("malloc a tree memory failed\n");
+        return -1;
+    }
+    lt->left = lt->right = NULL;
+    lt->val = val;
+    tree->left = lt;
+    return ret;
+}
+
+int32_t binarytree_insert_value_to_right(BIN_TREE_NODE *tree, int64_t val)
+{
+    int32_t ret = 0;
+    if (NULL == tree) {
+        LOG("input tree pointer is error\n");
+        return -1;
+    }
+    if (NULL != tree->right) {
+        LOG("tree right child is not NULL\n");
+        return -1;
+    }
+    BIN_TREE_NODE *rt = NULL;
+    rt = binarytree_malloc();
+    if (rt == NULL) {
+        LOG("malloc a tree memory failed\n");
+        return -1;
+    }
+    rt->val = val;
+    rt->left = rt->right = NULL;
+    tree->right = rt;
+    return ret;
+}
 
 void binarytree_print_by_layers(BIN_TREE_NODE *tree)
 {
@@ -90,14 +135,18 @@ void binarytree_print_by_postorder(BIN_TREE_NODE *tree)
     printf("%lld, ", tree->val);
 }
 
+
 int32_t binarytree_insert_by_preorder(BIN_TREE_NODE **tree)
 {
     int32_t ret = 0;
+    int32_t i = 0;
     char ch = '\0';
+
     if (tree == NULL) {
-        printf("input error on tree\n");
+        LOG("input error on tree\n");
         return -1;
     }
+
     if (*tree == NULL) {
         scanf("%c", &ch);
         if (ch == '#') {
@@ -105,7 +154,7 @@ int32_t binarytree_insert_by_preorder(BIN_TREE_NODE **tree)
         } else {
             *tree = binarytree_malloc();
             if (*tree == NULL) {
-                printf("malloc a tree memory failed\n");
+                LOG("malloc a tree memory failed\n");
                 return -1;
             }
             (*tree)->left = (*tree)->right = NULL;
@@ -114,6 +163,7 @@ int32_t binarytree_insert_by_preorder(BIN_TREE_NODE **tree)
             binarytree_insert_by_preorder(&((*tree)->right));
         }
     }
+
     return 0;
 }
 
@@ -142,4 +192,5 @@ int32_t binarytree_selftest(void)
     binarytree_print_by_postorder(tree);
     printf("\n");
     binarytree_free(tree);
+    return 0;
 }

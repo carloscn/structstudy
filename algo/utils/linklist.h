@@ -16,7 +16,8 @@ int32_t linklist_remove_node(LINKLIST_T *list, LINKLIST_T *node);
 int32_t linklist_add_value(LINKLIST_T **list, int64_t val);
 int32_t linklist_remove_value(LINKLIST_T **list, int64_t val);
 void linklist_free(LINKLIST_T **node);
-void linklist_prink_revert(LINKLIST_T *list);
+void linklist_print(LINKLIST_T *list);
+void linklist_print_revert(LINKLIST_T *list);
 int32_t linklist_selftest(void);
 
 #endif
