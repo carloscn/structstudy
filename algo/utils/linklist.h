@@ -1,5 +1,5 @@
-#ifndef LINKLIST_H
-#define LINKLIST_H
+#ifndef _LINKLIST_H
+#define _LINKLIST_H
 
 #include <stdint.h>
 #include <stdlib.h>

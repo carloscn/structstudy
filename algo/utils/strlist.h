@@ -1,5 +1,5 @@
-#ifndef STRLIST_H
-#define STRLIST_H
+#ifndef _STRLIST_H
+#define _STRLIST_H
 
 #include <stdint.h>
 #include <stdlib.h>

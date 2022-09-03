@@ -4,4 +4,10 @@
 .vscode/*
 .idea
 .idea/*
-
+CMakeCache.txt
+CMakeFiles
+CMakeFiles/*
+*.out
+*.o
+*.elf
+cmake_install.cmake
