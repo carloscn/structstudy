@@ -7,7 +7,7 @@ BIN_TREE_NODE* binarytree_malloc(void)
 {
     BIN_TREE_NODE *p = NULL;
     p = (BIN_TREE_NODE *)malloc(sizeof(BIN_TREE_NODE));
-    if (p == NULL) {
+    if (NULL == p) {
         LOG("malloc a tree memory failed\n");
         return NULL;
     }
@@ -142,14 +142,15 @@ int32_t binarytree_insert_by_preorder(BIN_TREE_NODE **tree)
     int32_t i = 0;
     char ch = '\0';
 
-    if (tree == NULL) {
+    if (NULL == tree) {
         LOG("input error on tree\n");
         return -1;
     }
 
-    if (*tree == NULL) {
+    if (NULL == *tree) {
         scanf("%c", &ch);
         if (ch == '#') {
+            LOG("inserted null\n");
             *tree = NULL;
         } else {
             *tree = binarytree_malloc();
@@ -159,11 +160,69 @@ int32_t binarytree_insert_by_preorder(BIN_TREE_NODE **tree)
             }
             (*tree)->left = (*tree)->right = NULL;
             (*tree)->val = (int64_t)ch - '0';
+            LOG("inserted value %lld\n", (*tree)->val );
+            LOG("insert left :\n");
             binarytree_insert_by_preorder(&((*tree)->left));
+            LOG("insert right :\n");
             binarytree_insert_by_preorder(&((*tree)->right));
         }
     }
 
+    return 0;
+}
+
+int32_t binarytree_insert_by_preorder_by_queue(BIN_TREE_NODE **tree, QUEUE_T *queue)
+{
+    int32_t ret = 0;
+    int32_t i = 0;
+    int64_t val = 0;
+
+    if (queue_count(queue) == 0) {
+        return 0;
+    }
+    if (NULL == tree) {
+        LOG("input error on tree\n");
+        return -1;
+    }
+
+    if (NULL == *tree) {
+        queue_pop(queue, &val);
+        if (val == (int64_t)'#') {
+            *tree = NULL;
+        } else {
+            *tree = binarytree_malloc();
+            if (*tree == NULL) {
+                LOG("malloc a tree memory failed\n");
+                return -1;
+            }
+            (*tree)->left = (*tree)->right = NULL;
+            (*tree)->val = val;
+            binarytree_insert_by_preorder_by_queue(&((*tree)->left), queue);
+            binarytree_insert_by_preorder_by_queue(&((*tree)->right), queue);
+        }
+    }
+
+    return 0;
+}
+
+int32_t binarytree_insert_by_preorder_by_string(BIN_TREE_NODE **tree, const char *str)
+{
+    int32_t ret = 0;
+    QUEUE_T *queue = queue_malloc(QUEUE_DEFUALT_SIZE);
+    if (NULL == queue || NULL == str) {
+        LOG("queue malloc failed\n");
+        return -1;
+    }
+    ret = queue_str_to_int_queue(queue, str);
+    if (ret != 0) {
+        LOG("failed\n");
+        return ret;
+    }
+    ret = binarytree_insert_by_preorder_by_queue(tree, queue);
+    if (ret != 0) {
+        LOG("failed\n");
+        return ret;
+    }
     return 0;
 }
 

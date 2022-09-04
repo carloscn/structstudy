@@ -23,6 +23,10 @@ int64_t queue_pop(QUEUE_T *queue, int64_t *e);
 void queue_print(QUEUE_T *queue);
 size_t queue_limit_len(QUEUE_T *queue);
 size_t queue_count(QUEUE_T *queue);
+int32_t queue_str_to_queue(QUEUE_T *queue, const char *str);
+int32_t queue_queue_to_str(QUEUE_T* queue, char *out);
+int32_t queue_str_to_int_queue(QUEUE_T *queue, const char *str);
+void queue_print_as_char(QUEUE_T *queue);
 int32_t queue_selftest(void);
 
 #endif /* QUEUE_H */

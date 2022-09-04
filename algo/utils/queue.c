@@ -93,6 +93,16 @@ void queue_print(QUEUE_T *queue)
     printf("] tail. \n -- queue len = %zu\n", queue->current_len);
 }
 
+void queue_print_as_char(QUEUE_T *queue)
+{
+    size_t i = 0;
+    printf("head [ ");
+    do {
+        printf("%c, ", (char)queue->space[i++]);
+    } while (i < queue->current_len);
+    printf("] tail. \n -- queue len = %zu\n", queue->current_len);
+}
+
 size_t queue_count(QUEUE_T *queue)
 {
     return queue->current_len;
@@ -101,6 +111,64 @@ size_t queue_count(QUEUE_T *queue)
 size_t queue_limit_len(QUEUE_T *queue)
 {
     return queue->total_len;
+}
+
+int32_t queue_str_to_queue(QUEUE_T *queue, const char *str)
+{
+    if (NULL == queue || NULL == str) {
+        LOG("input queue or str is NULL\n");
+        return -1;
+    }
+    do {
+        queue_push(queue, (int64_t)*str);
+    } while (*(++str) != '\0');
+    return 0;
+}
+
+static int32_t ___atoi(const char *c)
+{
+    if (NULL == c) {
+        return -1;
+    }
+    if (*c == '#') {
+        return (int32_t)'#';
+    }
+    return atoi(c);
+}
+
+int32_t queue_str_to_int_queue(QUEUE_T *queue, const char *str)
+{
+    /* "123,556,7878,5,9,0,7847,9999," -> (int)123 (int)556 (int)787 */
+    char str_t[20] = {0};
+    size_t pos = 0;
+    if (NULL == queue || NULL == str) {
+        LOG("input queue or str is NULL\n");
+        return -1;
+    }
+    do {
+        if (*str == ',') {
+            *(str_t + pos) = '\0';
+            pos = 0;
+            queue_push(queue, (int64_t)___atoi(str_t));
+            continue;
+        }
+        *(str_t + pos++) = *str;
+    } while (*(++str) != '\0');
+
+    return 0;
+}
+
+int32_t queue_queue_to_str(QUEUE_T* queue, char *out)
+{
+    if (NULL == queue || NULL == out || NULL == (out + queue->current_len)) {
+        LOG("input queue or str is NULL\n");
+        return -1;
+    }
+    size_t i = 0;
+    for (i = 0; i < queue->current_len; i ++) {
+        out[i] = (char)queue->space[i];
+    }
+    return 0;
 }
 
 int32_t queue_selftest(void)

@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include "utils.h"
 
 #define STACK_ENABLE
 #define QUEUE_ENABLE
@@ -141,6 +142,7 @@ static int32_t bin_tree_insert_by_preorder(BIN_TREE_NODE **tree)
         scanf("%c", &ch);
         if (ch == '#') {
             *tree = NULL;
+            LOG("inserted null\n");
         } else {
             *tree = bin_tree_create();
             if (*tree == NULL) {
@@ -149,7 +151,10 @@ static int32_t bin_tree_insert_by_preorder(BIN_TREE_NODE **tree)
             }
             (*tree)->left = (*tree)->right = NULL;
             (*tree)->val = ch - '0';
+            LOG("inserted value %lld\n", (*tree)->val);
+            LOG("insert left :\n");
             bin_tree_insert_by_preorder(&((*tree)->left));
+            LOG("insert right :\n");
             bin_tree_insert_by_preorder(&((*tree)->right));
         }
     }

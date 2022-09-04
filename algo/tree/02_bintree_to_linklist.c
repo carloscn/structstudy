@@ -24,7 +24,7 @@ int main(void)
     int32_t ret = 0;
     LINKLIST_T *list = NULL;
     BIN_TREE_NODE *tree = NULL, *p = NULL;
-
+#if 0
     tree = binarytree_malloc();
     if (tree == NULL) {
         ret = -1;
@@ -66,6 +66,9 @@ int main(void)
         LOG("failed\n");
         return ret;
     }
+#endif
+    binarytree_insert_by_preorder_by_string(&tree, "1,2,3,#,#,4,#,#,5,#,6,#,#,");
+    binarytree_print_by_preorder(tree);
     LOG("call binarytree_tolinklist\n");
     ret = binarytree_to_linklist(tree, &list);
     if (ret != 0) {

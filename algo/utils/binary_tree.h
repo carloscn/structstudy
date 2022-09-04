@@ -23,6 +23,8 @@ void binarytree_print_by_postorder(BIN_TREE_NODE *tree);
 int32_t binarytree_insert_by_preorder(BIN_TREE_NODE **tree);
 int32_t binarytree_insert_value_to_left(BIN_TREE_NODE *tree, int64_t val);
 int32_t binarytree_insert_value_to_right(BIN_TREE_NODE *tree, int64_t val);
+int32_t binarytree_insert_by_preorder_by_queue(BIN_TREE_NODE **tree, QUEUE_T *queue);
+int32_t binarytree_insert_by_preorder_by_string(BIN_TREE_NODE **tree, const char *str);
 int32_t binarytree_selftest(void);
 
 #endif /* _BINARY_TREE_H */

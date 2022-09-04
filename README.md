@@ -30,6 +30,7 @@
 ## 二叉树
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)
+* [二叉树的所有路径（leetcode-257）](https://github.com/carloscn/structstudy/issues/24)
 
 ## 递归回溯问题
 * [斐波那契数列(Fibonacci)的第n项](https://github.com/carloscn/structstudy/issues/16)
