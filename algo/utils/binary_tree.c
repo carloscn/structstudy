@@ -90,6 +90,7 @@ void binarytree_print_by_layers(BIN_TREE_NODE *tree)
         LOG("queue malloc failed\n");
         return;
     }
+    printf("[");
     queue_push(queue, CONVERT_TREE_NODE_TO_ADDR(p));
     while(queue_count(queue) > 0) {
         queue_pop(queue, &val);
@@ -103,6 +104,7 @@ void binarytree_print_by_layers(BIN_TREE_NODE *tree)
         printf("%lld, ", p->val);
     }
     queue_free(queue);
+    printf("]\n");
 }
 
 void binarytree_print_by_preorder(BIN_TREE_NODE *tree)
@@ -189,6 +191,7 @@ int32_t binarytree_insert_by_preorder_by_queue(BIN_TREE_NODE **tree, QUEUE_T *qu
         queue_pop(queue, &val);
         if (val == (int64_t)'#') {
             *tree = NULL;
+            return 0;
         } else {
             *tree = binarytree_malloc();
             if (*tree == NULL) {
