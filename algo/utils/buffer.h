@@ -1,0 +1,35 @@
+#ifndef _BUFFER_H
+#define _BUFFER_H
+
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+#define BUFFER_DEFUALT_SIZE (1024UL)
+#define BUFFER_MAX_SZIE (100000000UL)
+
+typedef struct buffer_t {
+    int64_t *data;
+    size_t current_len;
+    size_t total_len;
+} BUFFER_T;
+
+BUFFER_T* buffer_malloc(size_t sz);
+void buffer_free(BUFFER_T *buffer);
+int32_t buffer_get_current_len(BUFFER_T *buffer);
+bool buffer_is_empty(BUFFER_T *buffer);
+int32_t buffer_push_by_index(BUFFER_T *buffer, size_t index, int64_t e);
+int32_t buffer_push_head(BUFFER_T *buffer, int64_t e);
+int32_t buffer_get_by_index(BUFFER_T *buffer, size_t index, int64_t *e);
+int32_t buffer_set_by_index(BUFFER_T *buffer, size_t index, int64_t e);
+bool buffer_is_contain(BUFFER_T *buffer, int64_t e);
+int32_t buffer_find(BUFFER_T *buffer, size_t *index, int64_t e);
+int32_t buffer_pop_by_index(BUFFER_T *buffer, size_t index, int64_t *e);
+int32_t buffer_pop_tail(BUFFER_T *buffer, int64_t *e);
+int32_t buffer_pop_head(BUFFER_T *buffer, int64_t *e);
+int32_t buffer_remove_element(BUFFER_T *buffer, int64_t e);
+int32_t buffer_get_tail(BUFFER_T *buffer, int64_t *e);
+int32_t buffer_get_head(BUFFER_T *buffer, int64_t *e);
+void buffer_print(BUFFER_T *buffer);
+int32_t buffer_selftest(void);
+#endif /* _BUFFER_H */

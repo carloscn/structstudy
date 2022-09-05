@@ -239,7 +239,7 @@ int32_t binarytree_selftest(void)
     */
     BIN_TREE_NODE *tree = NULL;
     printf("input binary tree using the pre-order (# is NULL):");
-    ret = binarytree_insert_by_preorder(&tree);
+    ret = binarytree_insert_by_preorder_by_string(&tree, "1,2,4,#,7,#,#,#,3,5,#,#,6,8,#,#,#,");
     if (ret != 0) {
         printf("set bin tree failed\n");
         return -1;
