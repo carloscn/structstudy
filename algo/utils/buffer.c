@@ -14,11 +14,17 @@ BUFFER_T* buffer_malloc(size_t sz)
     }
 
     buffer->data = (int64_t *)malloc(sizeof(int64_t) * sz);
+    if (NULL == buffer->data) {
+        goto err;    
+    }
     memset(buffer->data, 0, sizeof(int64_t) * sz);
     buffer->total_len = sz;
     buffer->current_len = 0;
     
     return buffer;
+err:
+    free(buffer);
+    return NULL;
 }
 
 void buffer_free(BUFFER_T *buffer)
@@ -90,7 +96,7 @@ finish:
 int32_t buffer_push_by_index(BUFFER_T *buffer, size_t index, int64_t e)
 {
     int32_t ret = 0;
-    size_t i = 0;
+    int64_t i = 0;
 
     if (NULL == buffer) {
         ret = -1;
@@ -110,11 +116,13 @@ int32_t buffer_push_by_index(BUFFER_T *buffer, size_t index, int64_t e)
             goto finish;
         }
     }
-    for (i = buffer->current_len - 1; i >= index; i --) {
-        buffer->data[i + 1] = buffer->data[i];
+    //memcpy(buffer->data + index + 1 , buffer->data + index, buffer->current_len - index);
+    for (i = (int64_t)buffer->current_len - 1; i >= index; i --) {
+        *(buffer->data + i + 1) = *(buffer->data + i);
     }
     buffer->data[index] = e;
     buffer->current_len ++;
+
 finish:
     return ret;
 }
@@ -191,7 +199,7 @@ finish:
     return ret;
 }
 
-int32_t buffer_find(BUFFER_T *buffer, size_t *index, int64_t e)
+bool buffer_find(BUFFER_T *buffer, size_t *index, int64_t e)
 {
     bool ret = true;
     size_t i = 0;
@@ -257,9 +265,10 @@ int32_t buffer_pop_head(BUFFER_T *buffer, int64_t *e)
 int32_t buffer_remove_element(BUFFER_T *buffer, int64_t e)
 {
     int32_t ret = 0;
+    bool ret_b = false;
     size_t index = 0;
-    ret = buffer_find(buffer, &index, e);
-    if (ret != 0) {
+    ret_b = buffer_find(buffer, &index, e);
+    if (!ret_b) {
         LOG("find e=%lld failed\d", e);
         return -1;
     }
@@ -299,27 +308,34 @@ int32_t buffer_selftest(void)
     int32_t ret = 0;
     size_t i = 0;
 
-    BUFFER_T *buffer = buffer_malloc(BUFFER_DEFUALT_SIZE);
-    if (NULL != buffer) return -1;
-
+    BUFFER_T *buffer = NULL;
+    buffer= buffer_malloc(20);
+    if (NULL == buffer) return -1;
+    
     for (i = 0; i < 10 ; i ++) {
-        ret = buffer_push_by_index(buffer, i, (int64_t)i);
+        ret = buffer_push_by_index(buffer, i, (int64_t)0xffff);
         if (ret != 0) {
             LOG("test failed, buffer_push_by_index failed\n");
             return ret;
         }
     }
     buffer_print(buffer);
-
     ret = buffer_push_by_index(buffer, 5, 10);
     if (ret != 0) return ret;
-
-    ret = buffer_remove_element(buffer, 5);
+    buffer_print(buffer);   
+    ret = buffer_remove_element(buffer, 10);
     if (ret != 0) return ret;
     buffer_print(buffer);
 
-    for (i = 0; i < 500; i ++) {
-        ret = buffer_push_by_index(buffer, i, (int64_t)i);
+    for (i = 0; i < 20; i ++) {
+        ret = buffer_push_head(buffer, (int64_t)i);
+        if (ret != 0) {
+            LOG("test failed, buffer_push_by_index failed\n");
+            return ret;
+        }
+    }
+    for (i = 0; i < 20; i ++) {
+        ret = buffer_push_tail(buffer, (int64_t)i);
         if (ret != 0) {
             LOG("test failed, buffer_push_by_index failed\n");
             return ret;
