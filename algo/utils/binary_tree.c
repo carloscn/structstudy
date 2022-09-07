@@ -32,6 +32,7 @@ void binarytree_free(BIN_TREE_NODE *tree)
         binarytree_free(next_right);
     }
 }
+
 int32_t binarytree_insert_value_to_left(BIN_TREE_NODE *tree, int64_t val)
 {
     int32_t ret = 0;

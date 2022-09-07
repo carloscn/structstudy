@@ -16,10 +16,11 @@ typedef struct buffer_t {
 
 BUFFER_T* buffer_malloc(size_t sz);
 void buffer_free(BUFFER_T *buffer);
-int32_t buffer_get_current_len(BUFFER_T *buffer);
+size_t buffer_get_current_len(BUFFER_T *buffer);
 bool buffer_is_empty(BUFFER_T *buffer);
 int32_t buffer_push_by_index(BUFFER_T *buffer, size_t index, int64_t e);
 int32_t buffer_push_head(BUFFER_T *buffer, int64_t e);
+int32_t buffer_push_tail(BUFFER_T *buffer, int64_t e);
 int32_t buffer_get_by_index(BUFFER_T *buffer, size_t index, int64_t *e);
 int32_t buffer_set_by_index(BUFFER_T *buffer, size_t index, int64_t e);
 bool buffer_is_contain(BUFFER_T *buffer, int64_t e);

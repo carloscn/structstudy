@@ -14,6 +14,31 @@
 #define LOG_LINE() printf("\n------------------------------------------------------------------")
 #define LOG_LINE_WITH_TR() printf("\n------------------------------------------------------------------\n");
 #define LOG_LINE_WITH_DOUBLE_TR() printf("\n------------------------------------------------------------------\n\n");
+#define LOG_ERR LOG
+#define UTILS_CHECK_RET(err)                                                     \
+    do {                                                                         \
+        if (ret != 0) {                                                          \
+            LOG_ERR("Operation failed: err= 0x%x\n", err);                       \
+            ret  = -1;                                                           \
+            goto finish;                                                         \
+        }                                                                        \
+    } while(0)
+#define UTILS_CHECK_BOOL(err)                                                    \
+    do {                                                                         \
+        if (ret_b != true) {                                                     \
+            LOG_ERR("Operation failed: err= 0x%x\n", err);                       \
+            ret_b  = false;                                                      \
+            goto finish;                                                         \
+        }                                                                        \
+    } while(0)
+#define UTILS_CHECK_PTR(p)                                                       \
+    do {                                                                         \
+        if (NULL == (p)) {                                                       \
+            LOG_ERR("pointer is NULL\n");                                        \
+            ret  = -1;                                                           \
+            goto finish;                                                         \
+        }                                                                        \
+    } while(0)
 
 /* Functions */
 void utils_swap(int64_t *a, int64_t *b);

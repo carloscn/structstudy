@@ -13,11 +13,15 @@ BUFFER_T* buffer_malloc(size_t sz)
         return buffer;
     }
 
-    buffer->data = (int64_t *)malloc(sizeof(int64_t) * sz);
-    if (NULL == buffer->data) {
-        goto err;
+    if (sz != 0) {
+        buffer->data = (int64_t *)malloc(sizeof(int64_t) * sz);
+        if (NULL == buffer->data) {
+            goto err;
+        }
+        memset(buffer->data, 0, sizeof(int64_t) * sz);
+    } else {
+        buffer->data = NULL;
     }
-    memset(buffer->data, 0, sizeof(int64_t) * sz);
     buffer->total_len = sz;
     buffer->current_len = 0;
 
@@ -40,7 +44,7 @@ void buffer_free(BUFFER_T *buffer)
     free(buffer);
 }
 
-int32_t buffer_get_current_len(BUFFER_T *buffer)
+size_t buffer_get_current_len(BUFFER_T *buffer)
 {
     return buffer->current_len;
 }

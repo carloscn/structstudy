@@ -7,6 +7,7 @@
 #include "utils.h"
 #include "binary_tree.h"
 #include "buffer.h"
+#include "multi_tree.h"
 
 int main(void)
 {
@@ -26,8 +27,10 @@ int main(void)
     // LOG("binary_tree selftest: please input: 124#7###35##68###\n");
     // LOG_LINE_WITH_DOUBLE_TR();
     // binarytree_selftest();
-    LOG("dynamic array selftest: \n");
-    LOG_LINE_WITH_DOUBLE_TR();
-    buffer_selftest();
+    //LOG("dynamic array selftest: \n");
+    //LOG_LINE_WITH_DOUBLE_TR();
+    //buffer_selftest();
+    multitree_selftest();
+
     return 0;
 }
