@@ -215,19 +215,22 @@ int32_t binarytree_insert_by_preorder_by_string(BIN_TREE_NODE **tree, const char
     QUEUE_T *queue = queue_malloc(QUEUE_DEFUALT_SIZE);
     if (NULL == queue || NULL == str) {
         LOG("queue malloc failed\n");
-        return -1;
+        ret = -1;
+        goto finish;
     }
     ret = queue_str_to_int_queue(queue, str);
     if (ret != 0) {
         LOG("failed\n");
-        return ret;
+        goto finish;
     }
     ret = binarytree_insert_by_preorder_by_queue(tree, queue);
     if (ret != 0) {
         LOG("failed\n");
-        return ret;
+        goto finish;
     }
-    return 0;
+finish:
+    queue_free(queue);
+    return ret;
 }
 
 int32_t binarytree_selftest(void)

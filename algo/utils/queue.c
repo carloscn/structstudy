@@ -87,9 +87,11 @@ void queue_print(QUEUE_T *queue)
 {
     size_t i = 0;
     printf("head [ ");
-    do {
-        printf("%lld, ", queue->space[i++]);
-    } while (i < queue->current_len);
+    if (queue->current_len != 0) {
+        do {
+            printf("%lld, ", queue->space[i++]);
+        } while (i < queue->current_len);
+    }
     printf("] tail. \n -- queue len = %zu\n", queue->current_len);
 }
 
@@ -97,19 +99,29 @@ void queue_print_as_char(QUEUE_T *queue)
 {
     size_t i = 0;
     printf("head [ ");
-    do {
-        printf("%c, ", (char)queue->space[i++]);
-    } while (i < queue->current_len);
+    if (queue->current_len != 0) {
+        do {
+            printf("%c, ", (char)queue->space[i++]);
+        } while (i < queue->current_len);
+    }
     printf("] tail. \n -- queue len = %zu\n", queue->current_len);
 }
 
 size_t queue_count(QUEUE_T *queue)
 {
+    if (NULL == queue) {
+        LOG("queue is NULL\n");
+        return 0;
+    }
     return queue->current_len;
 }
 
 size_t queue_limit_len(QUEUE_T *queue)
 {
+    if (NULL == queue) {
+        LOG("queue is NULL\n");
+        return 0;
+    }
     return queue->total_len;
 }
 
@@ -132,6 +144,9 @@ static int32_t ___atoi(const char *c)
     }
     if (*c == '#') {
         return (int32_t)'#';
+    }
+    if (*c == '@') {
+        return (int32_t)'@';
     }
     return atoi(c);
 }

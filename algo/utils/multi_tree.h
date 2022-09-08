@@ -5,6 +5,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include "buffer.h"
+#include "queue.h"
 
 typedef struct multi_tree_node_t MULTI_TREE_NODE_T;
 
