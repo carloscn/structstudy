@@ -19,11 +19,14 @@
 * [排序][对数组内的元素进行排序（选择排序法)](https://github.com/carloscn/structstudy/issues/10)
 * [排序][对数组内的元素进行排序（插入排序法)](https://github.com/carloscn/structstudy/issues/11)
 * [排序][递归][对数组内的元素进行排序（快速排序法)](https://github.com/carloscn/structstudy/issues/12)
+
 ## 字符串：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
-* [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26)
+* [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
+
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
+
 ## 数学：
 * [数值的整数次方](https://github.com/carloscn/structstudy/issues/13)
 * [含回溯方法][打印从1到最大的n位数](https://github.com/carloscn/structstudy/issues/14)
