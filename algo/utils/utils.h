@@ -39,6 +39,14 @@
             goto finish;                                                         \
         }                                                                        \
     } while(0)
+#define UTILS_CHECK_TEST_RESULT(ret1, ret2)                                      \
+    do {                                                                         \
+        if ((ret1) == (ret2)) {                                                  \
+            LOG("Test PASS!\n");                                                 \
+        } else {                                                                 \
+            LOG("Test FAILED!\n");                                               \
+        }                                                                        \
+    } while(0)
 
 /* Functions */
 void utils_swap(int64_t *a, int64_t *b);
