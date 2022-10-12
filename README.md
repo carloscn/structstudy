@@ -1,11 +1,5 @@
 # ALGO [^1] List
 
-注意，不要做一道忘记一道，一定要记得review。
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/carloscn/images/main/typora20220827191513.png" alt="image-20220829141115959" width="66%"/>
-</div>
-
 ## 数组：
 
 * [在数组中查找元素](https://github.com/carloscn/structstudy/issues/1)
