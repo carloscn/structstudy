@@ -1,7 +1,6 @@
 # ALGO [^1] List
 
 ## 数组：
-
 * [在数组中查找元素](https://github.com/carloscn/structstudy/issues/1)
 * [调整数组顺序使奇数位于偶数前面（冒泡排序）](https://github.com/carloscn/structstudy/issues/2)
 * [数组中次数出现超过一半的数字（摩尔投票法）](https://github.com/carloscn/structstudy/issues/3)
@@ -13,10 +12,11 @@
 * [排序][对数组内的元素进行排序（选择排序法)](https://github.com/carloscn/structstudy/issues/10)
 * [排序][对数组内的元素进行排序（插入排序法)](https://github.com/carloscn/structstudy/issues/11)
 * [排序][递归][对数组内的元素进行排序（快速排序法)](https://github.com/carloscn/structstudy/issues/12)
-
+* [两数之和（leetcode-1）](https://github.com/carloscn/structstudy/issues/27) [2022-10-13]
 ## 字符串：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
+* [回文数(leetcode-9）](https://github.com/carloscn/structstudy/issues/28) [2022-10-13]
 
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)

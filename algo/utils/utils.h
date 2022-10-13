@@ -50,11 +50,12 @@
 
 /* Functions */
 void utils_swap(int64_t *a, int64_t *b);
-inline int32_t utils_check_odd_even(int64_t base);
+int32_t utils_check_odd_even(int64_t base);
 int utils_check_pass(int e);
 void utils_print_int64_array(int64_t *a, size_t size, const char *msg);
 void utils_print_uchar_array(unsigned char *a, size_t size, const char *msg);
 int utils_compare_array(unsigned char *a, unsigned char *b, size_t size);
 void utils_print_array_by_hex(const unsigned char buf[], size_t len, const char *title);
+size_t utils_get_num_len(int32_t __x);
 
 #endif

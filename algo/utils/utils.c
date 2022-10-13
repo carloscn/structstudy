@@ -61,6 +61,7 @@ void utils_print_int64_array(int64_t *a, size_t size, const char *msg)
     }
     printf("\n");
 }
+
 int utils_check_pass(int e)
 {
     if (!e) {
@@ -69,4 +70,15 @@ int utils_check_pass(int e)
         LOG("Result Failed!\n");
     }
     return e;
+}
+
+inline size_t utils_get_num_len(int32_t __x)
+{
+    size_t __c = 0;
+
+    while(__x) {
+        __x = __x / 10;
+         __c ++;
+    }
+    return __c;
 }
