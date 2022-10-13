@@ -6,12 +6,21 @@
 #include <time.h>
 #include "utils.h"
 
+
+#define METHOD_STR      0
+#define METHOD_VALUE    1
+
 static bool is_palindrome(int32_t x)
 {
     size_t x_len = 0, i = 0;
-    char *x_str = NULL;
     bool ret = true;
 
+    if (x < 0) {
+        return false;
+    }
+
+#if METHOD_STR
+    char *x_str = NULL;
     // get len  “12534”
     x_len = utils_get_num_len(x);
 
@@ -30,10 +39,21 @@ static bool is_palindrome(int32_t x)
             goto finish;
         }
     }
+#elif METHOD_VALUE
+    int32_t cacu_invert_val = 0;
+    int32_t cacu_x_val = x;
+    while(cacu_x_val != 0) {
+        cacu_invert_val = (cacu_invert_val * 10) + (cacu_x_val % 10);
+        cacu_x_val /= 10;
+    }
+    ret = (cacu_invert_val == x);
+#endif
 
 finish:
+#if METHOD_STR
     if (x_str != NULL)
         free(x_str);
+#endif
     return ret;
 }
 
