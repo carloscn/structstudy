@@ -1,3 +1,0 @@
-/home/delvis/workspace/CLion/STRUCTOR/BST/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/delvis/workspace/CLion/STRUCTOR/BST/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/delvis/workspace/CLion/STRUCTOR/BST/cmake-build-debug/CMakeFiles/BST.dir
