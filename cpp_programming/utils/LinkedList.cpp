@@ -68,10 +68,10 @@ void LinkedList::toString() {
 
     Node *cur = dummyHead->next;
     while(cur != NULL) {
-        std::cout << cur->e << "->";
+        std::cout << cur->e << " -> ";
         cur = cur->next;
     }
-    std::cout << "NULL Size is " << getSize() << endl;
+    std::cout << "NULL | Size is " << getSize() << endl;
 
 }
 
@@ -116,10 +116,3 @@ bool LinkedList::contains(int e) {
     }
     return false;
 }
-
-
-
-
-
-
-

@@ -23,7 +23,7 @@
 
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
-* [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31)
+* [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
 
 ## 数学：
 * [数值的整数次方](https://github.com/carloscn/structstudy/issues/13)
