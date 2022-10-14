@@ -151,6 +151,58 @@ int32_t linklist_remove_value(LINKLIST_T **list, int64_t val)
     return 0;
 }
 
+int32_t linklist_append_array(LINKLIST_T **node, const int64_t *buffer, size_t len)
+{
+    int32_t ret = 0;
+    size_t i = 0;
+
+    if (0 == len) {
+        goto finish;
+    }
+    UTILS_CHECK_PTR(node);
+    UTILS_CHECK_PTR(buffer);
+
+    for (i = 0; i < len; i ++) {
+        ret = linklist_add_value(node, buffer[i]);
+        UTILS_CHECK_RET(ret);
+    }
+
+finish:
+    return ret;
+}
+
+inline int32_t linklist_copy_node(LINKLIST_T *node_dest, LINKLIST_T *node_src)
+{
+    int32_t ret = 0;
+
+    UTILS_CHECK_PTR(node_dest);
+    UTILS_CHECK_PTR(node_src);
+
+    memcpy(node_dest, node_src, sizeof(LINKLIST_T));
+
+finish:
+    return ret;
+}
+
+int32_t linklist_get_len(LINKLIST_T *list, size_t *o_len)
+{
+    int32_t ret = 0;
+    size_t len = 0;
+    LINKLIST_T *node = list;
+
+    UTILS_CHECK_PTR(list);
+    UTILS_CHECK_PTR(o_len);
+
+    do {
+        node = node->next;
+        len ++;
+    } while(node != NULL);
+
+    *o_len = len;
+finish:
+    return ret;
+}
+
 void linklist_free(LINKLIST_T **node)
 {
     if (*node == NULL || node == NULL) {
@@ -162,6 +214,33 @@ void linklist_free(LINKLIST_T **node)
         linklist_free_node(p);
         p = next_p;
     } while (p != NULL);
+}
+
+int32_t linklist_revert(LINKLIST_T **list)
+{
+    int32_t ret = 0;
+    LINKLIST_T *back_node = NULL, *pre_node = NULL, *cur_node = NULL;
+
+    UTILS_CHECK_PTR(list);
+
+    cur_node = *list;
+    back_node = linklist_create_node(0);
+    UTILS_CHECK_PTR(back_node);
+
+    do {
+        ret = linklist_copy_node(back_node, cur_node);
+        UTILS_CHECK_RET(ret);
+        cur_node->next = pre_node;
+        pre_node = cur_node;
+        cur_node = back_node->next;
+    } while (cur_node != NULL);
+
+    *list = pre_node;
+
+finish:
+    if (back_node != NULL)
+        free(back_node);
+    return ret;
 }
 
 void linklist_print(LINKLIST_T *list)
