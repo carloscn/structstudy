@@ -11,6 +11,23 @@ typedef struct stack_t {
     QUEUE_T *qb;
 } STACK_T;
 
+void stack_free(STACK_T *stack)
+{
+    if (NULL == stack) {
+        return;
+    }
+    if (NULL != stack->qa) {
+        free(stack->qa);
+        stack->qa = NULL;
+    }
+    if (NULL != stack->qb) {
+        free(stack->qb);
+        stack->qb = NULL;
+    }
+    free(stack);
+    stack = NULL;
+}
+
 int32_t stack_init(STACK_T **stack, size_t sz)
 {
     int32_t ret = 0;
@@ -33,26 +50,8 @@ int32_t stack_init(STACK_T **stack, size_t sz)
 
     return ret;
 finish:
-    if (new_stack != NULL)
-        free(new_stack);
+    stack_free(new_stack);
     return ret;
-}
-
-void stack_free(STACK_T *stack)
-{
-    if (NULL == stack) {
-        return;
-    }
-    if (NULL != stack->qa) {
-        free(stack->qa);
-        stack->qa = NULL;
-    }
-    if (NULL != stack->qb) {
-        free(stack->qb);
-        stack->qb = NULL;
-    }
-    free(stack);
-    stack = NULL;
 }
 
 // 1. Push the element to the queue which is not empty.
@@ -140,5 +139,6 @@ int32_t main(void)
         LOG("stack pop e = %lld\n", e);
     }
 finish:
+    free(stack);
     return ret;
 }
