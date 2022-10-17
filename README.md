@@ -22,7 +22,7 @@
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
 * [回文数(leetcode-9）](https://github.com/carloscn/structstudy/issues/28) [2022-10-13]
 * [罗马数字转整数（leetcode-13）roman-to-integer](https://github.com/carloscn/structstudy/issues/33) [2022-10-17]
-
+* [最长公共前缀（leetcode-14）longest-common-prefix](https://github.com/carloscn/structstudy/issues/33) [2022-10-17]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]

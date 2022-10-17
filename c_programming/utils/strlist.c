@@ -94,6 +94,11 @@ int32_t strlist_contains(STRLIST_T *strlist, char* str)
     return 0;
 }
 
+size_t strlist_get_size(STRLIST_T *strlist)
+{
+    return strlist->size;
+}
+
 int32_t strlist_free(STRLIST_T *strlist)
 {
     int32_t i;
