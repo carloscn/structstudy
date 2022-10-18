@@ -22,9 +22,9 @@
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
 * [回文数(leetcode-9）](https://github.com/carloscn/structstudy/issues/28) [2022-10-13]
 * [罗马数字转整数（leetcode-13）roman-to-integer](https://github.com/carloscn/structstudy/issues/33) [2022-10-17]
-* [最长公共前缀（leetcode-14）longest-common-prefix](https://github.com/carloscn/structstudy/issues/33) [2022-10-17]
-* [有效的括号（leetcode-20）valid-parentheses](https://github.com/carloscn/structstudy/issues/34) [2022-10-18]
-* [无重复字符的最长子串（leetcode-3）longest-substring-without-repeating-characters](https://github.com/carloscn/structstudy/issues/34) [2022-10-18]
+* [最长公共前缀（leetcode-14）longest-common-prefix](https://github.com/carloscn/structstudy/issues/34) [2022-10-17]
+* [有效的括号（leetcode-20）valid-parentheses](https://github.com/carloscn/structstudy/issues/35) [2022-10-18]
+* [[队列处理]无重复字符的最长子串（leetcode-3）longest-substring-without-repeating-characters](https://github.com/carloscn/structstudy/issues/36) [2022-10-18]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
