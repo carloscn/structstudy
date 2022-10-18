@@ -61,7 +61,8 @@ void utils_print_uchar_array(unsigned char *a, size_t size, const char *msg);
 int utils_compare_array(unsigned char *a, unsigned char *b, size_t size);
 void utils_print_array_by_hex(const unsigned char buf[], size_t len, const char *title);
 size_t utils_get_num_len(int32_t __x);
-
+int32_t utils_int32_abs(int32_t base);
+int64_t utils_int64_abs(int64_t base);
 
 #ifdef __cplusplus
 }

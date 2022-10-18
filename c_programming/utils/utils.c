@@ -24,6 +24,18 @@ inline int32_t utils_check_odd_even(int64_t base)
     }
 }
 
+inline int64_t utils_int64_abs(int64_t base)
+{
+    base = base * (((base >> 63) << 1) + 1);
+    return base;
+}
+
+inline int32_t utils_int32_abs(int32_t base)
+{
+    base = base * (((base >> 31) << 1) + 1);
+    return base;
+}
+
 void utils_print_array_by_hex(const unsigned char buf[], size_t len, const char *title)
 {
     printf("%s \n", title);
