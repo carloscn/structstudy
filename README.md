@@ -1,6 +1,7 @@
 # ALGO [^1] List
 
 ## 基本数据结构的C语言实现
+C语言无法像是高级计算机语言对基础数据结构有一部分的实现，而一些算法需要基于这些数据结构，故在本工程中的utils中实现基本的数据结构。
 * [栈（stack）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/stack.c)
 * [队列（queue）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/queue.c)
 * [链表（linkedlist）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/linklist.c)
