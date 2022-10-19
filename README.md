@@ -1,5 +1,15 @@
 # ALGO [^1] List
 
+## 基本数据结构的C语言实现
+* [栈（stack）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/stack.c)
+* [队列（queue）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/queue.c)
+* [链表（linkedlist）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/linklist.c)
+* [字符串列表（stringlist）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/strlist.c)
+* [动态数组（buffer）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/buffer.c)
+* [二叉树/堆（binarytree/heap）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/binary_tree.c)
+* [多叉树/堆（multitree/heap）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/multi_tree.c)
+* [哈希映射表（hash mapping）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/hash_map.c)
+
 ## 数组：
 * [在数组中查找元素](https://github.com/carloscn/structstudy/issues/1)
 * [调整数组顺序使奇数位于偶数前面（冒泡排序）](https://github.com/carloscn/structstudy/issues/2)
