@@ -39,6 +39,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
+* [leetcode-21：合并两个有序链表（merge-two-sorted-lists）](https://github.com/carloscn/structstudy/issues/37) [2022-10-23]
 
 ## 数学：
 * [数值的整数次方](https://github.com/carloscn/structstudy/issues/13)

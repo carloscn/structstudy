@@ -184,6 +184,28 @@ finish:
     return ret;
 }
 
+inline int32_t linklist_dup_node(LINKLIST_T **node_dest, LINKLIST_T *node_src)
+{
+    int32_t ret = 0;
+    LINKLIST_T *list = NULL;
+
+    UTILS_CHECK_PTR(node_dest);
+
+    list = linklist_create_node(0);
+    UTILS_CHECK_PTR(list);
+
+    ret = linklist_copy_node(list, node_src);
+    if (ret != 0) {
+        LOG("linklist_copy_node failed\n");
+        linklist_free_node(list);
+        goto finish;
+    }
+
+    *node_dest = list;
+finish:
+    return ret;
+}
+
 int32_t linklist_get_len(LINKLIST_T *list, size_t *o_len)
 {
     int32_t ret = 0;
