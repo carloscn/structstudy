@@ -36,7 +36,6 @@ finish:
     return ret;
 }
 
-
 int main(void)
 {
     int32_t ret = 0;

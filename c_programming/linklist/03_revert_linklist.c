@@ -21,6 +21,6 @@ int main(void)
     linklist_print(list);
 
 finish:
-    linklist_free_node(list);
+    linklist_free(&list);
     return ret;
 }
