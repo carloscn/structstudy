@@ -28,6 +28,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [用队列实现栈（leetcode-225）implement-stack-using-queues](https://github.com/carloscn/structstudy/issues/30) [2022-10-14]
 * [颜色分类-荷兰三色旗（leetcode-75）sort-colors](https://github.com/carloscn/structstudy/issues/32) [2022-10-15]
 * [leetcode26：删除有序数组中的重复项（remove-duplicates-from-sorted-array）](https://github.com/carloscn/structstudy/issues/38) [2022-10-24]
+* [leetcode27：移除元素（remove-element）](https://github.com/carloscn/structstudy/issues/39) [2022-10-25]
 
 ## 字符串：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
