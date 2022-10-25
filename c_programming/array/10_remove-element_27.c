@@ -44,28 +44,33 @@ int main(void)
     int64_t test_nums_3[] = {0,0,1,1,1,2,2,3,3,4};
     int64_t test_nums_4[] = {0,1,2,3,4,5};
     size_t len_out = 0;
+    int64_t target = 0;
 
-    ret = remove_element(test_nums_1, ARRAY_SIZE(test_nums_1), &len_out, 2);
+    target = 2;
+    ret = remove_element(test_nums_1, ARRAY_SIZE(test_nums_1), &len_out, target);
     UTILS_CHECK_RET(ret);
-    LOG("the output pos %zd\n", len_out);
+    LOG("the output pos %zd, remove target = %lld\n", len_out, target);
     utils_print_int64_array(test_nums_1, len_out, "the output array :");
     LOG_LINE_WITH_TR();
 
-    ret = remove_element(test_nums_2, ARRAY_SIZE(test_nums_2), &len_out, 1);
+    target = 1;
+    ret = remove_element(test_nums_2, ARRAY_SIZE(test_nums_2), &len_out, target);
     UTILS_CHECK_RET(ret);
-    LOG("the output pos %zd\n", len_out);
+    LOG("the output pos %zd, remove target = %lld\n", len_out, target);
     utils_print_int64_array(test_nums_2, len_out, "the output array :");
     LOG_LINE_WITH_TR();
 
-    ret = remove_element(test_nums_3, ARRAY_SIZE(test_nums_3), &len_out, 3);
+    target = 3;
+    ret = remove_element(test_nums_3, ARRAY_SIZE(test_nums_3), &len_out, target);
     UTILS_CHECK_RET(ret);
-    LOG("the output pos %zd\n", len_out);
+    LOG("the output pos %zd, remove target = %lld\n", len_out, target);
     utils_print_int64_array(test_nums_3, len_out, "the output array :");
     LOG_LINE_WITH_TR();
 
-    ret = remove_element(test_nums_4, ARRAY_SIZE(test_nums_4), &len_out, 5);
+    target = 5;
+    ret = remove_element(test_nums_4, ARRAY_SIZE(test_nums_4), &len_out, target);
     UTILS_CHECK_RET(ret);
-    LOG("the output pos %zd\n", len_out);
+    LOG("the output pos %zd, remove target = %lld\n", len_out, target);
     utils_print_int64_array(test_nums_4, len_out, "the output array :");
     LOG_LINE_WITH_TR();
 finish:
