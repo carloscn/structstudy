@@ -21,7 +21,7 @@ static int32_t search_insert_position(int64_t *array,
         goto finish;
     }
 
-    for (i = array_size - 1; i > 0; i --) {
+    for (i = array_size - 1; i >= 0; i --) {
         // check condition of boundary
         if ((i == array_size - 1) && (array[i] <= target)) {
             array[++i] = target;
