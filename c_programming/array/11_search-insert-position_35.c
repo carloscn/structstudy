@@ -5,6 +5,9 @@
 #include <time.h>
 #include "utils.h"
 
+#define METHOD_1    0
+#define METHOD_2    1
+
 // note, the array must over 1 size at least.
 static int32_t search_insert_position(int64_t *array,
                                       size_t array_size,
@@ -21,6 +24,7 @@ static int32_t search_insert_position(int64_t *array,
         goto finish;
     }
 
+#if METHOD_1
     for (i = array_size - 1; i >= 0; i --) {
         // check condition of boundary
         if ((i == array_size - 1) && (array[i] <= target)) {
@@ -37,6 +41,35 @@ static int32_t search_insert_position(int64_t *array,
     }
 
     *o_len = i;
+#elif METHOD_2
+
+    size_t left_pos = 0;
+    size_t right_pos = array_size - 1;
+    size_t mid_pos = 0;
+
+    while (left_pos < right_pos) {
+        mid_pos = left_pos + (right_pos - left_pos) / 2;
+        if (array[mid_pos] < target) {
+            left_pos = mid_pos + 1;
+        } else {
+            right_pos = mid_pos;
+        }
+    }
+
+    // check boundary
+    if (left_pos == array_size - 1) {
+        left_pos ++;
+        goto end;
+    }
+
+    for (i = array_size; i > left_pos; i --) {
+        array[i] = array[i-1];
+    }
+
+end:
+    array[left_pos] = target;
+    *o_len = left_pos;
+#endif
 
 finish:
     return ret;
