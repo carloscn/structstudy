@@ -10,7 +10,6 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [二叉树/堆（binarytree/heap）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/binary_tree.c)
 * [多叉树/堆（multitree/heap）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/multi_tree.c)
 * [哈希映射表（hash mapping）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/hash_map.c)
-
 ## 数组：
 * [在数组中查找元素](https://github.com/carloscn/structstudy/issues/1)
 * [调整数组顺序使奇数位于偶数前面（冒泡排序）](https://github.com/carloscn/structstudy/issues/2)
@@ -38,6 +37,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [最长公共前缀（leetcode-14）longest-common-prefix](https://github.com/carloscn/structstudy/issues/34) [2022-10-17]
 * [有效的括号（leetcode-20）valid-parentheses](https://github.com/carloscn/structstudy/issues/35) [2022-10-18]
 * [[队列处理]无重复字符的最长子串（leetcode-3）longest-substring-without-repeating-characters](https://github.com/carloscn/structstudy/issues/36) [2022-10-18]
+* [leetcode35：搜索插入位置（search-insert-position）](https://github.com/carloscn/structstudy/issues/40) [2022-10-26]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
