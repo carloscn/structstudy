@@ -63,6 +63,7 @@ void utils_print_array_by_hex(const unsigned char buf[], size_t len, const char 
 size_t utils_get_num_len(int32_t __x);
 int32_t utils_int32_abs(int32_t base);
 int64_t utils_int64_abs(int64_t base);
+double utils_float_abs(double base);
 
 #ifdef __cplusplus
 }

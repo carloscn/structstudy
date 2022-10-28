@@ -36,6 +36,13 @@ inline int32_t utils_int32_abs(int32_t base)
     return base;
 }
 
+inline double utils_float_abs(double base)
+{
+    if (base >= 0)
+        return base;
+    return -base;
+}
+
 void utils_print_array_by_hex(const unsigned char buf[], size_t len, const char *title)
 {
     printf("%s", title);
