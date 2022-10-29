@@ -133,6 +133,18 @@ size_t stack_count(STACK_T *stack)
     return stack_get_top(stack);
 }
 
+size_t stack_sum(STACK_T *stack)
+{
+    size_t i = 0;
+    size_t sum = 0;
+
+    for (i = 0; i < stack->size; i ++) {
+        sum += stack->space[i];
+    }
+
+    return sum;
+}
+
 void stack_print_as_hex(STACK_T *stack)
 {
     if (NULL == stack || NULL == stack->space) {

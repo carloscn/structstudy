@@ -27,7 +27,7 @@ void stack_print(STACK_T *stack);
 void stack_print_as_char(STACK_T *stack);
 void stack_print_as_hex(STACK_T *stack);
 char* stack_to_str(STACK_T *str_stack);
-
+size_t stack_sum(STACK_T *stack);
 int stack_selftest(void);
 
 #endif
