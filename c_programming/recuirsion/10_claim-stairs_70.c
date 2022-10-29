@@ -6,6 +6,10 @@
 #include "utils.h"
 #include "stack.h"
 
+#define METHOD_1 1 /* backtracing */
+#define METHOD_2 0 /* dynamic */
+
+
 /*
 if inputted n is 5.
 
@@ -33,6 +37,7 @@ if inputted n is 5.
  * @param target: target number;
  * @param count: recording possibilities;
  */
+#if METHOD_1
 static void dfs(STACK_T *stack, int32_t target, int32_t *count)
 {
     int32_t sum = (int32_t)stack_sum(stack);
@@ -80,6 +85,48 @@ finish:
     stack_free(stack);
     return ret;
 }
+#endif
+
+/*
+ * f(x) = f(x-1) + f(x-2), {x > 2}
+ *        1              , {x = 1, x = 0}
+ */
+#if METHOD_2
+static int32_t climb_stairs(int32_t n, int32_t *count)
+{
+    int32_t ret = 0;
+    int32_t *f = NULL;
+    int32_t i = 0;
+
+    UTILS_CHECK_PTR(count);
+
+    if (n <= 0) {
+        LOG("no possible situations.\n");
+        *count = n;
+        goto finish;
+    }
+
+    if (1 == n) {
+        *count = n;
+        goto finish;
+    }
+
+    f = (int32_t*)calloc(sizeof(int32_t), n + 1);
+    UTILS_CHECK_PTR(f);
+
+    f[0] = f[1] = 1;
+    for (i = 2; i <= n; i ++) {
+        f[i] = f[i - 1] + f[i - 2];
+    }
+    *count = f[n];
+
+finish:
+    LOG("total : when inputted %d, the %d types output.\n", n, *count);
+    if (f != NULL)
+        free(f);
+    return ret;
+}
+#endif
 
 int main(void)
 {
@@ -90,5 +137,6 @@ int main(void)
     UTILS_CHECK_RET(ret);
 
 finish:
+
     return ret;
 }
