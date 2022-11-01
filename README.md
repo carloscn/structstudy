@@ -30,6 +30,8 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode27：移除元素（remove-element）](https://github.com/carloscn/structstudy/issues/39) [2022-10-25]
 * [leetcode35：搜索插入位置（search-insert-position）](https://github.com/carloscn/structstudy/issues/40) [2022-10-26]
 * [leetcode66：加一（plus-one）](https://github.com/carloscn/structstudy/issues/41) [2022-10-27]
+* [leetcode88：合并两个有序数组（merge-sorted-array）](https://github.com/carloscn/structstudy/issues/46) [2022-10-31]
+* [1eetcode118：杨辉三角（pascals-triangle）](https://github.com/carloscn/structstudy/issues/47) [2022-11-01]
 ## 字符串：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
@@ -39,7 +41,6 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [有效的括号（leetcode-20）valid-parentheses](https://github.com/carloscn/structstudy/issues/35) [2022-10-18]
 * [无重复字符的最长子串（leetcode-3）longest-substring-without-repeating-characters](https://github.com/carloscn/structstudy/issues/36) [2022-10-18]
 * [leetcode67：二进制求和（add-binary）](https://github.com/carloscn/structstudy/issues/42) [2022-10-28]
-* [leetcode88：合并两个有序数组（merge-sorted-array）](https://github.com/carloscn/structstudy/issues/46) [2022-10-31]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
