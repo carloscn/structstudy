@@ -68,7 +68,7 @@ int main(void)
     size_t i = 0;
     struct triangle_t tran;
 
-    ret = gen_pascals_triangle(&tran, 10);
+    ret = gen_pascals_triangle(&tran, 30);
     UTILS_CHECK_RET(ret);
 
     for (i = 0; i < tran.depth; i ++) {
