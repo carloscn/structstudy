@@ -34,6 +34,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode118：杨辉三角（pascals-triangle）](https://github.com/carloscn/structstudy/issues/47) [2022-11-01]
 * [leetcode119：杨辉三角 II（pascals-triangle-ii）](https://github.com/carloscn/structstudy/issues/48) [2022-11-02]
 * [leetcode121：买卖股票的最佳时机（best-time-to-buy-and-sell-stock）](https://github.com/carloscn/structstudy/issues/49) [2022-11-03]
+* [leetcode136：只出现一次的数字（single-number）](https://github.com/carloscn/structstudy/issues/50) [2022-11-04]
 ## 字符串：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
