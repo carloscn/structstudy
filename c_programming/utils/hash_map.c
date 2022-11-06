@@ -133,7 +133,7 @@ finish:
  * Returns the value to which the specified key is mapped,
  * or -1 if this map contains no mapping for the key.
  */
-int32_t hashmap_get(HASH_MAP_T *mp, const char *key, int64_t *out_val)
+int32_t hashmap_get(HASH_MAP_T *mp, const char *key, int64_t *out_val, bool *state)
 {
     int32_t ret = 0;
     HASH_NODE_T *head = NULL, *tail = NULL;
@@ -141,6 +141,7 @@ int32_t hashmap_get(HASH_MAP_T *mp, const char *key, int64_t *out_val)
     UTILS_CHECK_PTR(mp);
     UTILS_CHECK_PTR(key);
     UTILS_CHECK_PTR(out_val);
+    UTILS_CHECK_PTR(state);
 
     head = &mp->table[hash(key, mp->capacity)];
     tail = head->next;
@@ -148,11 +149,12 @@ int32_t hashmap_get(HASH_MAP_T *mp, const char *key, int64_t *out_val)
     while (tail) {
         if (strcmp(key, tail->key) == 0) {
             *out_val = tail->value;
+            *state = true;
             goto finish;
         }
         tail = tail->next;
     }
-    ret = -1;
+    *state = false;
 
 finish:
     return ret;
@@ -162,7 +164,7 @@ finish:
  * Removes the mapping of the specified value key
  * if this map contains a mapping for the key.
  */
-int32_t hashmap_delete(HASH_MAP_T *mp, const char *key, int64_t *out_val)
+int32_t hashmap_delete(HASH_MAP_T *mp, const char *key, int64_t *out_val, bool *state)
 {
     int32_t ret = 0;
     HASH_NODE_T *head = NULL, *tail = NULL, *prev = NULL;
@@ -170,6 +172,7 @@ int32_t hashmap_delete(HASH_MAP_T *mp, const char *key, int64_t *out_val)
     UTILS_CHECK_PTR(mp);
     UTILS_CHECK_PTR(key);
     UTILS_CHECK_PTR(out_val);
+    UTILS_CHECK_PTR(state);
 
     head = &mp->table[hash(key, mp->capacity)];
     tail = head->next;
@@ -181,12 +184,13 @@ int32_t hashmap_delete(HASH_MAP_T *mp, const char *key, int64_t *out_val)
             *out_val = tail->value;
             free(tail);
             tail = NULL;
+            *state = true;
             goto finish;
         }
         tail = tail->next;
         prev = prev->next;
     }
-    ret = -1;
+    *state = false;
 
 finish:
     return ret;
@@ -196,6 +200,7 @@ int32_t hashmap_selftest()
 {
     int32_t ret = 0;
     int64_t val = 0;
+    bool state = false;
 
     HASH_MAP_T *hash_map = NULL;
     hash_map = hashmap_malloc(HASH_MAP_DEFAULT_SIZE);
@@ -210,45 +215,47 @@ int32_t hashmap_selftest()
     ret = hashmap_push(hash_map, "my_c", 3);
     UTILS_CHECK_RET(ret);
 
-    ret = hashmap_get(hash_map, "my_a", &val);
-    if (ret == -1) {
+    ret = hashmap_get(hash_map, "my_a", &val, &state);
+    UTILS_CHECK_RET(ret);
+
+    if (state == false) {
         LOG("not found key mapping value\n");
-    } else if (ret == 0) {
-        LOG("get the value is %lld\n", val);
     } else {
-        LOG("failed get\n");
+        LOG("get the value is %lld\n", val);
     }
 
-    ret = hashmap_delete(hash_map, "my_a", &val);
-    if (ret == -1) {
+    ret = hashmap_delete(hash_map, "my_a", &val, &state);
+    UTILS_CHECK_RET(ret);
+
+    if (state == false) {
         LOG("not found key mapping value\n");
-    } else if (ret == 0) {
+    } else {
         LOG("delete the value is %lld\n", val);
-    } else {
-        LOG("failed get\n");
     }
 
-    ret = hashmap_get(hash_map, "my_a", &val);
-    if (ret == -1) {
+    ret = hashmap_get(hash_map, "my_a", &val, &state);
+    UTILS_CHECK_RET(ret);
+
+    if (state == false) {
         LOG("not found key mapping value\n");
-    } else if (ret == 0) {
-        LOG("get the value is %lld\n", val);
     } else {
-        LOG("failed get\n");
+        LOG("get the value is %lld\n", val);
     }
+
 
     ret = hashmap_push(hash_map, "my_a", val);
     UTILS_CHECK_RET(ret);
     LOG("push my_a value to 1\n");
 
-    ret = hashmap_get(hash_map, "my_a", &val);
-    if (ret == -1) {
+    ret = hashmap_get(hash_map, "my_a", &val, &state);
+    UTILS_CHECK_RET(ret);
+
+    if (state == false) {
         LOG("not found key mapping value\n");
-    } else if (ret == 0) {
-        LOG("get the value is %lld\n", val);
     } else {
-        LOG("failed get\n");
+        LOG("get the value is %lld\n", val);
     }
+
 
 finish:
     hashmap_free(hash_map);

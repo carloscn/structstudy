@@ -2,6 +2,7 @@
 #define _HASH_MAP
 
 #include <stdint.h>
+#include <stdbool.h>
 #include <stdlib.h>
 
 #define HASH_MAP_DEFAULT_SIZE (1024U)
@@ -20,8 +21,8 @@ typedef struct hash_map_t {
 HASH_MAP_T* hashmap_malloc(size_t sz);
 void hashmap_free(HASH_MAP_T *mp);
 int32_t hashmap_push(HASH_MAP_T *mp, const char *key, int64_t value);
-int32_t hashmap_get(HASH_MAP_T *mp, const char *key, int64_t *out_val);
-int32_t hashmap_delete(HASH_MAP_T *mp, const char *key, int64_t *out_val);
+int32_t hashmap_get(HASH_MAP_T *mp, const char *key, int64_t *out_val, bool *state);
+int32_t hashmap_delete(HASH_MAP_T *mp, const char *key, int64_t *out_val, bool *state);
 int32_t hashmap_selftest();
 
 #endif /* _HASH_MAP */

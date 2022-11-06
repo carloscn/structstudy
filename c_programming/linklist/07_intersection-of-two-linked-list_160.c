@@ -83,6 +83,7 @@ static int32_t find_intersection_in_hash_map(LINKLIST_T *list1, LINKLIST_T *list
     HASH_MAP_T *hash_map = NULL;
     char *hash_key = NULL;
     int64_t val = 0;
+    bool state = false;
 
     UTILS_CHECK_PTR(list1);
     UTILS_CHECK_PTR(list2);
@@ -109,8 +110,10 @@ static int32_t find_intersection_in_hash_map(LINKLIST_T *list1, LINKLIST_T *list
         ret = utils_int64_convert_str((int64_t)current_node, &hash_key);
         UTILS_CHECK_RET(ret);
 
-        ret = hashmap_get(hash_map, hash_key, &val);
-        if (0 == ret) {
+        ret = hashmap_get(hash_map, hash_key, &val, &state);
+        UTILS_CHECK_RET(ret);
+
+        if (true == state) {
             *out_val = val;
             goto finish;
         }
@@ -120,7 +123,7 @@ static int32_t find_intersection_in_hash_map(LINKLIST_T *list1, LINKLIST_T *list
         free(hash_key);
         hash_key = NULL;
     }
-    ret = 0;
+
     LOG("no intersection point.\n");
     *out_val = 0xFFFF;
 
