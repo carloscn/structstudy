@@ -8,9 +8,15 @@
 static int32_t hashnode_init(HASH_NODE_T *node, const char *key, int64_t val)
 {
     int32_t ret = 0;
+    char *t_key = NULL;
 
     UTILS_CHECK_PTR(node);
-    node->key = key;
+    if (NULL != key) {
+        t_key = (char *)malloc(strlen(key) + 1);
+        UTILS_CHECK_PTR(t_key);
+        strcpy(t_key, key);
+    }
+    node->key = t_key;
     node->next = NULL;
     node->value = val;
 
@@ -64,6 +70,7 @@ void hashmap_free(HASH_MAP_T *mp)
         while (tail) {
             temp = tail;
             tail = tail->next;
+            free(temp->key);
             free(temp);
             temp = NULL;
         }

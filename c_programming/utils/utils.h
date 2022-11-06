@@ -8,6 +8,7 @@ extern "C" {
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <string.h>
 
 /* MACRO define */
 #define ARRAY_SIZE(_a_) ((size_t)(sizeof(_a_)/sizeof((_a_)[0])))
@@ -64,7 +65,7 @@ size_t utils_get_num_len(int32_t __x);
 int32_t utils_int32_abs(int32_t base);
 int64_t utils_int64_abs(int64_t base);
 double utils_float_abs(double base);
-
+int32_t utils_int64_convert_str(int64_t value, char **out_str);
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/

@@ -106,6 +106,28 @@ inline size_t utils_get_num_len(int32_t __x)
     return __c;
 }
 
+int32_t utils_int64_convert_str(int64_t value, char **out_str)
+{
+    int32_t ret = 0;
+    char *str = NULL;
+
+    str = (char*)malloc(17);
+
+    if (NULL == str) {
+        *out_str = NULL;
+        return -1;
+    }
+    memset(str, '\0', 17);
+    ret = sprintf(str, "%llx", value);
+    if (ret < 0) {
+        return ret;
+    }
+    *out_str = str;
+    ret = 0;
+
+    return ret;
+}
+
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/

@@ -7,7 +7,7 @@
 #define HASH_MAP_DEFAULT_SIZE (1024U)
 
 typedef struct hash_node_t {
-    const char *key;
+    char *key;
     int64_t value;
     struct hash_node_t *next;
 } HASH_NODE_T;
@@ -17,7 +17,7 @@ typedef struct hash_map_t {
     size_t capacity;
 } HASH_MAP_T;
 
-HASH_MAP_T* hashmap_malloc();
+HASH_MAP_T* hashmap_malloc(size_t sz);
 void hashmap_free(HASH_MAP_T *mp);
 int32_t hashmap_push(HASH_MAP_T *mp, const char *key, int64_t value);
 int32_t hashmap_get(HASH_MAP_T *mp, const char *key, int64_t *out_val);

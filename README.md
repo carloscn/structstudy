@@ -50,6 +50,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode-21：合并两个有序链表（merge-two-sorted-lists）](https://github.com/carloscn/structstudy/issues/37) [2022-10-23]
 * [leetcode83：删除排序链表中的重复元素（remove-duplicates-from-sorted-list）](https://github.com/carloscn/structstudy/issues/45) [2022-10-30]
 * [leetcode141：环形链表（linked-list-cycle）](https://github.com/carloscn/structstudy/issues/51) [2022-11-05]
+* [leetcode160：相交链表（intersection-of-two-linked-lists）](https://github.com/carloscn/structstudy/issues/52) [2022-11-06]
 ## 数学：
 * [数值的整数次方](https://github.com/carloscn/structstudy/issues/13)
 * [含回溯方法][打印从1到最大的n位数](https://github.com/carloscn/structstudy/issues/14)
