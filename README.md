@@ -44,6 +44,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [有效的括号（leetcode-20）valid-parentheses](https://github.com/carloscn/structstudy/issues/35) [2022-10-18]
 * [无重复字符的最长子串（leetcode-3）longest-substring-without-repeating-characters](https://github.com/carloscn/structstudy/issues/36) [2022-10-18]
 * [leetcode67：二进制求和（add-binary）](https://github.com/carloscn/structstudy/issues/42) [2022-10-28]
+* [leetcode168：Excel表列名称（excel-sheet-column-title）](https://github.com/carloscn/structstudy/issues/53) [2022-11-07]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
