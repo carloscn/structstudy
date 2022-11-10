@@ -67,6 +67,8 @@ int32_t utils_int32_abs(int32_t base);
 int64_t utils_int64_abs(int64_t base);
 double utils_float_abs(double base);
 int32_t utils_int64_convert_str(int64_t value, char **out_str);
+void utils_print_32_value_by_binary(uint32_t val);
+void utils_print_64_value_by_binary(uint64_t val);
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/

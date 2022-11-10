@@ -48,6 +48,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode67：二进制求和（add-binary）](https://github.com/carloscn/structstudy/issues/42) [2022-10-28]
 * [leetcode168：Excel表列名称（excel-sheet-column-title）](https://github.com/carloscn/structstudy/issues/53) [2022-11-07]
 * [leetcode171：Excel 表列序号（excel-sheet-column-number）](https://github.com/carloscn/structstudy/issues/55) [2022-11-09]
+* [leetcode190：颠倒二进制（reverse-bits）](https://github.com/carloscn/structstudy/issues/56) [2022-11-10]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]

@@ -54,6 +54,36 @@ void utils_print_array_by_hex(const unsigned char buf[], size_t len, const char 
     printf("\r\n");
 }
 
+void utils_print_64_value_by_binary(uint64_t val)
+{
+    size_t i = 0;
+
+    printf("utils_print_64_value_by_binary: (%zu) -> (0x%zX) -> ", val, val);
+    for (i = 0; i < 64; i ++) {
+        if ((val >> (63 - i)) & 0x1 == 1) {
+            printf("1");
+        } else {
+            printf("0");
+        }
+    }
+    printf("\n");
+}
+
+void utils_print_32_value_by_binary(uint32_t val)
+{
+    size_t i = 0;
+
+    printf("utils_print_64_value_by_binary: (%u) -> (0x%X) -> ", val, val);
+    for (i = 0; i < 32; i ++) {
+        if ((val >> (31 - i)) & 0x1 == 1) {
+            printf("1");
+        } else {
+            printf("0");
+        }
+    }
+    printf("(B)\n");
+}
+
 int utils_compare_array(unsigned char *a, unsigned char *b, size_t size)
 {
     size_t i = 0;
@@ -80,7 +110,7 @@ void utils_print_int64_array(int64_t *a, size_t size, const char *msg)
     size_t i = 0;
     printf("%s", msg);
     for (i = 0; i < size; i ++) {
-        printf("%lld, ", a[i]);
+        printf("%ld, ", a[i]);
     }
     printf("\n");
 }
@@ -118,7 +148,7 @@ int32_t utils_int64_convert_str(int64_t value, char **out_str)
         return -1;
     }
     memset(str, '\0', 17);
-    ret = sprintf(str, "%llx", value);
+    ret = sprintf(str, "%lx", value);
     if (ret < 0) {
         return ret;
     }
