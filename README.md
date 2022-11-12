@@ -61,6 +61,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [数值的整数次方](https://github.com/carloscn/structstudy/issues/13)
 * [含回溯方法][打印从1到最大的n位数](https://github.com/carloscn/structstudy/issues/14)
 * [leetcode69：x的平方根（sqrtx）](https://github.com/carloscn/structstudy/issues/43) [2022-10-28]
+* [leetcode7：整数反转（reverse-integer）](https://github.com/carloscn/structstudy/issues/58) [2022-11-12]
 ## 二叉树
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)
