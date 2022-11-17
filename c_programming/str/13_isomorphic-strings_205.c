@@ -5,7 +5,6 @@
 #include <stdbool.h>
 #include "utils.h"
 
-
 static int32_t get_index(char *rom, char c, int32_t count)
 {
     int32_t i = 0;
