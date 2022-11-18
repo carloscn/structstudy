@@ -53,7 +53,12 @@ extern "C" {
             LOG("Test FAILED!\n");                                               \
         }                                                                        \
     } while(0)
-
+#define UTILS_CHECK_LEN(ret)                                                     \
+    do {                                                                         \
+        if ((ret) == (0)) {                                                      \
+            goto finish;                                                         \
+        }                                                                        \
+    } while(0)
 /* Functions */
 void utils_swap(int64_t *a, int64_t *b);
 int32_t utils_check_odd_even(int64_t base);
