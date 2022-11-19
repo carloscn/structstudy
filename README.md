@@ -36,7 +36,8 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode121：买卖股票的最佳时机（best-time-to-buy-and-sell-stock）](https://github.com/carloscn/structstudy/issues/49) [2022-11-03]
 * [leetcode136：只出现一次的数字（single-number）](https://github.com/carloscn/structstudy/issues/50) [2022-11-04]
 * [leetcode169：多数元素（majority-element）](https://github.com/carloscn/structstudy/issues/54) [2022-11-08]
-
+* [leetcode217：存在重复元素（contains-duplicate）](https://github.com/carloscn/structstudy/issues/63) [2022-11-17]
+* [leetcode11：盛最多水的容器（container-with-most-water）](https://github.com/carloscn/structstudy/issues/65) [2022-11-19]
 ## 字符串：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
@@ -52,8 +53,6 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode191：位1的个数（number-of-1-bits）](https://github.com/carloscn/structstudy/issues/57) [2022-11-11]
 * [leetcode8：字符串转换整数 (atoi)](https://github.com/carloscn/structstudy/issues/59) [2022-11-13]
 * [leetcode205：同构字符串（isomorphic-strings）](https://github.com/carloscn/structstudy/issues/62) [2022-11-16]
-* [leetcode217：存在重复元素（contains-duplicate）](https://github.com/carloscn/structstudy/issues/63) [2022-11-17]
-* [leetcode219：存在重复元素 II（contains-duplicate-ii）](https://github.com/carloscn/structstudy/issues/64) [2022-11-18]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
