@@ -48,6 +48,7 @@ static int32_t sort_array_by_bubble(const int32_t *array, int32_t *out, size_t l
 error:
     return -1;
 }
+
 static int32_t sort_array_by_selection(const int32_t *array, int32_t *out, size_t len)
 {
     if (NULL == array || 0 == len || NULL == out) {

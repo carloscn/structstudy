@@ -74,6 +74,7 @@ double utils_float_abs(double base);
 int32_t utils_int64_convert_str(int64_t value, char **out_str);
 void utils_print_32_value_by_binary(uint32_t val);
 void utils_print_64_value_by_binary(uint64_t val);
+size_t utils_set_array(int64_t *array, size_t sz);
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/
