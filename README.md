@@ -55,6 +55,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode191：位1的个数（number-of-1-bits）](https://github.com/carloscn/structstudy/issues/57) [2022-11-11]
 * [leetcode8：字符串转换整数 (atoi)](https://github.com/carloscn/structstudy/issues/59) [2022-11-13]
 * [leetcode205：同构字符串（isomorphic-strings）](https://github.com/carloscn/structstudy/issues/62) [2022-11-16]
+* [leetcode242：有效的字母异位词（valid-anagram）](https://github.com/carloscn/structstudy/issues/69) [2022-11-23]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
@@ -75,7 +76,6 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)
 * [二叉树的所有路径（leetcode-257）](https://github.com/carloscn/structstudy/issues/24)
 * [二叉搜索树中第K小的元素（leetcode-230）](https://github.com/carloscn/structstudy/issues/25)
-
 ## 递归回溯问题
 * [斐波那契数列(Fibonacci)的第n项](https://github.com/carloscn/structstudy/issues/16)
 * [生成匹配的括号(Leetcode-22)](https://github.com/carloscn/structstudy/issues/17)
