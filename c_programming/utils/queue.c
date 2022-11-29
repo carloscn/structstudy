@@ -64,6 +64,64 @@ int32_t queue_push(QUEUE_T *queue, int64_t e)
     return 0;
 }
 
+int32_t queue_push_array(QUEUE_T *queue, int64_t *array, size_t sz)
+{
+    int32_t ret = 0;
+    size_t i = 0;
+
+    if (NULL == array) {
+        printf("error on the queue_push_array, input params\n");
+        return -1;
+    }
+
+    if (0 == sz) {
+        return ret;
+    }
+
+    for (i = 0; i < sz; i ++) {
+        ret = queue_push(queue, array[i]);
+        if (ret != 0) {
+            printf("error on the queue_push_array\n");
+            return ret;
+        }
+    }
+
+    return ret;
+}
+
+int32_t queue_pop_array(QUEUE_T *queue, int64_t *array, size_t *sz)
+{
+    int32_t ret = 0;
+    size_t i = 0;
+    int64_t e = 0;
+
+    if (NULL == array || NULL == sz) {
+        printf("error on the queue_pop_array, input params\n");
+        return -1;
+    }
+
+    if (0 == *sz) {
+        return ret;
+    }
+
+    for (i = 0; i < *sz; i ++) {
+        if (queue_count(queue) != 0) {
+            ret = queue_pop(queue, &e);
+            if (ret != 0) {
+                printf("error on the queue_pop_array\n");
+                return ret;
+            }
+            array[i] = e;
+        } else {
+            break;
+        }
+    }
+
+    *sz = i;
+
+    return ret;
+}
+
 int64_t queue_pop(QUEUE_T *queue, int64_t *e)
 {
     if (queue->current_len <= 0) {
