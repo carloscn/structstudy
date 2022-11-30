@@ -28,6 +28,24 @@ int32_t strlist_add(STRLIST_T *strlist, char *str)
     return strlist->size;
 }
 
+int32_t strlist_add_split_by_char(STRLIST_T *strlist, char *str, char c)
+{
+    int32_t len = strlen(str);
+    char *head = str;
+    int32_t i = 0;
+
+    for (i = 0; i < len; i ++) {
+        if(str[i] == c) {
+            str[i] = '\0';
+            strlist_add(strlist, head);
+            str[i] = c;
+            head = str + i + 1;
+        }
+    }
+    strlist_add(strlist, head);
+    return strlist->size;
+}
+
 int32_t strlist_insert_after(STRLIST_T *strlist, char* str, uint32_t index)
 {
     int32_t i, len;

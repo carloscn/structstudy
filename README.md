@@ -59,6 +59,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode8：字符串转换整数 (atoi)](https://github.com/carloscn/structstudy/issues/59) [2022-11-13]
 * [leetcode205：同构字符串（isomorphic-strings）](https://github.com/carloscn/structstudy/issues/62) [2022-11-16]
 * [leetcode242：有效的字母异位词（valid-anagram）](https://github.com/carloscn/structstudy/issues/69) [2022-11-23]
+* [leetcode290：单词规律（word-pattern）](https://github.com/carloscn/structstudy/issues/75) [2022-11-30]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
