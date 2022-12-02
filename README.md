@@ -75,6 +75,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode202：快乐数（happy-number）](https://github.com/carloscn/structstudy/issues/60) [2022-11-14]
 * [leetcode231：2 的幂（power-of-two）](https://github.com/carloscn/structstudy/issues/68) [2022-11-22]
 * [leetcode258：各位相加（add-digits)](https://github.com/carloscn/structstudy/issues/70) [2022-11-24]
+* [leetcode292：Nim 游戏（nim-game）](https://github.com/carloscn/structstudy/issues/76) [2022-12-02]
 ## 二叉树
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)
