@@ -106,7 +106,8 @@ int32_t hashmap_push(HASH_MAP_T *mp, const char *key, int64_t value)
 
     while (tail) {
         if (strcmp(key, tail->key) == 0) {
-            tail->value = value;
+            //tail->value = value;]
+            ret = 6;    /* duplicate */
             goto finish;
         }
         tail = tail->next;
@@ -141,7 +142,6 @@ int32_t hashmap_get(HASH_MAP_T *mp, const char *key, int64_t *out_val, bool *sta
     UTILS_CHECK_PTR(mp);
     UTILS_CHECK_PTR(key);
     UTILS_CHECK_PTR(out_val);
-    UTILS_CHECK_PTR(state);
 
     head = &mp->table[hash(key, mp->capacity)];
     tail = head->next;
@@ -149,12 +149,14 @@ int32_t hashmap_get(HASH_MAP_T *mp, const char *key, int64_t *out_val, bool *sta
     while (tail) {
         if (strcmp(key, tail->key) == 0) {
             *out_val = tail->value;
-            *state = true;
+            if (state != NULL)
+                *state = true;
             goto finish;
         }
         tail = tail->next;
     }
-    *state = false;
+    if (state != NULL)
+        *state = false;
 
 finish:
     return ret;
