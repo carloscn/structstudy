@@ -60,6 +60,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode205：同构字符串（isomorphic-strings）](https://github.com/carloscn/structstudy/issues/62) [2022-11-16]
 * [leetcode242：有效的字母异位词（valid-anagram）](https://github.com/carloscn/structstudy/issues/69) [2022-11-23]
 * [leetcode290：单词规律（word-pattern）](https://github.com/carloscn/structstudy/issues/75) [2022-11-30]
+* [leetcode17：电话号码的字母组合（letter-combinations-of-a-phone-number）](https://github.com/carloscn/structstudy/issues/77) [2022-12-03]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
