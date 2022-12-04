@@ -43,6 +43,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode268：丢失的数字（missing-number）](https://github.com/carloscn/structstudy/issues/71) [2022-11-25]
 * [leetcode278：第一个错误的版本（first-bad-version）](https://github.com/carloscn/structstudy/issues/73) [2022-11-28]
 * [leetcode283：移动零元素（move-zeroes）](https://github.com/carloscn/structstudy/issues/74) [2022-11-29]
+* [leetcode18：四数之和（4sum）](https://github.com/carloscn/structstudy/issues/78) [2022-12-04]
 ## 字符串：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
