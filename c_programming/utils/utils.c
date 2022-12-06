@@ -105,6 +105,26 @@ void utils_print_uchar_array(unsigned char *a, size_t size, const char *msg)
     printf("\n");
 }
 
+void utils_print_size_t_array(size_t *a, size_t size, const char *msg)
+{
+    size_t i = 0;
+    printf("%s", msg);
+    for (i = 0; i < size; i ++) {
+        printf("%zu, ", a[i]);
+    }
+    printf("\n");
+}
+
+void utils_print_int32_array(int32_t *a, size_t size, const char *msg)
+{
+    size_t i = 0;
+    printf("%s", msg);
+    for (i = 0; i < size; i ++) {
+        printf("%ld, ", a[i]);
+    }
+    printf("\n");
+}
+
 void utils_print_int64_array(int64_t *a, size_t size, const char *msg)
 {
     size_t i = 0;
