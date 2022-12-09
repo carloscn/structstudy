@@ -61,6 +61,8 @@ extern "C" {
     } while(0)
 /* Functions */
 void utils_swap(int64_t *a, int64_t *b);
+void utils_swap_int32(int32_t *a, int32_t *b);
+void utils_swap_char(char *a, char *b);
 int32_t utils_check_odd_even(int64_t base);
 int utils_check_pass(int e);
 void utils_print_int64_array(int64_t *a, size_t size, const char *msg);

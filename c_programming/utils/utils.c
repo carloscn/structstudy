@@ -11,6 +11,20 @@ void utils_swap(int64_t *a, int64_t *b)
     *a = (*a) ^ (*b);
 }
 
+void utils_swap_char(char *a, char *b)
+{
+    *a = (*a) ^ (*b);
+    *b = (*b) ^ (*a);
+    *a = (*a) ^ (*b);
+}
+
+void utils_swap_int32(int32_t *a, int32_t *b)
+{
+    *a = (*a) ^ (*b);
+    *b = (*b) ^ (*a);
+    *a = (*a) ^ (*b);
+}
+
 /*
  * return 1: odd number
  * return 0: even number
