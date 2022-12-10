@@ -134,7 +134,7 @@ void utils_print_int32_array(int32_t *a, size_t size, const char *msg)
     size_t i = 0;
     printf("%s", msg);
     for (i = 0; i < size; i ++) {
-        printf("%ld, ", a[i]);
+        printf("%d, ", a[i]);
     }
     printf("\n");
 }
