@@ -66,6 +66,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode17：电话号码的字母组合（letter-combinations-of-a-phone-number）](https://github.com/carloscn/structstudy/issues/77) [2022-12-03]
 * [leetcode344：反转字符串（reverse-string）](https://github.com/carloscn/structstudy/issues/82) [2022-12-09]
 * [leetcode345：反转字符串中的元音字母（reverse-vowels-of-a-string）](https://github.com/carloscn/structstudy/issues/83) [2022-12-10]
+* [leetcode383：赎金信（ransom-note）](https://github.com/carloscn/structstudy/issues/87) [2022-12-15]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
