@@ -6,6 +6,8 @@ extern "C" {
 
 void utils_swap(int64_t *a, int64_t *b)
 {
+    if (a == b)
+        return;
     *a = (*a) ^ (*b);
     *b = (*b) ^ (*a);
     *a = (*a) ^ (*b);
@@ -13,6 +15,8 @@ void utils_swap(int64_t *a, int64_t *b)
 
 void utils_swap_char(char *a, char *b)
 {
+    if (a == b)
+        return;
     *a = (*a) ^ (*b);
     *b = (*b) ^ (*a);
     *a = (*a) ^ (*b);
@@ -20,6 +24,8 @@ void utils_swap_char(char *a, char *b)
 
 void utils_swap_int32(int32_t *a, int32_t *b)
 {
+    if (a == b)
+        return;
     *a = (*a) ^ (*b);
     *b = (*b) ^ (*a);
     *a = (*a) ^ (*b);
