@@ -70,6 +70,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode389：找不同（find-the-difference）](https://github.com/carloscn/structstudy/issues/89) [2022-12-18]
 * [leetcode392：判断子序列（is-subsequence](https://github.com/carloscn/structstudy/issues/90) [2022-12-20]
 * [leetcode401：二进制手表（binary-watch）](https://github.com/carloscn/structstudy/issues/91) [2022-12-21]
+* [leetcode405：数字转换为十六进制数（convert-a-number-to-hexadecimal）](https://github.com/carloscn/structstudy/issues/92) [2022-12-23]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
