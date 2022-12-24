@@ -49,7 +49,7 @@ int32_t main(void)
     int32_t ret = 0;
     char *result = NULL;
 
-    result = to_hex(0);
+    result = to_hex(45456);
     printf("the result is %s\n", result);
 
 finish:

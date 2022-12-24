@@ -11,6 +11,11 @@ extern "C" {
 #include <stdbool.h>
 #include <string.h>
 
+typedef enum {
+    ORDER_BY_ASCEND = 0,
+    ORDER_BY_DESCEND
+} ORDER_E;
+
 /* MACRO define */
 #define ARRAY_SIZE(_a_) ((size_t)(sizeof(_a_)/sizeof((_a_)[0])))
 #define MAX(_a_, _b_) (((_a_)>(_b_))?(_a_):(_b_))
@@ -79,6 +84,7 @@ int32_t utils_int64_convert_str(int64_t value, char **out_str);
 void utils_print_32_value_by_binary(uint32_t val);
 void utils_print_64_value_by_binary(uint64_t val);
 size_t utils_set_array(int64_t *array, size_t sz);
+int32_t utils_sort_char_array(char *array, size_t len, ORDER_E order);
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/
