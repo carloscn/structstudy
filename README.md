@@ -72,6 +72,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode401：二进制手表（binary-watch）](https://github.com/carloscn/structstudy/issues/91) [2022-12-21]
 * [leetcode405：数字转换为十六进制数（convert-a-number-to-hexadecimal）](https://github.com/carloscn/structstudy/issues/92) [2022-12-23]
 * [leetcode409：最长回文串（longest-palindrome](https://github.com/carloscn/structstudy/issues/93) [2022-12-24]
+* [leetcode412：Fizz Buzz](https://github.com/carloscn/structstudy/issues/94) [2022-12-25]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
