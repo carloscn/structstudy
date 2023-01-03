@@ -31,6 +31,15 @@ void utils_swap_int32(int32_t *a, int32_t *b)
     *a = (*a) ^ (*b);
 }
 
+void utils_swap_int64(int64_t *a, int64_t *b)
+{
+    if (a == b)
+        return;
+    *a = (*a) ^ (*b);
+    *b = (*b) ^ (*a);
+    *a = (*a) ^ (*b);
+}
+
 /*
  * return 1: odd number
  * return 0: even number
@@ -277,6 +286,64 @@ int32_t utils_sort_char_array(char *array, size_t len, ORDER_E order)
     }
     printf("\n");
     memcpy(array, test_array, len);
+
+error:
+    if (test_array != NULL)
+        free(test_array);
+    return ret;
+}
+
+int32_t utils_sort_int64_array(int64_t *array, size_t len, ORDER_E order)
+{
+    int32_t ret = 0;
+    int64_t *test_array = NULL;
+    size_t i = 0, j = 0;
+
+    if (NULL == array || 0 == len) {
+        ret = -1;
+        LOG("parameters error \n");
+        goto error;
+    }
+
+    test_array = (int64_t *)calloc(sizeof(int64_t), len);
+    if (NULL == test_array) {
+        ret = -1;
+        LOG("malloc test_array failed\n");
+        goto error;
+    }
+
+    memcpy(test_array, array, len * sizeof(int64_t));
+
+    LOG("\npre : ");
+    for (i = 0; i < len; i ++) {
+        printf("%lld, ", array[i]);
+    }
+
+    // sort from small to large.
+    if (ORDER_BY_ASCEND == order) {
+        for (j = 0; j < len - 1; j ++) {
+            for (i = 0; i < len - j - 1; i ++) {
+                if (test_array[i] > test_array[i + 1]) {
+                    utils_swap_int64(&test_array[i], &test_array[i+1]);
+                }
+            }
+        }
+    } else {
+        for (j = 0; j < len - 1; j ++) {
+            for (i = 0; i < len - j - 1; i ++) {
+                if (test_array[i] < test_array[i + 1]) {
+                    utils_swap_int64(&test_array[i], &test_array[i+1]);
+                }
+            }
+        }
+    }
+
+    LOG("\npost: ");
+    for (i = 0; i < len; i ++) {
+        printf("%lld, ", test_array[i]);
+    }
+    printf("\n");
+    memcpy(array, test_array, len * sizeof(int64_t));
 
 error:
     if (test_array != NULL)

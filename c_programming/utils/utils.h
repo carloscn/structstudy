@@ -68,6 +68,7 @@ typedef enum {
 void utils_swap(int64_t *a, int64_t *b);
 void utils_swap_int32(int32_t *a, int32_t *b);
 void utils_swap_char(char *a, char *b);
+void utils_swap_int64(int64_t *a, int64_t *b);
 int32_t utils_check_odd_even(int64_t base);
 int utils_check_pass(int e);
 void utils_print_int64_array(int64_t *a, size_t size, const char *msg);
@@ -85,6 +86,7 @@ void utils_print_32_value_by_binary(uint32_t val);
 void utils_print_64_value_by_binary(uint64_t val);
 size_t utils_set_array(int64_t *array, size_t sz);
 int32_t utils_sort_char_array(char *array, size_t len, ORDER_E order);
+int32_t utils_sort_int64_array(int64_t *array, size_t len, ORDER_E order);
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/
