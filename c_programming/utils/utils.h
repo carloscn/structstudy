@@ -20,6 +20,11 @@ typedef enum {
 #define ARRAY_SIZE(_a_) ((size_t)(sizeof(_a_)/sizeof((_a_)[0])))
 #define MAX(_a_, _b_) (((_a_)>(_b_))?(_a_):(_b_))
 #define MIN(_a_, _b_) (((_a_)<(_b_))?(_a_):(_b_))
+#define UTILS_ARRAY_SIZE(__a) ARRAY_SIZE(__a)
+#define UTILS_MAX(__a, __b) MAX(__a, __b)
+#define UTILS_MIN(__a, __b) MIN(__a, __b)
+#define UTILS_ASCII_TO_INT(__x) (((__x) - '0'))
+#define UTILS_INT_TO_ASCII(__x) (((__x) + '0'))
 
 #define LOG printf("%s:%d on func:(%s) -- ",__FILE__,__LINE__,__FUNCTION__);printf
 #define LOG_LINE() printf("\n------------------------------------------------------------------")

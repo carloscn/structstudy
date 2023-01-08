@@ -75,6 +75,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode412：Fizz Buzz](https://github.com/carloscn/structstudy/issues/94) [2022-12-25]
 * [leetcode414：第三大的数（third-maximum-number）](https://github.com/carloscn/structstudy/issues/95) [2023-01-03]
 * [leetcode415：字符串相加（add-strings）](https://github.com/carloscn/structstudy/issues/96) [2023-01-07]
+* [leetcode434：字符串中的单词数（number-of-segments-in-a-string）](https://github.com/carloscn/structstudy/issues/97) [2023-01-08]
 ## 链表：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
