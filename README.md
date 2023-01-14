@@ -46,6 +46,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode18：四数之和（4sum）](https://github.com/carloscn/structstudy/issues/78) [2022-12-04]
 * [leetcode338：比特位计数（counting-bits）](https://github.com/carloscn/structstudy/issues/80) [2022-12-06]
 * [leetcode349：两个数组的交集（intersection-of-two-arrays）](https://github.com/carloscn/structstudy/issues/84) [2022-12-11]
+* [leetcode448：找到所有数组中消失的数字（find-all-numbers-disappeared-in-an-array）](https://github.com/carloscn/structstudy/issues/99) [2023-01-14]
 ## 字符串：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]

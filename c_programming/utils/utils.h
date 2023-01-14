@@ -90,6 +90,7 @@ int32_t utils_int64_convert_str(int64_t value, char **out_str);
 void utils_print_32_value_by_binary(uint32_t val);
 void utils_print_64_value_by_binary(uint64_t val);
 size_t utils_set_array(int64_t *array, size_t sz);
+size_t utils_set_u8_array(uint8_t *array, size_t sz);
 int32_t utils_sort_char_array(char *array, size_t len, ORDER_E order);
 int32_t utils_sort_int64_array(int64_t *array, size_t len, ORDER_E order);
 #ifdef __cplusplus

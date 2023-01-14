@@ -207,6 +207,33 @@ int32_t utils_int64_convert_str(int64_t value, char **out_str)
     return ret;
 }
 
+size_t utils_set_u8_array(uint8_t *array, size_t sz)
+{
+    size_t i = 0, j = 0, k = 0;
+    size_t count = 0;
+    int64_t e = 0;
+    size_t ori_len = sz;
+
+    if (NULL == array || 0 == ori_len) {
+        return 0;
+    }
+
+    for (i = 0; i < ori_len; i ++) {
+        e = array[i];
+        for (j = i + 1; j < ori_len; j ++) {
+            if (e == array[j]) {
+                count ++;
+                ori_len --;
+                for (k = j, j--; k < ori_len; k ++) {
+                    array[k] = array[k + 1];
+                }
+            }
+        }
+    }
+
+    return sz - count;
+}
+
 size_t utils_set_array(int64_t *array, size_t sz)
 {
     size_t i = 0, j = 0, k = 0;
