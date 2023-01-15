@@ -1,6 +1,6 @@
 # ALGO [^1] List
 
-## 基本数据结构的C语言实现
+## [基本数据结构的C语言实现](https://github.com/carloscn/structstudy/tree/master/c_programming/utils)
 C语言无法像是高级计算机语言对基础数据结构有一部分的实现，而一些算法需要基于这些数据结构，故在本工程中的utils中实现基本的数据结构，在算法实现中可以调用这些数据结构的基本方法。通过接口封装的方式，可以轻松调用这些方法，基本数据结构还在扩充中。
 * [栈（stack）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/stack.c)
 * [队列（queue）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/queue.c)
@@ -10,7 +10,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [二叉树/堆（binarytree/heap）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/binary_tree.c)
 * [多叉树/堆（multitree/heap）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/multi_tree.c)
 * [哈希映射表（hash mapping）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/hash_map.c)
-## 数组：
+## [数组](https://github.com/carloscn/structstudy/tree/master/c_programming/array)：
 * [在数组中查找元素](https://github.com/carloscn/structstudy/issues/1)
 * [调整数组顺序使奇数位于偶数前面（冒泡排序）](https://github.com/carloscn/structstudy/issues/2)
 * [数组中次数出现超过一半的数字（摩尔投票法）](https://github.com/carloscn/structstudy/issues/3)
@@ -48,7 +48,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode349：两个数组的交集（intersection-of-two-arrays）](https://github.com/carloscn/structstudy/issues/84) [2022-12-11]
 * [leetcode448：找到所有数组中消失的数字（find-all-numbers-disappeared-in-an-array）](https://github.com/carloscn/structstudy/issues/99) [2023-01-14]
 * [leetcode455：分发饼干（assign-cookies）](https://github.com/carloscn/structstudy/issues/100) [2023-01-15]
-## 字符串：
+## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
 * [回文数(leetcode-9）](https://github.com/carloscn/structstudy/issues/28) [2022-10-13]
@@ -79,7 +79,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode415：字符串相加（add-strings）](https://github.com/carloscn/structstudy/issues/96) [2023-01-07]
 * [leetcode434：字符串中的单词数（number-of-segments-in-a-string）](https://github.com/carloscn/structstudy/issues/97) [2023-01-08]
 * [leetcode441：排列硬币（arranging-coins）](https://github.com/carloscn/structstudy/issues/98) [2023-01-10]
-## 链表：
+## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
 * [leetcode-21：合并两个有序链表（merge-two-sorted-lists）](https://github.com/carloscn/structstudy/issues/37) [2022-10-23]
@@ -87,7 +87,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode141：环形链表（linked-list-cycle）](https://github.com/carloscn/structstudy/issues/51) [2022-11-05]
 * [leetcode160：相交链表（intersection-of-two-linked-lists）](https://github.com/carloscn/structstudy/issues/52) [2022-11-06]
 * [leetcode203：移除链表元素（remove-linked-list-elements）](https://github.com/carloscn/structstudy/issues/61) [2022-11-15]
-## 数学：
+## [数学](https://github.com/carloscn/structstudy/tree/master/c_programming/common)：
 * [数值的整数次方](https://github.com/carloscn/structstudy/issues/13)
 * [含回溯方法][打印从1到最大的n位数](https://github.com/carloscn/structstudy/issues/14)
 * [leetcode69：x的平方根（sqrtx）](https://github.com/carloscn/structstudy/issues/43) [2022-10-28]
@@ -100,12 +100,12 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode342：4的幂（power-of-four）](https://github.com/carloscn/structstudy/issues/81) [2022-12-08]
 * [leetcode367：有效的完全平方数（valid-perfect-square）](https://github.com/carloscn/structstudy/issues/85) [2022-12-13]
 * [leetcode374：猜数字大小（guess-number-higher-or-lower）](https://github.com/carloscn/structstudy/issues/86) [2022-12-14]
-## 二叉树
+## [二叉树](https://github.com/carloscn/structstudy/tree/master/c_programming/tree)
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)
 * [二叉树的所有路径（leetcode-257）](https://github.com/carloscn/structstudy/issues/24)
 * [二叉搜索树中第K小的元素（leetcode-230）](https://github.com/carloscn/structstudy/issues/25)
-## 递归回溯问题
+## [递归回溯问题](https://github.com/carloscn/structstudy/tree/master/c_programming/recuirsion)
 * [斐波那契数列(Fibonacci)的第n项](https://github.com/carloscn/structstudy/issues/16)
 * [生成匹配的括号(Leetcode-22)](https://github.com/carloscn/structstudy/issues/17)
 * [所有子集(leetcode-78)](https://github.com/carloscn/structstudy/issues/18)
