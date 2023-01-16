@@ -377,6 +377,64 @@ error:
         free(test_array);
     return ret;
 }
+// 123456
+// 123
+bool utils_str_contains(char *input_str, char *sub_str)
+{
+    size_t in_len, sub_len;
+    size_t i = 0;
+    char bak_char = 0;
+    char *in = NULL;
+    char *sub = NULL;
+    bool ret = false;
+
+    if (NULL == input_str ||
+        NULL == sub_str) {
+        goto finish;
+    }
+
+    in_len = strlen(input_str);
+    sub_len = strlen(sub_str);
+
+    in = strdup(input_str);
+    if (NULL == in) {
+        ret = false;
+        goto finish;
+    }
+
+    sub = strdup(sub_str);
+    if (NULL == sub) {
+        ret = false;
+        goto finish;
+    }
+
+    if (sub_len > in_len) {
+        ret = false;
+        goto finish;
+    } else if (sub_len == in_len) {
+        ret = 0 == strcmp(in, sub);
+        goto finish;
+    }
+
+    for (i = 0; in_len >= i + sub_len; i ++) {
+        bak_char = in[sub_len + i];
+        in[sub_len + i] = '\0';
+        if (0 == strcmp(in + i, sub)) {
+            ret = true;
+            goto finish;
+        }
+        in[sub_len + i] = bak_char;
+    }
+
+finish:
+    if (in != NULL) {
+        free(in);
+    }
+    if (sub != NULL) {
+        free(sub);
+    }
+    return ret;
+}
 
 #ifdef __cplusplus
 }
