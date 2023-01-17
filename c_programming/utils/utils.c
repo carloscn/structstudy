@@ -436,6 +436,71 @@ finish:
     return ret;
 }
 
+int32_t utils_int64_to_str(int64_t val, char *str)
+{
+    int32_t ret = 0;
+    size_t i = 0;
+
+    if (NULL == str) {
+        ret = -1;
+        goto finish;
+    }
+
+    for (i = 0; i < sizeof(val) * 8; i ++) {
+        *(str + i) = ((val >> i) & 0x01u) + '0';
+    }
+
+finish:
+    return ret;
+}
+
+int32_t utils_size_t_to_str(size_t val, char *str)
+{
+    int32_t ret = 0;
+    size_t i = 0;
+
+    if (NULL == str) {
+        ret = -1;
+        goto finish;
+    }
+
+    for (i = 0; i < sizeof(val) * 8; i ++) {
+        *(str + i) = ((val >> i) & 0x01u) + '0';
+    }
+
+finish:
+    return ret;
+}
+
+size_t utils_str_count_char(char *str, char c)
+{
+    size_t count = 0;
+    char *in = str;
+
+    while (*in != '\0') {
+        if (*in == c) {
+            count ++;
+        }
+        in ++;
+    }
+
+    return count;
+}
+
+size_t utils_value_hamming_distance(size_t a, size_t b)
+{
+    size_t i = 0;
+    size_t c = 0;
+    char str[sizeof(a) * 8 + 1] = {0};
+
+    c = a ^ b;
+    if (utils_size_t_to_str(c, str)) {
+        return 0;
+    }
+
+    return utils_str_count_char(str, '1');
+}
+
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/

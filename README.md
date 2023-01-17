@@ -90,7 +90,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode203：移除链表元素（remove-linked-list-elements）](https://github.com/carloscn/structstudy/issues/61) [2022-11-15]
 ## [数学](https://github.com/carloscn/structstudy/tree/master/c_programming/common)：
 * [数值的整数次方](https://github.com/carloscn/structstudy/issues/13)
-* [含回溯方法][打印从1到最大的n位数](https://github.com/carloscn/structstudy/issues/14)
+* [打印从1到最大的n位数(含回溯方法)](https://github.com/carloscn/structstudy/issues/14)
 * [leetcode69：x的平方根（sqrtx）](https://github.com/carloscn/structstudy/issues/43) [2022-10-28]
 * [leetcode7：整数反转（reverse-integer）](https://github.com/carloscn/structstudy/issues/58) [2022-11-12]
 * [leetcode202：快乐数（happy-number）](https://github.com/carloscn/structstudy/issues/60) [2022-11-14]
@@ -101,6 +101,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode342：4的幂（power-of-four）](https://github.com/carloscn/structstudy/issues/81) [2022-12-08]
 * [leetcode367：有效的完全平方数（valid-perfect-square）](https://github.com/carloscn/structstudy/issues/85) [2022-12-13]
 * [leetcode374：猜数字大小（guess-number-higher-or-lower）](https://github.com/carloscn/structstudy/issues/86) [2022-12-14]
+* [leetcode461：汉明距离（hamming-distance）](https://github.com/carloscn/structstudy/issues/102) [2023-01-17]
 ## [二叉树](https://github.com/carloscn/structstudy/tree/master/c_programming/tree)
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)

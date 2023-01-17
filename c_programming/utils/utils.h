@@ -94,6 +94,10 @@ size_t utils_set_u8_array(uint8_t *array, size_t sz);
 int32_t utils_sort_char_array(char *array, size_t len, ORDER_E order);
 int32_t utils_sort_int64_array(int64_t *array, size_t len, ORDER_E order);
 bool utils_str_contains(char *input_str, char *sub_str);
+size_t utils_value_hamming_distance(size_t a, size_t b);
+size_t utils_str_count_char(char *str, char c);
+int32_t utils_size_t_to_str(size_t val, char *str);
+int32_t utils_int64_to_str(int64_t val, char *str);
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/
