@@ -103,6 +103,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode367：有效的完全平方数（valid-perfect-square）](https://github.com/carloscn/structstudy/issues/85) [2022-12-13]
 * [leetcode374：猜数字大小（guess-number-higher-or-lower）](https://github.com/carloscn/structstudy/issues/86) [2022-12-14]
 * [leetcode461：汉明距离（hamming-distance）](https://github.com/carloscn/structstudy/issues/102) [2023-01-17]
+* [leetcode476：数字的补数（number-complement）](https://github.com/carloscn/structstudy/issues/104) [2022-01-25]
 ## [二叉树](https://github.com/carloscn/structstudy/tree/master/c_programming/tree)
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)
