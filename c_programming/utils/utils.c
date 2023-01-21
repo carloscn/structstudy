@@ -501,6 +501,47 @@ size_t utils_value_hamming_distance(size_t a, size_t b)
     return utils_str_count_char(str, '1');
 }
 
+char inline utils_conv_uppercase(char c)
+{
+    if (c >= 'A' && c <= 'Z') {
+        return c;
+    } else if (c >= 'a' && c <= 'z') {
+        return c - 32;
+    } else {
+        return 0;
+    }
+}
+
+char inline utils_conv_lowercase(char c)
+{
+    if (c >= 'A' && c <= 'Z') {
+        return c + 32;
+    } else if (c >= 'a' && c <= 'z') {
+        return c;
+    } else {
+        return 0;
+    }
+}
+
+bool inline utils_is_liter(char c)
+{
+    if (((c >= 'A') && (c <= 'Z')) || 
+        ((c >= 'a') && (c <= 'z'))) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+bool inline utils_is_number(char c)
+{
+    if (((c >= '0') && (c <= '9'))) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/

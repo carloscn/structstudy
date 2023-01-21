@@ -98,6 +98,11 @@ size_t utils_value_hamming_distance(size_t a, size_t b);
 size_t utils_str_count_char(char *str, char c);
 int32_t utils_size_t_to_str(size_t val, char *str);
 int32_t utils_int64_to_str(int64_t val, char *str);
+bool utils_is_liter(char c);
+bool utils_is_number(char c);
+char utils_conv_lowercase(char c);
+char utils_conv_uppercase(char c);
+
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/

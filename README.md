@@ -81,6 +81,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode434：字符串中的单词数（number-of-segments-in-a-string）](https://github.com/carloscn/structstudy/issues/97) [2023-01-08]
 * [leetcode441：排列硬币（arranging-coins）](https://github.com/carloscn/structstudy/issues/98) [2023-01-10]
 * [leetcode459：重复的子字符串（repeated-substring-pattern）](https://github.com/carloscn/structstudy/issues/101) [2023-01-16]
+* [leetcode482：密钥格式化（license-key-formatting）](https://github.com/carloscn/structstudy/issues/105) [2023-01-21]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
