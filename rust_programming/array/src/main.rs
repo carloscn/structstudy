@@ -1,6 +1,6 @@
-include!("../../utils/src/utils.rs");
+extern crate utils;
 
 fn main() {
-    let max = utils_max(1, 5);
+    let max = utils::utils_max(1, 5);
     println!("Hello, world! max is {:?}", max);
 }
