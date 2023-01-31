@@ -102,7 +102,7 @@ bool utils_is_liter(char c);
 bool utils_is_number(char c);
 char utils_conv_lowercase(char c);
 char utils_conv_uppercase(char c);
-
+int32_t utils_str_reverse(char *s);
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/

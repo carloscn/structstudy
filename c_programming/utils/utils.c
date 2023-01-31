@@ -525,7 +525,7 @@ char inline utils_conv_lowercase(char c)
 
 bool inline utils_is_liter(char c)
 {
-    if (((c >= 'A') && (c <= 'Z')) || 
+    if (((c >= 'A') && (c <= 'Z')) ||
         ((c >= 'a') && (c <= 'z'))) {
         return true;
     } else {
@@ -540,6 +540,29 @@ bool inline utils_is_number(char c)
     } else {
         return false;
     }
+}
+
+
+int32_t utils_str_reverse(char *s)
+{
+    int32_t ret = 0;
+    size_t len = 0;
+    size_t i = 0;
+
+    if (s == NULL || strlen(s) == 0) {
+        ret = -1;
+        goto finish;
+    }
+
+    UTILS_CHECK_PTR(s);
+    UTILS_CHECK_LEN(len = strlen(s));
+
+    for (i = 0; i < len / 2; i ++) {
+        utils_swap_char(&(s[i]), &(s[len - i - 1]));
+    }
+
+finish:
+    return ret;
 }
 
 #ifdef __cplusplus
