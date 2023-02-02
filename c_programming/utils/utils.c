@@ -40,6 +40,15 @@ void utils_swap_int64(int64_t *a, int64_t *b)
     *a = (*a) ^ (*b);
 }
 
+void utils_swap_size_t(size_t *a, size_t *b)
+{
+    if (a == b)
+        return;
+    *a = (*a) ^ (*b);
+    *b = (*b) ^ (*a);
+    *a = (*a) ^ (*b);
+}
+
 /*
  * return 1: odd number
  * return 0: even number
