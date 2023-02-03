@@ -1,6 +1,5 @@
-extern crate utils;
+include!("33_detect-capital_520.rs");
 
 fn main() {
-    let max = utils::utils_max(1, 5);
-    println!("Hello, world! max is {:?}", max);
+    test_detect_capital();
 }

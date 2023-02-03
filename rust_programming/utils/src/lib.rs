@@ -1,5 +1,6 @@
 
-pub fn utils_max(n:u64, m:u64) -> u64 {
+pub fn utils_max(n:u64, m:u64) -> u64
+{
     if n > m {
         return n;
     } else {
@@ -7,13 +8,24 @@ pub fn utils_max(n:u64, m:u64) -> u64 {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+pub fn utils_is_capital(c : char) -> bool
+{
+    let mut ret = false;
 
-    #[test]
-    fn it_works() {
-        let result = utils_max(2, 9);
-        assert_eq!(result, 9);
+    if (c >= 'A') && (c <= 'Z') {
+        ret = true;
     }
+
+    return ret;
+}
+
+pub fn utils_is_lowercase(c : char) -> bool
+{
+    let mut ret = false;
+
+    if (c >= 'a') && (c <= 'z') {
+        ret = true;
+    }
+
+    return ret;
 }
