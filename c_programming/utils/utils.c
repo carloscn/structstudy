@@ -551,6 +551,21 @@ bool inline utils_is_number(char c)
     }
 }
 
+bool inline utils_is_capital(char c)
+{
+    if ((c >= 'A') && (c <= 'Z')) {
+        return true;
+    }
+    return false;
+}
+
+bool inline utils_is_lowercase(char c)
+{
+    if ((c >= 'a') && (c <= 'z')) {
+        return true;
+    }
+    return false;
+}
 
 int32_t utils_str_reverse(char *s)
 {
