@@ -90,6 +90,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode500：键盘行（keyboard-row）](https://github.com/carloscn/structstudy/issues/110) [2023-01-30]
 * [leetcode504：七进制数（base-7）](https://github.com/carloscn/structstudy/issues/111) [2023-01-31]
 * [leetcode520：检测大写字母（detect-capital）](https://github.com/carloscn/structstudy/issues/113) [2023-02-03]
+* [leetcode521：最长特殊序列I（longest-uncommon-subsequence-i）](https://github.com/carloscn/structstudy/issues/114) [2023-02-04]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
