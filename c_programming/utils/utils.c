@@ -573,16 +573,43 @@ int32_t utils_str_reverse(char *s)
     size_t len = 0;
     size_t i = 0;
 
-    if (s == NULL || strlen(s) == 0) {
+    if (s == NULL || (len = strlen(s)) == 0) {
         ret = -1;
         goto finish;
     }
 
-    UTILS_CHECK_PTR(s);
-    UTILS_CHECK_LEN(len = strlen(s));
-
     for (i = 0; i < len / 2; i ++) {
         utils_swap_char(&(s[i]), &(s[len - i - 1]));
+    }
+
+finish:
+    return ret;
+}
+
+int32_t utils_str_reserve_region(char* s, size_t start, size_t end)
+{
+    int32_t ret = 0;
+    size_t count = 1;
+    size_t j = 0;
+    size_t len = 0;
+
+    if (start == end) {
+        goto finish;
+    }
+
+    if (s == NULL || (start > end) || (len = strlen(s)) == 0) {
+        ret = -1;
+        goto finish;
+    }
+
+    if (end - start == 1) {
+       utils_swap_char(s + start, s + end);
+       goto finish;
+    }
+
+    for (j = start; j < (end - start) / 2; j ++) {
+        utils_swap_char(s + j, s + end - count);
+        count ++;
     }
 
 finish:
