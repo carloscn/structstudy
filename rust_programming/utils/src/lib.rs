@@ -98,6 +98,17 @@ pub fn utils_str_reverse(in_str: &mut str) -> i32
     return utils_str_reverse_region(in_str, 0, in_str.len());
 }
 
+pub fn utils_array_sum_i64(array: &[i64], len: usize) -> i64
+{
+    let mut sum:i64 = 0;
+
+    for val in array.iter() {
+        sum += val;
+    }
+
+    return sum;
+}
+
 // pub fn utils_strcpy(dest : &mut str, src : &str) -> i32
 // {
 //     let mut ret = 0i32;
