@@ -54,6 +54,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode495：提莫攻击（teemo-attacking） ](https://github.com/carloscn/structstudy/issues/108) [2023-01-24]
 * [leetcode496：下一个更大元素 I（next-greater-element-i）](https://github.com/carloscn/structstudy/issues/109) [2023-01-28]
 * [leetcode506：相对名次（relative-ranks）](https://github.com/carloscn/structstudy/issues/112) [2023-02-01]
+* [leetcode643：子数组最大平均数 I（maximum-average-subarray-i）](https://github.com/carloscn/structstudy/issues/116) [2023-02-06]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
