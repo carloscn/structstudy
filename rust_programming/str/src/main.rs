@@ -1,9 +1,12 @@
-//include!("34_longest-uncommon-subsequence-i_521.rs");
-//include!("35_reverse-string-ii_541.rs");
-include!("36_robot-return-to-origin_657.rs");
+mod n36_robot_return_to_origin_657;
+mod n35_reverse_tring_ii_541;
+mod n34_longest_uncommon_subsequence_i_521;
+
 fn main() {
-    //test_reverse_string_ii();
-    test_is_move_back();
-    //test_longest_uncommon_subseq();
+
+    n36_robot_return_to_origin_657::test_is_move_back();
+    n35_reverse_tring_ii_541::test_reverse_string_ii();
+    n34_longest_uncommon_subsequence_i_521::test_longest_uncommon_subseq();
+
     println!("array test vector done!");
 }

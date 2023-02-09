@@ -1,5 +1,3 @@
-extern crate utils;
-use utils::utils_array_sum_i64;
 fn max_average(array: &[i64], k: usize, max_ave: &mut i64) -> i32
 {
     let mut _ret:i32 = 0;
@@ -15,7 +13,7 @@ fn max_average(array: &[i64], k: usize, max_ave: &mut i64) -> i32
     }
 
     for i in [0..(len - k)] {
-        sum = utils_array_sum_i64(&array[j..], k);
+        sum = utils::array::sum_i64(&array[j..], k);
         if sum > max_sum {
             max_sum = sum;
         }
@@ -26,7 +24,7 @@ fn max_average(array: &[i64], k: usize, max_ave: &mut i64) -> i32
     return _ret;
 }
 
-fn test_max_average()
+pub fn test_max_average()
 {
     let mut max_ave: i64 = 0;
     let array: [i64;6] = [1,12,-5,-6,50,3];

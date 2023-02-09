@@ -27,7 +27,7 @@ fn longest_continuous_seq(array:&[i64], len:&mut usize) -> Result<i32, &'static 
     return Ok(0);
 }
 
-fn test_longest_continuous_seq()
+pub fn test_longest_continuous_seq()
 {
     let array = [1i64,3,5,4,7];
     let mut len:usize = array.len();

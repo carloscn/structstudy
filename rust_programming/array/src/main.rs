@@ -1,10 +1,11 @@
-//include!("33_detect-capital_520.rs");
-//include!("39_maximum-average-subarray-i_643.rs");
-//include!("40_set-mismatch_645.rs");
-include!("41_longest-continuous-increasing-subsequence_674.rs");
+mod n33_detect_capital_520;
+mod n39_maximum_average_subarray_i_643;
+mod n40_set_mismatch_645;
+mod n41_longest_continuous_increasing_subsequence_674;
+
 fn main() {
-    //test_detect_capital();
-    //test_max_average();
-    //test_mis_set();
-    test_longest_continuous_seq();
+    n33_detect_capital_520::test_detect_capital();
+    n39_maximum_average_subarray_i_643::test_max_average();
+    n40_set_mismatch_645::test_mis_set();
+    n41_longest_continuous_increasing_subsequence_674::test_longest_continuous_seq();
 }

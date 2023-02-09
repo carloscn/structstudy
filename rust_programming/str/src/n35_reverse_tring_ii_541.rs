@@ -1,6 +1,5 @@
-extern crate utils;
-use utils::utils_str_reverse;
-use utils::utils_str_reverse_region;
+
+
 fn reverse_string_ii(in_str: &mut str, k: i32) -> i32
 {
     //let mut dup_str = String::from(in_str);
@@ -18,9 +17,9 @@ fn reverse_string_ii(in_str: &mut str, k: i32) -> i32
     while i < str_len {
         i += delta;
         if 2*str_len - i < uk + str_len {
-            ret = utils_str_reverse_region(in_str, i, str_len);
+            ret = utils::str::reverse_region(in_str, i, str_len);
         } else {
-            ret = utils_str_reverse_region(in_str, i - delta, i - delta + 1);
+            ret = utils::str::reverse_region(in_str, i - delta, i - delta + 1);
         }
         if 0 != ret {
             println!("failed on reverse region!");
@@ -31,7 +30,7 @@ fn reverse_string_ii(in_str: &mut str, k: i32) -> i32
     return ret;
 }
 
-fn test_reverse_string_ii()
+pub fn test_reverse_string_ii()
 {
     let mut s = "abcdefg".to_string();
     let _ret = reverse_string_ii(&mut s, 2);

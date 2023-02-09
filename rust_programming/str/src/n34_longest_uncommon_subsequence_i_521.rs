@@ -1,5 +1,3 @@
-extern crate utils;
-
 fn longest_uncommon_subseq(str_1: &str, str_2: &str, out: &mut i32) -> i32
 {
     let ret: i32 = 0;
@@ -20,7 +18,7 @@ fn longest_uncommon_subseq(str_1: &str, str_2: &str, out: &mut i32) -> i32
     return ret;
 }
 
-fn test_longest_uncommon_subseq() {
+pub fn test_longest_uncommon_subseq() {
     let mut ret: i32 = 0;
     let mut len: i32 = 0;
     ret = longest_uncommon_subseq("aaa", "bbb", &mut len);

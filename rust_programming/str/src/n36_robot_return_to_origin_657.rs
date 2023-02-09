@@ -1,5 +1,3 @@
-extern crate utils;
-
 fn is_move_back(vector: &str) -> bool
 {
     let mut pos = (0_i32 ,0_i32);
@@ -25,7 +23,7 @@ fn is_move_back(vector: &str) -> bool
     }
 }
 
-fn test_is_move_back()
+pub fn test_is_move_back()
 {
     let vector = "LRUDD".to_string();
     let ret = is_move_back(&vector);

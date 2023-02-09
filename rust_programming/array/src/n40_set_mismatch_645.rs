@@ -1,4 +1,3 @@
-extern crate utils;
 
 fn mis_set(array : &mut [i64], len : &mut usize) -> i32
 {
@@ -25,7 +24,7 @@ fn mis_set(array : &mut [i64], len : &mut usize) -> i32
     return ret;
 }
 
-fn test_mis_set()
+pub fn test_mis_set()
 {
     let mut array:[i64;4] = [1,2,2,4];
     let mut len:usize = array.len();
