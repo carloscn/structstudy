@@ -69,6 +69,17 @@ typedef enum {
             goto finish;                                                         \
         }                                                                        \
     } while(0)
+#define UTILS_CHECK_CONDITION(err_condition, ret_code, format, ...)            \
+    do {                                                                       \
+        if ((err_condition)) {                                                 \
+            printf("%s line:%d. Error number is 0x%x \n", __func__, __LINE__,  \
+                ret);                                                          \
+            printf(format, ##__VA_ARGS__);                                     \
+            ret = ret_code;                                                    \
+            goto finish;                                                       \
+        }                                                                      \
+    } while (0)
+
 /* Functions */
 void utils_swap(int64_t *a, int64_t *b);
 void utils_swap_int32(int32_t *a, int32_t *b);
