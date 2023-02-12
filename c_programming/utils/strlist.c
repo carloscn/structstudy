@@ -112,6 +112,33 @@ int32_t strlist_contains(STRLIST_T *strlist, char* str)
     return 0;
 }
 
+// 00110011
+//
+size_t strlist_append_all_substr(STRLIST_T *strlist, char* str)
+{
+    size_t i = 0;
+    size_t j = 0;
+    size_t len = strlen(str);
+    size_t count = 0;
+    char *p = NULL;
+
+    for (i = 1; i < len; i ++) {
+        for (j = 0; j < len - i + 1; j ++) {
+            p = (char *)malloc(i + 1);
+            if (p == NULL) {
+                return 0;
+            }
+            memset(p, 0, i + 1);
+            memcpy(p, str + j, i);
+            strlist_add(strlist, p);
+            count ++;
+            p = NULL;
+        }
+    }
+
+    return count;
+}
+
 size_t strlist_get_size(STRLIST_T *strlist)
 {
     return strlist->size;

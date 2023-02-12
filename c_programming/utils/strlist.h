@@ -22,5 +22,6 @@ int32_t strlist_add_split_by_char(STRLIST_T *strlist, char *str, char c);
 int32_t strlist_free(STRLIST_T *strlist);
 void strlist_infolog(STRLIST_T *strlist);
 int32_t strlist_selftest(void);
+size_t strlist_append_all_substr(STRLIST_T *strlist, char* str);
 
 #endif
