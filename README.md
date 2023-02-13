@@ -56,7 +56,8 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode506：相对名次（relative-ranks）](https://github.com/carloscn/structstudy/issues/112) [2023-02-01]
 * [leetcode643：子数组最大平均数 I（maximum-average-subarray-i）](https://github.com/carloscn/structstudy/issues/116) [2023-02-06]
 * [leetcode645：错误的集合（set-mismatch）](https://github.com/carloscn/structstudy/issues/117) [2023-02-07]
-* [leetcode674：最长连续递增序列（longest-continuous-increasing-subsequence）](https://github.com/carloscn/structstudy/issues/119) [2022-02-09]
+* [leetcode674：最长连续递增序列（longest-continuous-increasing-subsequence）](https://github.com/carloscn/structstudy/issues/119) [2023-02-09]
+* [leetcode697：数组的度（degree_of_an_array_697）](https://github.com/carloscn/structstudy/issues/123) [2023-02-13]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
@@ -96,8 +97,8 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode521：最长特殊序列I（longest-uncommon-subsequence-i）](https://github.com/carloscn/structstudy/issues/114) [2023-02-04]
 * [leetcode541：反转字符串 II（reverse-string-ii）](https://github.com/carloscn/structstudy/issues/115) [2023-02-5]
 * [leetcode657：机器人能否返回原点（robot-return-to-origin）](https://github.com/carloscn/structstudy/issues/118) [2023-02-08]
-* [leetcode680：验证回文串 II（valid_palindrome_ii）](https://github.com/carloscn/structstudy/issues/120) [2022-02-10]
-* [leetcode696：计数二进制字符串（count-binary-substrings）](https://github.com/carloscn/structstudy/issues/122) [2022-02-12]
+* [leetcode680：验证回文串 II（valid_palindrome_ii）](https://github.com/carloscn/structstudy/issues/120) [2023-02-10]
+* [leetcode696：计数二进制字符串（count-binary-substrings）](https://github.com/carloscn/structstudy/issues/122) [2023-02-12]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
@@ -120,8 +121,8 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode367：有效的完全平方数（valid-perfect-square）](https://github.com/carloscn/structstudy/issues/85) [2022-12-13]
 * [leetcode374：猜数字大小（guess-number-higher-or-lower）](https://github.com/carloscn/structstudy/issues/86) [2022-12-14]
 * [leetcode461：汉明距离（hamming-distance）](https://github.com/carloscn/structstudy/issues/102) [2023-01-17]
-* [leetcode476：数字的补数（number-complement）](https://github.com/carloscn/structstudy/issues/104) [2022-01-25]
-* [leetcode693：交替位二进制数（binary-number-with-alternating-bits）](https://github.com/carloscn/structstudy/issues/121) [2022-02-11]
+* [leetcode476：数字的补数（number-complement）](https://github.com/carloscn/structstudy/issues/104) [2023-01-25]
+* [leetcode693：交替位二进制数（binary-number-with-alternating-bits）](https://github.com/carloscn/structstudy/issues/121) [2023-02-11]
 ## [二叉树](https://github.com/carloscn/structstudy/tree/master/c_programming/tree)
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)

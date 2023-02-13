@@ -79,7 +79,12 @@ typedef enum {
             goto finish;                                                       \
         }                                                                      \
     } while (0)
-
+#define UTILS_SAFE_FREE(_p)                                                     \
+    do {                                                                        \
+        if ((_p) != NULL) {                                                     \
+            free((_p));                                                         \
+        }                                                                       \
+    } while(0)
 /* Functions */
 void utils_swap(int64_t *a, int64_t *b);
 void utils_swap_int32(int32_t *a, int32_t *b);
