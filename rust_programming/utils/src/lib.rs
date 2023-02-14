@@ -42,6 +42,16 @@ pub mod num {
         *b = (*b) ^ (*a);
         *a = (*a) ^ (*b);
     }
+
+    pub fn swap_i64(a :&mut i64, b: &mut i64) {
+        if *a == *b {
+            return;
+        }
+        *a = (*a) ^ (*b);
+        *b = (*b) ^ (*a);
+        *a = (*a) ^ (*b);
+    }
+
 }
 
 pub mod str {
@@ -120,5 +130,18 @@ pub mod array {
             sum += val;
         }
         return sum;
+    }
+
+    pub fn swap_i64(array :&mut [i64], i:usize, j:usize) {
+
+        let a = array[i];
+        let b = array[j];
+
+        if a == b {
+            return;
+        }
+
+        array[i] = b;
+        array[j] = a;
     }
 }
