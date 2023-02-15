@@ -55,6 +55,8 @@ pub mod num {
 }
 
 pub mod str {
+    use std::str::Bytes;
+
     pub fn swap_pos(in_str: &mut str, a: usize, b: usize) -> i32 {
         let mut ret : i32 = 0;
         let len = in_str.len();
@@ -120,6 +122,22 @@ pub mod str {
         }
 
         return subs_vec;
+    }
+
+    pub fn conv_uppercase(c:u8) -> u8 {
+        if c >= 'a' as u8 && c <= 'z' as u8 {
+            return c - 32;
+        } else {
+            return c;
+        }
+    }
+
+    pub fn conv_lowercase(c:u8) -> u8 {
+        if c >= 'A' as u8 && c <= 'Z' as u8 {
+            return c + 32;
+        } else {
+            return c;
+        }
     }
 }
 
