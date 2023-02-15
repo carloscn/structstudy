@@ -517,7 +517,7 @@ char inline utils_conv_uppercase(char c)
     } else if (c >= 'a' && c <= 'z') {
         return c - 32;
     } else {
-        return 0;
+        return c;
     }
 }
 
@@ -528,7 +528,7 @@ char inline utils_conv_lowercase(char c)
     } else if (c >= 'a' && c <= 'z') {
         return c;
     } else {
-        return 0;
+        return c;
     }
 }
 
