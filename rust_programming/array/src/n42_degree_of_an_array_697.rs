@@ -50,7 +50,7 @@ fn degree_array(vec: &[i64]) -> usize
                     min_index = ind;
                 }
             }
-            if (count > max_count) {
+            if count > max_count {
                 max_count = count;
             }
         } else {
