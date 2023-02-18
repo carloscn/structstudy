@@ -58,7 +58,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode645：错误的集合（set-mismatch）](https://github.com/carloscn/structstudy/issues/117) [2023-02-07]
 * [leetcode674：最长连续递增序列（longest-continuous-increasing-subsequence）](https://github.com/carloscn/structstudy/issues/119) [2023-02-09]
 * [leetcode697：数组的度（degree_of_an_array_697）](https://github.com/carloscn/structstudy/issues/123) [2023-02-13]
-* [leetcode724：寻找数组的中心下标（find_pivot_index_724）](https://github.com/carloscn/structstudy/issues/125) [2022-02-17]
+* [leetcode724：寻找数组的中心下标（find_pivot_index_724）](https://github.com/carloscn/structstudy/issues/125) [2023-02-17]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
@@ -101,6 +101,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode680：验证回文串 II（valid_palindrome_ii）](https://github.com/carloscn/structstudy/issues/120) [2023-02-10]
 * [leetcode696：计数二进制字符串（count-binary-substrings）](https://github.com/carloscn/structstudy/issues/122) [2023-02-12]
 * [leetcode709：转换成小写字母（to_lower_case_709](https://github.com/carloscn/structstudy/issues/124) [2023-02-15]
+* [leetcode744：寻找比目标字母大的最小字母（find_smallest_letter_greater_than_target_744）](https://github.com/carloscn/structstudy/issues/126) [2023-02-18]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
