@@ -30,10 +30,16 @@ fn reverse_string_ii(in_str: &mut str, k: i32) -> i32
     return ret;
 }
 
-pub fn test_reverse_string_ii()
-{
-    let mut s = "abcdefg".to_string();
-    let _ret = reverse_string_ii(&mut s, 2);
+#[cfg(test)]
+mod tests {
+    use super::*;
 
-    println!("the result is {s}");
+    #[test]
+    pub fn test_reverse_string_ii()
+    {
+        let mut s = "abcdefg".to_string();
+        let _ret = reverse_string_ii(&mut s, 2);
+
+        println!("the result is {s}");
+    }
 }

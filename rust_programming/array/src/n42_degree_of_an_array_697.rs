@@ -41,12 +41,12 @@ fn degree_array(vec: &[i64]) -> usize
             count += 1;
             if (count >= 1) && (count > max_count) {
                 ind = i64::abs((index[i + 1] as i64) - (index[j] as i64)) as usize;
-                if (ind > min_index) {
+                if ind > min_index {
                     min_index = ind;
                 }
             } else if (count >= 1) && (count == max_count) {
                 ind = i64::abs((index[i + 1] as i64) - (index[j] as i64)) as usize;
-                if (ind < min_index) {
+                if ind < min_index {
                     min_index = ind;
                 }
             }
@@ -63,14 +63,23 @@ fn degree_array(vec: &[i64]) -> usize
 }
 
 
-pub fn test_degree_array()
-{
-    let vec1:Vec<i64> = vec![1,2,2,3,1];
-    let mut n:usize = degree_array(&vec1);
-    println!("the n1 is {n}");
 
-    let vec2:Vec<i64> = vec![1,2,2,3,1,4,2];
-    n = degree_array(&vec2);
-    println!("the n2 is {n}");
 
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_degree_array()
+    {
+        let vec1:Vec<i64> = vec![1,2,2,3,1];
+        let mut n:usize = degree_array(&vec1);
+        println!("the n1 is {n}");
+        assert_eq!(n, 2);
+
+        let vec2:Vec<i64> = vec![1,2,2,3,1,4,2];
+        n = degree_array(&vec2);
+        println!("the n2 is {n}");
+        assert_eq!(n, 6);
+    }
 }

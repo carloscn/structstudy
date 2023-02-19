@@ -6,14 +6,5 @@ mod n38_count_binary_substrings_696;
 mod n39_to_lower_case_709;
 mod n40_find_smallest_letter_greater_than_target_744;
 fn main() {
-
-    n36_robot_return_to_origin_657::test_is_move_back();
-    n35_reverse_tring_ii_541::test_reverse_string_ii();
-    n34_longest_uncommon_subsequence_i_521::test_longest_uncommon_subseq();
-    n37_valid_palindrome_ii_680::test_valid_palindrome_ii();
-    n38_count_binary_substrings_696::test_count_binary_substrings();
-    n39_to_lower_case_709::test_to_lower_case();
-    n40_find_smallest_letter_greater_than_target_744::test_find_letter();
-
-    println!("array test vector done!");
+    println!("hello leetcode string project!");
 }

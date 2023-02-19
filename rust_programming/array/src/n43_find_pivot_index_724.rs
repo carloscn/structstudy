@@ -20,11 +20,18 @@ fn find_pivot_index(array:&[i64]) -> i32
     return -1_i32;
 }
 
-pub fn test_find_pivot_index()
-{
-    let array = [1, 7, 3, 6, 5, 6];
-    let mut index:i32;
+#[cfg(test)]
+mod tests {
+    use super::*;
 
-    index = find_pivot_index(&array);
-    println!("the index is {index}.");
+    #[test]
+    fn test_find_pivot_index()
+    {
+        let array = [1, 7, 3, 6, 5, 6];
+        let index:i32;
+
+        index = find_pivot_index(&array);
+        println!("the index is {index}.");
+        assert_eq!(index, 3);
+    }
 }

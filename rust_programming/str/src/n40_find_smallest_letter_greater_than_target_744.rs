@@ -19,9 +19,15 @@ fn find_letter(instr: &str, target: u8) -> u8
     return ret;
 }
 
-pub fn test_find_letter()
-{
-    let mut ins:u8 = 'y' as u8;
-    let c:u8 = find_letter("abcdefghijklmnopqrstuvwxyz", ins);
-    println!("the c is {}", c as char);
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    pub fn test_find_letter()
+    {
+        let mut ins:u8 = 'y' as u8;
+        let c:u8 = find_letter("abcdefghijklmnopqrstuvwxyz", ins);
+        println!("the c is {}", c as char);
+    }
 }

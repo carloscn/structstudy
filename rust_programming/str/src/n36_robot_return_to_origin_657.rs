@@ -23,9 +23,17 @@ fn is_move_back(vector: &str) -> bool
     }
 }
 
-pub fn test_is_move_back()
-{
-    let vector = "LRUDD".to_string();
-    let ret = is_move_back(&vector);
-    println!("the return is {ret}");
+
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    pub fn test_is_move_back()
+    {
+        let vector = "LRUDD".to_string();
+        let ret = is_move_back(&vector);
+        println!("the return is {ret}");
+    }
 }

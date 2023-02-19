@@ -24,11 +24,18 @@ fn max_average(array: &[i64], k: usize, max_ave: &mut i64) -> i32
     return _ret;
 }
 
-pub fn test_max_average()
-{
-    let mut max_ave: i64 = 0;
-    let array: [i64;6] = [1,12,-5,-6,50,3];
-    let _ret = max_average(&array[0..], 4, &mut max_ave);
+#[cfg(test)]
+mod tests {
+    use super::*;
 
-    println!("max ave is {max_ave}");
+    #[test]
+    pub fn test_max_average()
+    {
+        let mut max_ave: i64 = 0;
+        let array: [i64;6] = [1,12,-5,-6,50,3];
+        let _ret = max_average(&array[0..], 4, &mut max_ave);
+
+        println!("max ave is {max_ave}");
+        assert_eq!(max_ave, 13);
+    }
 }

@@ -27,19 +27,26 @@ fn longest_continuous_seq(array:&[i64], len:&mut usize) -> Result<i32, &'static 
     return Ok(0);
 }
 
-pub fn test_longest_continuous_seq()
-{
-    let array = [1i64,3,5,4,7];
-    let mut len:usize = array.len();
+#[cfg(test)]
+mod tests {
+    use super::*;
 
-    let ret = longest_continuous_seq(&array, &mut len);
-    match ret {
-        Ok(v) => {}
-        Err(e) => {
-            println!("error parsing header: {:?}", e);
-            return
+    #[test]
+    fn test_longest_continuous_seq()
+    {
+        let array = [1i64,3,5,4,7];
+        let mut len:usize = array.len();
+
+        let ret = longest_continuous_seq(&array, &mut len);
+        match ret {
+            Ok(v) => {}
+            Err(e) => {
+                println!("error parsing header: {:?}", e);
+                return
+            }
         }
-    }
 
-    println!("the longest is {len}");
+        println!("the longest is {len}");
+        assert_eq!(len, 3)
+    }
 }

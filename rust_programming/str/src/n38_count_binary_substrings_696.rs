@@ -60,9 +60,15 @@ fn count_binary_substr(in_str:&str) -> usize
     return count;
 }
 
-pub fn test_count_binary_substrings()
-{
-    let mut count:usize = 0;
-    count = count_binary_substr("00110011");
-    println!("{:#?}", count);
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    pub fn test_count_binary_substrings()
+    {
+        let mut count:usize = 0;
+        count = count_binary_substr("00110011");
+        println!("{:#?}", count);
+    }
 }

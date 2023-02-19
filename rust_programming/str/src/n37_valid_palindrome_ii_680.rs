@@ -38,10 +38,17 @@ fn valid_palindrome_ii(in_str:&str) -> bool
 }
 
 
-pub fn test_valid_palindrome_ii()
-{
-    let mut res:bool = false;
 
-    res = valid_palindrome_ii("abcddcbqa");
-    println!("thre result is {res}");
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    pub fn test_valid_palindrome_ii()
+    {
+        let mut res:bool = false;
+
+        res = valid_palindrome_ii("abcddcbqa");
+        println!("thre result is {res}");
+    }
 }

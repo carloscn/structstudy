@@ -14,8 +14,14 @@ fn to_lower(instr:&str) -> String
     return out;
 }
 
-pub fn test_to_lower_case()
-{
-    let ourstr = to_lower("HellO!");
-    println!("the output is {ourstr}");
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    pub fn test_to_lower_case()
+    {
+        let ourstr = to_lower("HellO!");
+        println!("the output is {ourstr}");
+    }
 }

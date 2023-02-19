@@ -24,22 +24,27 @@ fn mis_set(array : &mut [i64], len : &mut usize) -> i32
     return ret;
 }
 
-pub fn test_mis_set()
-{
-    let mut array:[i64;4] = [1,2,2,4];
-    let mut len:usize = array.len();
-    let mut i:usize = 0;
+#[cfg(test)]
+mod tests {
+    use super::*;
 
-    let ret = mis_set(&mut array, &mut len);
-    if ret != 0 {
-        println!("failed!\n");
+    #[test]
+    pub fn test_mis_set()
+    {
+        let mut array:[i64;4] = [1,2,2,4];
+        let mut len:usize = array.len();
+        let mut i:usize = 0;
+
+        let ret = mis_set(&mut array, &mut len);
+        if ret != 0 {
+            println!("failed!\n");
+        }
+        println!("len is {len}");
+
+        while i < len {
+            print!("{},", array[i]);
+            i += 1;
+        }
+        println!(" ");
     }
-    println!("len is {len}");
-
-    while i < len {
-        print!("{},", array[i]);
-        i += 1;
-    }
-    println!(" ");
-
 }

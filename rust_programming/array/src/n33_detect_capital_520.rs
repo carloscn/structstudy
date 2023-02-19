@@ -42,42 +42,49 @@ fn detect_capital(in_str: &str, result : &mut bool) -> i32
     return 0;
 }
 
-pub fn test_detect_capital() {
-    let mut in_str = "hello".to_string();
-    let mut result : bool = true;
-    let mut ret;
 
-    ret = detect_capital(&in_str, &mut result);
-    if ret != 0 {
-        println!("failed");
-    }
-    println!("result {} is {}", in_str, result);
+#[cfg(test)]
+mod tests {
+    use super::*;
 
-    in_str = "Hello".to_string();
-    ret = detect_capital(&in_str, &mut result);
-    if ret != 0 {
-        println!("failed");
-    }
-    println!("result {} is {}", in_str, result);
+    #[test]
+    pub fn test_detect_capital() {
+        let mut in_str = "hello".to_string();
+        let mut result : bool = true;
+        let mut ret;
 
-    in_str = "hEllo".to_string();
-    ret = detect_capital(&in_str, &mut result);
-    if ret != 0 {
-        println!("failed");
-    }
-    println!("result {} is {}", in_str, result);
+        ret = detect_capital(&in_str, &mut result);
+        if ret != 0 {
+            println!("failed");
+        }
+        println!("result {} is {}", in_str, result);
 
-    in_str = "HELLO".to_string();
-    ret = detect_capital(&in_str, &mut result);
-    if ret != 0 {
-        println!("failed");
-    }
-    println!("result {} is {}", in_str, result);
+        in_str = "Hello".to_string();
+        ret = detect_capital(&in_str, &mut result);
+        if ret != 0 {
+            println!("failed");
+        }
+        println!("result {} is {}", in_str, result);
 
-    in_str = "hellO".to_string();
-    ret = detect_capital(&in_str, &mut result);
-    if ret != 0 {
-        println!("failed");
+        in_str = "hEllo".to_string();
+        ret = detect_capital(&in_str, &mut result);
+        if ret != 0 {
+            println!("failed");
+        }
+        println!("result {} is {}", in_str, result);
+
+        in_str = "HELLO".to_string();
+        ret = detect_capital(&in_str, &mut result);
+        if ret != 0 {
+            println!("failed");
+        }
+        println!("result {} is {}", in_str, result);
+
+        in_str = "hellO".to_string();
+        ret = detect_capital(&in_str, &mut result);
+        if ret != 0 {
+            println!("failed");
+        }
+        println!("result {} is {}", in_str, result);
     }
-    println!("result {} is {}", in_str, result);
 }
