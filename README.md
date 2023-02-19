@@ -59,6 +59,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode674：最长连续递增序列（longest-continuous-increasing-subsequence）](https://github.com/carloscn/structstudy/issues/119) [2023-02-09]
 * [leetcode697：数组的度（degree_of_an_array_697）](https://github.com/carloscn/structstudy/issues/123) [2023-02-13]
 * [leetcode724：寻找数组的中心下标（find_pivot_index_724）](https://github.com/carloscn/structstudy/issues/125) [2023-02-17]
+* [leetcode746：使用最小花费爬楼梯（min_cost_climbing_stairs_746）](https://github.com/carloscn/structstudy/issues/127) [2023-02-19]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
