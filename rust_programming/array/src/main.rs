@@ -5,6 +5,7 @@ mod n41_longest_continuous_increasing_subsequence_674;
 mod n42_degree_of_an_array_697;
 mod n43_find_pivot_index_724;
 mod n44_min_cost_climbing_stairs_746;
+mod n45_largest_number_at_least_twice_of_others_747;
 
 fn main() {
     println!("hello leetcode array project!");
