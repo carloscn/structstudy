@@ -386,8 +386,67 @@ error:
         free(test_array);
     return ret;
 }
+
+int32_t utils_sort_int32_array(int32_t *array, size_t len, ORDER_E order)
+{
+    int32_t ret = 0;
+    int32_t *test_array = NULL;
+    size_t i = 0, j = 0;
+
+    if (NULL == array || 0 == len) {
+        ret = -1;
+        LOG("parameters error \n");
+        goto error;
+    }
+
+    test_array = (int32_t *)calloc(sizeof(int32_t), len);
+    if (NULL == test_array) {
+        ret = -1;
+        LOG("malloc test_array failed\n");
+        goto error;
+    }
+
+    memcpy(test_array, array, len * sizeof(int32_t));
+
+    LOG("\npre : ");
+    for (i = 0; i < len; i ++) {
+        printf("%d, ", array[i]);
+    }
+
+    // sort from small to large.
+    if (ORDER_BY_ASCEND == order) {
+        for (j = 0; j < len - 1; j ++) {
+            for (i = 0; i < len - j - 1; i ++) {
+                if (test_array[i] > test_array[i + 1]) {
+                    utils_swap_int32(&test_array[i], &test_array[i+1]);
+                }
+            }
+        }
+    } else {
+        for (j = 0; j < len - 1; j ++) {
+            for (i = 0; i < len - j - 1; i ++) {
+                if (test_array[i] < test_array[i + 1]) {
+                    utils_swap_int32(&test_array[i], &test_array[i+1]);
+                }
+            }
+        }
+    }
+
+    LOG("\npost: ");
+    for (i = 0; i < len; i ++) {
+        printf("%d, ", test_array[i]);
+    }
+    printf("\n");
+    memcpy(array, test_array, len * sizeof(int32_t));
+
+error:
+    if (test_array != NULL)
+        free(test_array);
+    return ret;
+}
 // 123456
 // 123
+
 bool utils_str_contains(char *input_str, char *sub_str)
 {
     size_t in_len, sub_len;
