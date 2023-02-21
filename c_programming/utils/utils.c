@@ -530,14 +530,14 @@ int32_t utils_str_to_lowercase(char *str)
         return -1;
     }
     
-    size_t i = 0, j = 0;
+    size_t i = 0;
     size_t len = strlen(str);
 
-    for (i = 0; i < len; i ++, j ++) {
+    for (i = 0; i < len; i ++) {
         if ((str[i] >= 'A' && str[i] <= 'Z')) {
-            str[j] = str[i] - ('A' - 'a');     
+            str[i] = str[i] - ('A' - 'a');     
         } else {
-            str[j] = str[i];
+            str[i] = str[i];
         }
     }
     
@@ -550,14 +550,14 @@ int32_t utils_str_to_uppercase(char *str)
         return -1;
     }
     
-    size_t i = 0, j = 0;
+    size_t i = 0;
     size_t len = strlen(str);
 
-    for (i = 0; i < len; i ++, j ++) {
+    for (i = 0; i < len; i ++) {
         if ((str[i] >= 'a' && str[i] <= 'z')) {
-            str[j] = str[i] + ('A' - 'a');     
+            str[i] = str[i] + ('A' - 'a');     
         } else {
-            str[j] = str[i];
+            str[i] = str[i];
         }
     }
     

@@ -56,6 +56,7 @@ pub mod num {
 
 pub mod str {
     use std::str::Bytes;
+    use crate::num::swap_u8;
 
     pub fn swap_pos(in_str: &mut str, a: usize, b: usize) -> i32 {
         let mut ret : i32 = 0;
@@ -137,6 +138,104 @@ pub mod str {
             return c + 32;
         } else {
             return c;
+        }
+    }
+
+    pub fn filter_letter(in_str:&mut str) {
+        unsafe {
+            let mut in_bytes:&mut [u8] = in_str.as_bytes_mut();
+            let mut i:usize = 0;
+            let mut j:usize = 0;
+            let len:usize = in_bytes.len();
+
+            while i < len {
+                let e = in_bytes[i];
+                if (e >= 'a' as u8 && e <= 'z' as u8) ||
+                (e >= 'A' as u8 && e <= 'Z' as u8) {
+                    in_bytes[j] = e;
+                    i += 1;
+                    j += 1;         
+                }
+            }
+            in_bytes[j] = '\0' as u8;
+        }
+    }
+
+    pub fn to_lowercase(in_str:&mut str) {
+        unsafe {
+            let mut in_bytes:&mut [u8] = in_str.as_bytes_mut();
+            let mut i:usize = 0;
+            let len:usize = in_bytes.len();
+
+            while i < len {
+                let e = in_bytes[i];
+                if e >= 'A' as u8 && e <= 'Z' as u8 {
+                    in_bytes[i] = e + ('a' as u8 - 'A' as u8);     
+                } else {
+                    in_bytes[i] = e;
+                }
+                i += 1;
+            }
+        }
+    }
+
+    pub fn to_uppercase(in_str:&mut str) {
+        unsafe{
+            let mut in_bytes:&mut [u8] = in_str.as_bytes_mut();
+            let mut i:usize = 0;
+            let len:usize = in_bytes.len();
+
+            while i < len {
+                let e = in_bytes[i];
+                if e >= 'A' as u8 && e <= 'Z' as u8 {
+                    in_bytes[i] = e - ('a' as u8 - 'A' as u8);     
+                } else {
+                    in_bytes[i] = e;
+                }
+                i += 1;
+            }
+        }
+    }
+
+    pub fn sort_by_ascend(in_str:&mut str) {
+        unsafe {
+            let mut in_bytes:&mut [u8] = in_str.as_bytes_mut();
+            let mut i:usize = 0;
+            let mut j:usize = 0;
+            let len:usize = in_bytes.len();
+
+            while i < len - 1 {
+                while j < len - i - 1 {
+                    if in_bytes[j] > in_bytes[j + 1] {
+                        let t = in_bytes[j];
+                        in_bytes[j] = in_bytes[j + 1];
+                        in_bytes[j + 1] = t;
+                    }
+                    j += 1;
+                }
+                i += 1;
+            }
+        }
+    }
+
+    pub fn sort_by_descend(in_str:&mut str) {
+        unsafe {
+            let mut in_bytes:&mut [u8] = in_str.as_bytes_mut();
+            let mut i:usize = 0;
+            let mut j:usize = 0;
+            let len:usize = in_bytes.len();
+
+            while i < len - 1 {
+                while j < len - i - 1 {
+                    if in_bytes[j] < in_bytes[j + 1] {
+                        let t = in_bytes[j];
+                        in_bytes[j] = in_bytes[j + 1];
+                        in_bytes[j + 1] = t;
+                    }
+                    j += 1;
+                }
+                i += 1;
+            }
         }
     }
 }
