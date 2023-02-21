@@ -124,6 +124,9 @@ int32_t utils_str_reverse(char *s);
 bool utils_is_lowercase(char c);
 bool utils_is_capital(char c);
 int32_t utils_str_reserve_region(char* s, size_t start, size_t end);
+int32_t utils_str_to_uppercase(char *str);
+int32_t utils_str_to_lowercase(char *str);
+int32_t utils_str_filter_letter(char *str);
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/

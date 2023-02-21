@@ -291,11 +291,10 @@ int32_t utils_sort_char_array(char *array, size_t len, ORDER_E order)
 
     memcpy(test_array, array, len);
 
-    LOG("\npre : ");
-    for (i = 0; i < len; i ++) {
-        printf("%c, ", array[i]);
-    }
-
+    // LOG("\npre : ");
+    // for (i = 0; i < len; i ++) {
+    //     printf("%c, ", array[i]);
+    // }
 
     // sort from small to large.
     if (ORDER_BY_ASCEND == order) {
@@ -316,11 +315,11 @@ int32_t utils_sort_char_array(char *array, size_t len, ORDER_E order)
         }
     }
 
-    LOG("\npost: ");
-    for (i = 0; i < len; i ++) {
-        printf("%c, ", test_array[i]);
-    }
-    printf("\n");
+    // LOG("\npost: ");
+    // for (i = 0; i < len; i ++) {
+    //     printf("%c, ", test_array[i]);
+    // }
+    // printf("\n");
     memcpy(array, test_array, len);
 
 error:
@@ -502,6 +501,67 @@ finish:
         free(sub);
     }
     return ret;
+}
+
+int32_t utils_str_filter_letter(char *str)
+{
+    if (NULL == str) {
+        return -1;
+    }
+    
+    size_t i = 0, j = 0;
+    size_t len = strlen(str);
+
+    for (i = 0; i < len; i ++) {
+        if ((str[i] >= 'a' && str[i] <= 'z') ||
+            (str[i] >= 'A' && str[i] <= 'Z')) {
+           str[j] = str[i];
+           j ++;         
+        }
+    }
+    str[j] = '\0';
+    
+    return 0;
+}
+
+int32_t utils_str_to_lowercase(char *str)
+{
+    if (NULL == str) {
+        return -1;
+    }
+    
+    size_t i = 0, j = 0;
+    size_t len = strlen(str);
+
+    for (i = 0; i < len; i ++, j ++) {
+        if ((str[i] >= 'A' && str[i] <= 'Z')) {
+            str[j] = str[i] - ('A' - 'a');     
+        } else {
+            str[j] = str[i];
+        }
+    }
+    
+    return 0;
+}
+
+int32_t utils_str_to_uppercase(char *str)
+{
+    if (NULL == str) {
+        return -1;
+    }
+    
+    size_t i = 0, j = 0;
+    size_t len = strlen(str);
+
+    for (i = 0; i < len; i ++, j ++) {
+        if ((str[i] >= 'a' && str[i] <= 'z')) {
+            str[j] = str[i] + ('A' - 'a');     
+        } else {
+            str[j] = str[i];
+        }
+    }
+    
+    return 0;
 }
 
 int32_t utils_int64_to_str(int64_t val, char *str)
