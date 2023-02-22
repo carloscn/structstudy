@@ -57,6 +57,7 @@ pub mod num {
 pub mod str {
     use std::str::Bytes;
     use crate::num::swap_u8;
+    use core::str::Chars;
 
     pub fn swap_pos(in_str: &mut str, a: usize, b: usize) -> i32 {
         let mut ret : i32 = 0;
@@ -141,102 +142,36 @@ pub mod str {
         }
     }
 
-    pub fn filter_letter(in_str:&mut str) {
-        unsafe {
-            let mut in_bytes:&mut [u8] = in_str.as_bytes_mut();
-            let mut i:usize = 0;
-            let mut j:usize = 0;
-            let len:usize = in_bytes.len();
-
-            while i < len {
-                let e = in_bytes[i];
-                if (e >= 'a' as u8 && e <= 'z' as u8) ||
-                (e >= 'A' as u8 && e <= 'Z' as u8) {
-                    in_bytes[j] = e;
-                    i += 1;
-                    j += 1;         
-                }
-            }
-            in_bytes[j] = '\0' as u8;
-        }
+    pub fn filter_letter(in_str:&mut String) {
+        let in_chars = in_str.chars();
+        let filter_str:String =
+            in_chars.into_iter().filter(|e| ((*e >= 'a' && *e <= 'z') ||
+                                             (*e >= 'A' && *e <= 'Z'))).collect();
+        *in_str = format!("{}", filter_str);
     }
 
-    pub fn to_lowercase(in_str:&mut str) {
-        unsafe {
-            let mut in_bytes:&mut [u8] = in_str.as_bytes_mut();
-            let mut i:usize = 0;
-            let len:usize = in_bytes.len();
-
-            while i < len {
-                let e = in_bytes[i];
-                if e >= 'A' as u8 && e <= 'Z' as u8 {
-                    in_bytes[i] = e + ('a' as u8 - 'A' as u8);     
-                } else {
-                    in_bytes[i] = e;
-                }
-                i += 1;
-            }
-        }
+    pub fn to_lowercase(in_str: & mut String) {
+        let f_str:String = String::from(in_str.to_lowercase());
+        *in_str = format!("{f_str}");
     }
 
-    pub fn to_uppercase(in_str:&mut str) {
-        unsafe{
-            let mut in_bytes:&mut [u8] = in_str.as_bytes_mut();
-            let mut i:usize = 0;
-            let len:usize = in_bytes.len();
-
-            while i < len {
-                let e = in_bytes[i];
-                if e >= 'A' as u8 && e <= 'Z' as u8 {
-                    in_bytes[i] = e - ('a' as u8 - 'A' as u8);     
-                } else {
-                    in_bytes[i] = e;
-                }
-                i += 1;
-            }
-        }
+    pub fn to_uppercase(in_str:&mut String) {
+        let f_str:String = String::from(in_str.to_uppercase());
+        *in_str = format!("{f_str}");
     }
 
-    pub fn sort_by_ascend(in_str:&mut str) {
-        unsafe {
-            let mut in_bytes:&mut [u8] = in_str.as_bytes_mut();
-            let mut i:usize = 0;
-            let mut j:usize = 0;
-            let len:usize = in_bytes.len();
-
-            while i < len - 1 {
-                while j < len - i - 1 {
-                    if in_bytes[j] > in_bytes[j + 1] {
-                        let t = in_bytes[j];
-                        in_bytes[j] = in_bytes[j + 1];
-                        in_bytes[j + 1] = t;
-                    }
-                    j += 1;
-                }
-                i += 1;
-            }
-        }
+    pub fn sort_by_ascend(in_str:&mut String) {
+        let in_chars:Chars = in_str.chars();
+        let mut in_vect:Vec<char> = in_chars.into_iter().collect();
+        in_vect.sort_by(|a, b| a.partial_cmp(b).unwrap());
+        *in_str = format!("{}", in_vect.iter().collect::<String>());
     }
 
-    pub fn sort_by_descend(in_str:&mut str) {
-        unsafe {
-            let mut in_bytes:&mut [u8] = in_str.as_bytes_mut();
-            let mut i:usize = 0;
-            let mut j:usize = 0;
-            let len:usize = in_bytes.len();
-
-            while i < len - 1 {
-                while j < len - i - 1 {
-                    if in_bytes[j] < in_bytes[j + 1] {
-                        let t = in_bytes[j];
-                        in_bytes[j] = in_bytes[j + 1];
-                        in_bytes[j + 1] = t;
-                    }
-                    j += 1;
-                }
-                i += 1;
-            }
-        }
+    pub fn sort_by_descend(in_str:&mut String) {
+        let in_chars:Chars = in_str.chars();
+        let mut in_vect:Vec<char> = in_chars.into_iter().collect();
+        in_vect.sort_by(|a, b| b.partial_cmp(a).unwrap());
+        *in_str = format!("{}", in_vect.iter().collect::<String>());
     }
 }
 
@@ -260,5 +195,45 @@ pub mod array {
 
         array[i] = b;
         array[j] = a;
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_filter_letter() {
+        let mut my_str:String = String::from("123412345abcd1234ABCD1234");
+        str::filter_letter(&mut my_str);
+        assert_eq!(my_str, "abcdABCD".to_string());
+    }
+
+    #[test]
+    fn test_to_lowercase() {
+        let mut my_str:String = String::from("123412345abcd1234ABCD1234");
+        str::to_lowercase(&mut my_str);
+        assert_eq!(my_str, "123412345abcd1234abcd1234".to_string());
+    }
+
+    #[test]
+    fn test_to_uppercase() {
+        let mut my_str:String = String::from("123412345abcd1234ABCD1234");
+        str::to_uppercase(&mut my_str);
+        assert_eq!(my_str, "123412345ABCD1234ABCD1234".to_string());
+    }
+
+    #[test]
+    fn test_sort_by_ascend() {
+        let mut my_str:String = String::from("abcgdef");
+        str::sort_by_ascend(&mut my_str);
+        assert_eq!(my_str, "abcdefg".to_string());
+    }
+
+    #[test]
+    fn test_sort_by_descend() {
+        let mut my_str:String = String::from("abcgdef");
+        str::sort_by_descend(&mut my_str);
+        assert_eq!(my_str, "gfedcba".to_string());
     }
 }
