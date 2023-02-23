@@ -61,6 +61,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode724：寻找数组的中心下标（find_pivot_index_724）](https://github.com/carloscn/structstudy/issues/125) [2023-02-17]
 * [leetcode746：使用最小花费爬楼梯（min_cost_climbing_stairs_746）](https://github.com/carloscn/structstudy/issues/127) [2023-02-19]
 * [leetcode747：至少是其他数字两倍的最大数（largest_number_at_least_twice_of_others_747）](https://github.com/carloscn/structstudy/issues/128) [2023-02-20]
+* [leetcode766：托普利茨矩阵（toeplitz_matrix_766）](https://github.com/carloscn/structstudy/issues/130) [2023-02-23]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
