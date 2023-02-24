@@ -108,6 +108,7 @@ void utils_print_32_value_by_binary(uint32_t val);
 void utils_print_64_value_by_binary(uint64_t val);
 size_t utils_set_array(int64_t *array, size_t sz);
 size_t utils_set_u8_array(uint8_t *array, size_t sz);
+size_t utils_str_set(char *str);
 int32_t utils_sort_char_array(char *array, size_t len, ORDER_E order);
 int32_t utils_sort_int64_array(int64_t *array, size_t len, ORDER_E order);
 int32_t utils_sort_int32_array(int32_t *array, size_t len, ORDER_E order);
@@ -127,6 +128,7 @@ int32_t utils_str_reserve_region(char* s, size_t start, size_t end);
 int32_t utils_str_to_uppercase(char *str);
 int32_t utils_str_to_lowercase(char *str);
 int32_t utils_str_filter_letter(char *str);
+bool utils_str_contains_char(char *input_str, char e);
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/
