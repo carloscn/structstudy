@@ -107,6 +107,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode744：寻找比目标字母大的最小字母（find_smallest_letter_greater_than_target_744）](https://github.com/carloscn/structstudy/issues/126) [2023-02-18]
 * [leetcode748：最短补全词（shortest_completing_word_748）](https://github.com/carloscn/structstudy/issues/129) [2023-02-21]
 * [leetcode771：宝石与石头（jewels-and-stones）](https://github.com/carloscn/structstudy/issues/131) [2023-02-24]
+* [leetcode796：旋转字符串（rotate-string）]](https://github.com/carloscn/structstudy/issues/132) [2022-02-25]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
