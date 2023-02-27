@@ -7,6 +7,7 @@ mod n43_find_pivot_index_724;
 mod n44_min_cost_climbing_stairs_746;
 mod n45_largest_number_at_least_twice_of_others_747;
 mod n46_toeplitz_matrix_766;
+mod n47_shortest_distance_to_a_character_821;
 
 fn main() {
     println!("hello leetcode array project!");
