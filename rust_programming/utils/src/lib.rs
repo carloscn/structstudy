@@ -1,3 +1,6 @@
+mod stack;
+mod queue;
+mod linked_list;
 
 pub mod num {
     pub fn max(n:u64, m:u64) -> u64 {
