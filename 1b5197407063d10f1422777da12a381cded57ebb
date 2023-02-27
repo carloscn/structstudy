@@ -1,4 +1,28 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "96331cd4_35fcfbd8",
+        "filename": "c_programming/array/n47_shortest_distance_to_a_character_821.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1020912
+      },
+      "writtenOn": "2023-02-27T01:12:14Z",
+      "side": 1,
+      "message": "not free on finish!",
+      "range": {
+        "startLine": 23,
+        "startChar": 4,
+        "endLine": 23,
+        "endChar": 11
+      },
+      "revId": "1b5197407063d10f1422777da12a381cded57ebb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ],
   "submitRequirementResults": []
 }
