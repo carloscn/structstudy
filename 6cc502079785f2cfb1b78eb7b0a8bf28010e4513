@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d03e88d_9eda2545",
+        "filename": "rust_programming/utils/src/queue.rs",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1020912
+      },
+      "writtenOn": "2023-02-27T03:04:25Z",
+      "side": 1,
+      "message": "The returning of `push` function in the Stack is Option\u003cT\u003e. Can we unify them?",
+      "range": {
+        "startLine": 14,
+        "startChar": 33,
+        "endLine": 14,
+        "endChar": 34
+      },
+      "revId": "6cc502079785f2cfb1b78eb7b0a8bf28010e4513",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
