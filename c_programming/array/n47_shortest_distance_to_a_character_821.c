@@ -41,6 +41,7 @@ static int32_t shortest_distance(const char *in_str, char c, int32_t *array)
     }
 
 finish:
+    UTILS_SAFE_FREE(c_index);
     return ret;
 }
 
