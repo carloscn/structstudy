@@ -9,6 +9,7 @@ mod n41_shortest_completing_word_748;
 mod n42_jewels_and_stones_771;
 mod n43_rotate_string_796;
 mod n44_most_common_word_819;
+mod n45_find_the_index_of_the_first_occurrence_in_a_string_28;
 fn main() {
     println!("hello leetcode string project!");
 }
