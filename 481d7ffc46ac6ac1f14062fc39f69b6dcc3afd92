@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cc8032fb_6140ba4b",
+        "filename": "rust_programming/array/src/n48_find_first_and_last_position_of_element_in_sorted_array_34.rs",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1020912
+      },
+      "writtenOn": "2023-02-28T12:21:44Z",
+      "side": 1,
+      "message": "drop it",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 4
+      },
+      "revId": "481d7ffc46ac6ac1f14062fc39f69b6dcc3afd92",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
