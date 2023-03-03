@@ -49,6 +49,13 @@ void utils_swap_size_t(size_t *a, size_t *b)
     *a = (*a) ^ (*b);
 }
 
+void utils_swap_null(void *a, void *b)
+{
+    (void)a;
+    (void)b;
+    LOG("unsupport type!\n");
+}
+
 /*
  * return 1: odd number
  * return 0: even number
