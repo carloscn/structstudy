@@ -9,9 +9,13 @@
 #include "buffer.h"
 #include "multi_tree.h"
 #include "hash_map.h"
+#include "bufferlist.h"
 
 int main(void)
 {
+    size_t i = 8, j = 10;
+    UTILS_SWAP((uint32_t*)&i, (uint32_t*)&j);
+    LOG("the i = %zu, j = %zu\n", i, j);
     // LOG("queue selftest: \n");
     // LOG_LINE_WITH_TR();
     // queue_selftest();
@@ -23,7 +27,7 @@ int main(void)
     // linklist_selftest();
     // LOG("strlist selftest: \n");
     // LOG_LINE_WITH_TR();
-    // strlist_selftest();
+    //strlist_selftest();
     // LOG_LINE_WITH_DOUBLE_TR();
     // LOG("binary_tree selftest: please input: 124#7###35##68###\n");
     // LOG_LINE_WITH_DOUBLE_TR();
@@ -32,7 +36,8 @@ int main(void)
     //LOG_LINE_WITH_DOUBLE_TR();
     //buffer_selftest();
     //multitree_selftest();
-    hashmap_selftest();
+    //hashmap_selftest();
+    //buflist_selftest();
 
     return 0;
 }
