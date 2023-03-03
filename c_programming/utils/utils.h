@@ -83,6 +83,7 @@ typedef enum {
     do {                                                                        \
         if ((_p) != NULL) {                                                     \
             free((_p));                                                         \
+            (_p) = NULL;                                                        \
         }                                                                       \
     } while(0)
 /* Functions */

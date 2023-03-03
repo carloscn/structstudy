@@ -5,6 +5,12 @@
 #include "buffer.h"
 #include "utils.h"
 
+struct buffer_t {
+    int64_t *data;
+    size_t current_len;
+    size_t total_len;
+};
+
 BUFFER_T* buffer_malloc(size_t sz)
 {
     BUFFER_T* buffer = (BUFFER_T*)malloc(sizeof(BUFFER_T));
@@ -300,11 +306,93 @@ void buffer_print(BUFFER_T *buffer)
     if (NULL == buffer || 0 == buffer->current_len) {
         return;
     }
-    printf("print buffer: \n[ ");
+    printf(" [ ");
     for (i = 0; i < buffer->current_len; i ++) {
+        if ((i & 15) == 0) {
+            printf("\n\t");
+        }
         printf("%lld, ", buffer->data[i]);
     }
-    printf(" ]\n");
+    printf(" \n]\n");
+}
+
+int32_t buffer_copy(BUFFER_T *dest, BUFFER_T *src)
+{
+    int32_t ret = 0;
+    size_t i = 0;
+
+    UTILS_CHECK_PTR(dest);
+    UTILS_CHECK_PTR(src);
+
+    if (dest->total_len < src->current_len) {
+        return -1;
+    }
+
+    ret = buffer_clear(dest);
+    UTILS_CHECK_RET(ret);
+
+    memcpy(dest->data, src->data, src->current_len * sizeof(int64_t));
+    dest->current_len = src->current_len;
+
+finish:
+    return ret;
+}
+
+int32_t buffer_clear(BUFFER_T *buffer)
+{
+    int32_t ret = 0;
+
+    UTILS_CHECK_PTR(buffer);
+
+    memset(buffer->data, 0, buffer->total_len);
+    buffer->current_len = 0;
+
+finish:
+    return ret;
+}
+
+int32_t buffer_dup_array(BUFFER_T* buffer, int64_t **array, size_t *o_len)
+{
+    int32_t ret = 0;
+    int64_t *buf_array = NULL;
+
+    UTILS_CHECK_PTR(buffer);
+    UTILS_CHECK_PTR(array);
+    UTILS_CHECK_PTR(o_len);
+
+    buf_array = (int64_t*)calloc(sizeof(int64_t), buffer->current_len);
+    UTILS_CHECK_PTR(buf_array);
+
+    memcpy(buf_array, buffer->data, buffer->current_len * sizeof(int64_t));
+
+    *o_len = buffer->current_len;
+    *array = buf_array;
+
+finish:
+    return ret;
+}
+
+int32_t buffer_append_array(BUFFER_T *buffer, int64_t *array, size_t len)
+{
+    int32_t ret = 0;
+    int64_t *ptr = NULL;
+
+    UTILS_CHECK_PTR(buffer);
+    UTILS_CHECK_PTR(array);
+    UTILS_CHECK_LEN(len);
+
+    if (buffer->total_len - buffer->current_len < len) {
+        ptr = (int64_t*)realloc(buffer->data, (buffer->total_len + len + BUFFER_DEFUALT_SIZE) * sizeof(int64_t));
+        UTILS_CHECK_PTR(ptr);
+        buffer->data = ptr;
+        buffer->total_len = buffer->total_len + len + BUFFER_DEFUALT_SIZE;
+    }
+
+    memcpy(buffer->data + buffer->current_len, array, len * sizeof(int64_t));
+    buffer->current_len += len;
+
+finish:
+    return ret;
 }
 
 int32_t buffer_selftest(void)
