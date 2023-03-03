@@ -16,6 +16,7 @@ typedef enum {
     ORDER_BY_DESCEND
 } ORDER_E;
 
+
 /* MACRO define */
 #define ARRAY_SIZE(_a_) ((size_t)(sizeof(_a_)/sizeof((_a_)[0])))
 #define MAX(_a_, _b_) (((_a_)>(_b_))?(_a_):(_b_))
@@ -83,6 +84,7 @@ typedef enum {
     do {                                                                        \
         if ((_p) != NULL) {                                                     \
             free((_p));                                                         \
+            (_p) = NULL;                                                        \
         }                                                                       \
     } while(0)
 /* Functions */
@@ -91,12 +93,29 @@ void utils_swap_int32(int32_t *a, int32_t *b);
 void utils_swap_char(char *a, char *b);
 void utils_swap_size_t(size_t *a, size_t *b);
 void utils_swap_int64(int64_t *a, int64_t *b);
+void utils_swap_null(void *a, void *b);
+#define UTILS_SWAP(_v, _b)                          \
+        _Generic((_v),                              \
+            int64_t*:   utils_swap_int64,           \
+            int32_t*:   utils_swap_int32,           \
+            char*:      utils_swap_char,            \
+            size_t*:    utils_swap_size_t,          \
+            default:    utils_swap_null)(_v, _b)
+
 int32_t utils_check_odd_even(int64_t base);
 int utils_check_pass(int e);
 void utils_print_int64_array(int64_t *a, size_t size, const char *msg);
 void utils_print_int32_array(int32_t *a, size_t size, const char *msg);
 void utils_print_size_t_array(size_t *a, size_t size, const char *msg);
 void utils_print_uchar_array(unsigned char *a, size_t size, const char *msg);
+#define UTILS_PRINT_ARRAY(_v, _b, _c)                      \
+        _Generic((_v),                                     \
+            int64_t*:   utils_print_int64_array,           \
+            int32_t*:   utils_print_int32_array,           \
+            unsigned char*:  utils_print_uchar_array,      \
+            size_t*:    utils_print_size_t_array,          \
+            default:    utils_print_size_t_array)(_v, _b, _c)
+
 int utils_compare_array(unsigned char *a, unsigned char *b, size_t size);
 void utils_print_array_by_hex(const unsigned char buf[], size_t len, const char *title);
 size_t utils_get_num_len(int32_t __x);
