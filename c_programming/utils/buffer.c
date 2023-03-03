@@ -5,6 +5,12 @@
 #include "buffer.h"
 #include "utils.h"
 
+struct buffer_t {
+    int64_t *data;
+    size_t current_len;
+    size_t total_len;
+};
+
 BUFFER_T* buffer_malloc(size_t sz)
 {
     BUFFER_T* buffer = (BUFFER_T*)malloc(sizeof(BUFFER_T));
@@ -300,13 +306,49 @@ void buffer_print(BUFFER_T *buffer)
     if (NULL == buffer || 0 == buffer->current_len) {
         return;
     }
-    printf("print buffer: \n[ ");
+    printf(" [ ");
     for (i = 0; i < buffer->current_len; i ++) {
+        if ((i & 15) == 0) {
+            printf("\n\t");
+        }
         printf("%lld, ", buffer->data[i]);
     }
-    printf(" ]\n");
+    printf(" \n]\n");
 }
 
+int32_t buffer_copy(BUFFER_T *dest, BUFFER_T *src)
+{
+    int32_t ret = 0;
+    size_t i = 0;
+
+    UTILS_CHECK_PTR(dest);
+    UTILS_CHECK_PTR(src);
+
+    if (dest->total_len < src->current_len) {
+        return -1;
+    }
+
+    ret = buffer_clear(dest);
+    UTILS_CHECK_RET(ret);
+
+    memcpy(dest->data, src->data, src->current_len * sizeof(int64_t));
+    dest->current_len = src->current_len;
+
+finish:
+    return ret;
+}
+
+int32_t buffer_clear(BUFFER_T *buffer)
+{
+    if (NULL == buffer) {
+        return -1;
+    }
+
+    memset(buffer->data, 0, buffer->total_len);
+    buffer->current_len = 0;
+
+    return 0;
+}
 int32_t buffer_selftest(void)
 {
     int32_t ret = 0;

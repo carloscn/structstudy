@@ -9,6 +9,7 @@
 #include "buffer.h"
 #include "multi_tree.h"
 #include "hash_map.h"
+#include "bufferlist.h"
 
 int main(void)
 {
@@ -32,7 +33,8 @@ int main(void)
     //LOG_LINE_WITH_DOUBLE_TR();
     //buffer_selftest();
     //multitree_selftest();
-    hashmap_selftest();
+    //hashmap_selftest();
+    buflist_selftest();
 
     return 0;
 }
