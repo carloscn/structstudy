@@ -22,6 +22,30 @@
       },
       "revId": "c299e73ed8ae479e98abe1a31239fc50b1b7231b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de9730c4_80c72c34",
+        "filename": "c_programming/utils/strlist.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1020912
+      },
+      "writtenOn": "2023-03-04T06:51:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2a07809f_e2294cf0",
+      "range": {
+        "startLine": 13,
+        "startChar": 40,
+        "endLine": 13,
+        "endChar": 44
+      },
+      "revId": "c299e73ed8ae479e98abe1a31239fc50b1b7231b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
