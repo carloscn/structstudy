@@ -1,9 +1,12 @@
+use std::ops::{self, Add};
+use std::convert::From;
 
 pub struct Stack<T> {
     stack: Vec<T>,
 }
 
-impl<T> Stack<T> {
+impl<T:std::fmt::Debug + ops::Add + Copy> Stack<T>
+{
     pub fn new() -> Self {
         Stack { stack:Vec::new() }
     }
@@ -28,8 +31,32 @@ impl<T> Stack<T> {
         self.stack.last()
     }
 
+    pub fn sum(&self) -> T
+    where T:ops::Add<Output = T> + From<i64>{
+        let mut sum = T::from(0);
+        for e in &self.stack {
+            sum = sum + *e;
+        }
+        return sum;
+    }
+
+    pub fn dup_vector(&self) -> Vec<T>
+    where T:Copy {
+        let mut v_e:Vec<T> = vec![];
+
+        for e in &self.stack {
+            v_e.push(*e);
+        }
+        return v_e;
+    }
+
+
     pub fn clear(&mut self) {
         self.stack.truncate(0);
+    }
+
+    pub fn print(&self) {
+        print!("stack : {:?}\n", self.stack);
     }
 
 }
