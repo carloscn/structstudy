@@ -133,16 +133,37 @@ size_t stack_count(STACK_T *stack)
     return stack_get_top(stack);
 }
 
-size_t stack_sum(STACK_T *stack)
+int64_t stack_sum(STACK_T *stack)
 {
     size_t i = 0;
-    size_t sum = 0;
+    int64_t sum = 0;
 
     for (i = 0; i < stack->size; i ++) {
         sum += stack->space[i];
     }
 
     return sum;
+}
+
+int32_t stack_dup_array(STACK_T *stack, int64_t **array, size_t *o_len)
+{
+    int32_t ret = 0;
+    int64_t *ptr = NULL;
+
+    UTILS_CHECK_PTR(stack);
+    UTILS_CHECK_PTR(array);
+    UTILS_CHECK_PTR(o_len);
+
+    ptr = (int64_t *)calloc(sizeof(int64_t), stack->top_index);
+    UTILS_CHECK_PTR(ptr);
+
+    memcpy(ptr, stack->space, sizeof(int64_t) * stack->top_index);
+
+    *array = ptr;
+    *o_len = stack->top_index;
+
+finish:
+    return ret;
 }
 
 void stack_print_as_hex(STACK_T *stack)

@@ -7,6 +7,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [链表（linkedlist）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/linklist.c)
 * [字符串列表（stringlist）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/strlist.c)
 * [动态数组（buffer）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/buffer.c)
+* [动态数组列表(bufferlist)](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/bufferlist.c)
 * [二叉树/堆（binarytree/heap）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/binary_tree.c)
 * [多叉树/堆（multitree/heap）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/multi_tree.c)
 * [哈希映射表（hash mapping）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/hash_map.c)
