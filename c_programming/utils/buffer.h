@@ -31,6 +31,7 @@ int32_t buffer_get_head(BUFFER_T *buffer, int64_t *e);
 int32_t buffer_copy(BUFFER_T *dest, BUFFER_T *src);
 int32_t buffer_dup_array(BUFFER_T* buffer, int64_t **array, size_t *o_len);
 int32_t buffer_append_array(BUFFER_T *buffer, int64_t *array, size_t len);
+bool buffer_is_equal(BUFFER_T *a, BUFFER_T *b);
 void buffer_print(BUFFER_T *buffer);
 int32_t buffer_selftest(void);
 #endif /* _BUFFER_H */

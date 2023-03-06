@@ -114,7 +114,6 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode796：旋转字符串（rotate-string）](https://github.com/carloscn/structstudy/issues/132) [2023-02-25]
 * [leetcode819：最常见的单词（most_common_word_819）](https://github.com/carloscn/structstudy/issues/133) [2023-02-26]
 * [leetcode28：找出字符串中第一个匹配项的下标（find_the_index_of_the_first_occurrence_in_a_string_28）](https://github.com/carloscn/structstudy/issues/135) [2023-02-27]
-* [leetcode39：组合总和（combination_sum_39）](https://github.com/carloscn/structstudy/issues/138) [2023-03-03]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
@@ -152,3 +151,5 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [包含k个元素的组合(leetcode-77)](https://github.com/carloscn/structstudy/issues/20)
 * [字典序排数(leetcode-386)](https://github.com/carloscn/structstudy/issues/21)
 * [leetcode70：爬楼梯（climbing-stairs）](https://github.com/carloscn/structstudy/issues/44) [2022-10-29]
+* [leetcode39：组合总和（combination_sum_39）](https://github.com/carloscn/structstudy/issues/138) [2023-03-03]
+* [leetcode40：组合总和 II（combination-sum-ii）](https://github.com/carloscn/structstudy/issues/139) [2023-03-06]

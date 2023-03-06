@@ -187,6 +187,17 @@ finish:
     return ret;
 }
 
+bool buffer_is_equal(BUFFER_T *a, BUFFER_T *b)
+{
+    if (NULL == a ||
+        NULL == b ||
+        a->current_len != b->current_len) {
+        return false;
+    }
+
+    return memcmp(a->data, b->data, a->current_len * sizeof(int64_t)) == 0;
+}
+
 bool buffer_is_contain(BUFFER_T *buffer, int64_t e)
 {
     bool ret = true;
