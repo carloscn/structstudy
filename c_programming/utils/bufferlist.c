@@ -172,7 +172,6 @@ finish:
 }
 
 BUFFER_T* buflist_get_buffer_at(BUFLIST_T *buflist, size_t index)
-__unsafe_indexable
 {
     if ((NULL == buflist) ||
         (index > buflist->size - 1)) {
@@ -182,8 +181,38 @@ __unsafe_indexable
     return buflist->list[index];
 }
 
+int32_t buflist_set(BUFLIST_T *buflist)
+{
+    int32_t ret = 0;
+    size_t i = 0;
+    size_t j = 0;
+    BUFFER_T *a = NULL;
+    BUFFER_T *b = NULL;
+
+    UTILS_CHECK_PTR(buflist);
+
+    if (buflist->size < 2) {
+        goto finish;
+    }
+
+remove:
+    for (i = 0; i < buflist->size; i ++) {
+        a = buflist->list[i];
+        for (j = i + 1; j < buflist->size; j ++) {
+            b = buflist->list[j];
+            if (buffer_is_equal(a, b) == true) {
+                ret = buflist_remove_at(buflist, j);
+                UTILS_CHECK_RET(ret);
+                goto remove;
+            }
+        }
+    }
+
+finish:
+    return ret;
+}
+
 bool buflist_contains(BUFLIST_T *buflist, BUFFER_T* buf, size_t *index)
-__unsafe_indexable
 {
     size_t i = 0;
     int32_t ret = 0;
@@ -226,7 +255,6 @@ finish:
 }
 
 size_t buflist_get_size(BUFLIST_T *buflist)
-__unsafe_indexable
 {
     if (NULL == buflist) {
         return 0;
