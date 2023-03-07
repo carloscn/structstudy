@@ -16,6 +16,7 @@ int32_t strlist_insert_after(STRLIST_T *strlist, const char *str, size_t index);
 int32_t strlist_remove_last(STRLIST_T *strlist);
 int32_t strlist_remove_at(STRLIST_T *strlist, size_t index);
 char* strlist_get_str_at(STRLIST_T *strlist, size_t index);
+char *strlist_get_str_at_with_clone(STRLIST_T *strlist, size_t index);
 bool strlist_contains(STRLIST_T *strlist, const char *str, size_t *index);
 int32_t strlist_append_all_substrs(STRLIST_T *strlist, const char *str);
 size_t strlist_get_size(STRLIST_T *strlist);

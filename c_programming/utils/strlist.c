@@ -205,6 +205,11 @@ char* strlist_get_str_at(STRLIST_T *strlist, size_t index)
     return strlist->list[index];
 }
 
+char *strlist_get_str_at_with_clone(STRLIST_T *strlist, size_t index)
+{
+    return strdup(strlist_get_str_at(strlist, index));
+}
+
 bool strlist_contains(STRLIST_T *strlist, const char *str, size_t *index)
 {
     size_t i;
