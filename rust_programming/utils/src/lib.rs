@@ -3,7 +3,7 @@ pub mod queue;
 pub mod linked_list;
 
 pub mod num {
-    pub fn max(n:u64, m:u64) -> u64 {
+    pub fn max<T:std::cmp::PartialOrd>(n:T, m:T) -> T {
         if n > m {
             return n;
         } else {
