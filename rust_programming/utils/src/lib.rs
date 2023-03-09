@@ -11,6 +11,14 @@ pub mod num {
         }
     }
 
+    pub fn cmp<T:std::cmp::PartialOrd>(a:bool, n:T, m:T) -> T {
+        if a {
+            return n;
+        } else {
+            return m;
+        }
+    }
+
     pub fn min(n:u64, m:u64) -> u64 {
         if n < m {
             return n;
