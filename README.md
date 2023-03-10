@@ -1,5 +1,12 @@
 # Leetcode and Algo Daily Training
 
+## Direction
+截止到2023年3月10日，做以下规则变更：
+* 不再RUST和C进行同步；
+* 为了熟悉RUST语言，RUST继续进行leetcode简单等级的题目；
+* 为了熟悉算法及数据结构的使用，使用C进行leetcode的中等的题目；
+* C按照算法及数据结构的类别进行专题刷；
+* RUST延续C的简单题目顺序继续往下进行。
 ## [基本数据结构的C语言实现](https://github.com/carloscn/structstudy/tree/master/c_programming/utils)
 C语言无法像是高级计算机语言对基础数据结构有一部分的实现，而一些算法需要基于这些数据结构，故在本工程中的utils中实现基本的数据结构，在算法实现中可以调用这些数据结构的基本方法。通过接口封装的方式，可以轻松调用这些方法，基本数据结构还在扩充中。
 * [栈（stack）](https://github.com/carloscn/structstudy/blob/master/c_programming/utils/stack.c)
