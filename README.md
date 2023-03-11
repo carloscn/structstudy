@@ -163,3 +163,4 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode70：爬楼梯（climbing-stairs）](https://github.com/carloscn/structstudy/issues/44) [2022-10-29]
 * [leetcode39：组合总和（combination_sum_39）](https://github.com/carloscn/structstudy/issues/138) [2023-03-03]
 * [leetcode40：组合总和 II（combination-sum-ii）](https://github.com/carloscn/structstudy/issues/139) [2023-03-06]
+* [leetcode45： 跳跃游戏 II（jump-game-ii）](https://github.com/carloscn/structstudy/issues/141) [2023-03-11]
