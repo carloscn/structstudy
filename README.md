@@ -123,6 +123,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode28：找出字符串中第一个匹配项的下标（find_the_index_of_the_first_occurrence_in_a_string_28）](https://github.com/carloscn/structstudy/issues/135) [2023-02-27]
 * [leetcode43：字符串相乘（multiply_strings_43）](https://github.com/carloscn/structstudy/issues/140) [2023-03-07]
 * [leetcode824：山羊拉丁文（goat_latin_824）](https://github.com/carloscn/structstudy/issues/142) [2023-03-10]
+* [leetcode830：较大分组的位置（positions_of_large_groups_830）](https://github.com/carloscn/structstudy/issues/143) [2023-03-11]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
