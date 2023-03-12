@@ -319,12 +319,9 @@ void buffer_print(BUFFER_T *buffer)
     }
     printf(" [ ");
     for (i = 0; i < buffer->current_len; i ++) {
-        if ((i & 15) == 0) {
-            printf("\n\t");
-        }
         printf("%lld, ", buffer->data[i]);
     }
-    printf(" \n]\n");
+    printf("]\n");
 }
 
 int32_t buffer_copy(BUFFER_T *dest, BUFFER_T *src)
@@ -369,21 +366,52 @@ int32_t buffer_dup_array(BUFFER_T* buffer, int64_t **array, size_t *o_len)
 
     UTILS_CHECK_PTR(buffer);
     UTILS_CHECK_PTR(array);
-    UTILS_CHECK_PTR(o_len);
 
     buf_array = (int64_t*)calloc(sizeof(int64_t), buffer->current_len);
     UTILS_CHECK_PTR(buf_array);
 
     memcpy(buf_array, buffer->data, buffer->current_len * sizeof(int64_t));
 
-    *o_len = buffer->current_len;
+    if (o_len != NULL)
+        *o_len = buffer->current_len;
     *array = buf_array;
 
 finish:
     return ret;
 }
 
-int32_t buffer_append_array(BUFFER_T *buffer, int64_t *array, size_t len)
+int32_t buffer_soft_to_array(BUFFER_T *buffer, int64_t **array, size_t *o_len)
+{
+    int32_t ret = 0;
+
+    UTILS_CHECK_PTR(buffer);
+    UTILS_CHECK_PTR(array);
+    UTILS_CHECK_PTR(o_len);
+
+    *o_len = buffer->current_len;
+    *array = buffer->data;
+
+finish:
+    return ret;
+}
+
+int64_t* buffer_soft_to_array_2(BUFFER_T *buffer)
+{
+    int32_t ret = 0;
+    int64_t *ret_p = NULL;
+
+    UTILS_CHECK_PTR(buffer);
+
+    ret = buffer_soft_to_array(buffer, &ret_p, NULL);
+    if (ret != 0) {
+        ret_p = NULL;
+    }
+
+finish:
+    return ret_p;
+}
+
+int32_t buffer_append_array(BUFFER_T *buffer, const int64_t *array, size_t len)
 {
     int32_t ret = 0;
     int64_t *ptr = NULL;
