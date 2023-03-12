@@ -342,6 +342,77 @@ finish:
     return ret;
 }
 
+static int32_t _sub_array_helper(BUFLIST_T *list, BUFFER_T *buffer, int64_t *array, size_t len, size_t k, size_t s)
+{
+    int32_t ret = 0;
+    size_t i = 0;
+
+    UTILS_CHECK_PTR(list);
+    UTILS_CHECK_PTR(buffer);
+    UTILS_CHECK_PTR(array);
+    UTILS_CHECK_LEN(len);
+
+    buffer_print(buffer);
+
+    if (k == len - 1) {
+        goto finish;
+    }
+
+    for (i = k; i < len - 1; i ++) {
+        ret = buffer_push_tail(buffer, array[i]);
+        UTILS_CHECK_RET(ret);
+
+        ret = _sub_array_helper(list, buffer, array, len, k + 1, s + 1);
+        UTILS_CHECK_RET(ret);
+
+        ret = buffer_pop_tail(buffer, NULL);
+        UTILS_CHECK_RET(ret);
+    }
+
+finish:
+    return ret;
+}
+
+int32_t buflist_append_all_sub_arrays(BUFLIST_T *buflist, int64_t *array, size_t len)
+{
+    int32_t ret = 0;
+    size_t i = 0;
+    size_t j = 0;
+    size_t k = 0;
+    size_t num = 0;
+    BUFFER_T *buf = NULL;
+
+    UTILS_CHECK_PTR(buflist);
+    UTILS_CHECK_PTR(array);
+    UTILS_CHECK_LEN(len);
+
+    buf = buffer_malloc(BUFFER_DEFUALT_SIZE);
+    UTILS_CHECK_PTR(buf);
+
+    num = 1 << len;
+    for(i = 0; i < num; i ++) {
+        j = i;
+        k = 0;
+        while (j) {
+            if (j & 1) {
+                ret = buffer_push_tail(buf, array[k]);
+                UTILS_CHECK_RET(ret);
+            }
+            j >>= 1;
+            k ++;
+        }
+        ret = buflist_add(buflist, buf);
+        UTILS_CHECK_RET(ret);
+
+        ret = buffer_clear(buf);
+        UTILS_CHECK_RET(ret);
+    }
+
+finish:
+    buffer_free(buf);
+    return ret;
+}
+
 void buflist_infolog(BUFLIST_T *buflist)
 {
     size_t i;
@@ -353,6 +424,26 @@ void buflist_infolog(BUFLIST_T *buflist)
         buffer_print(buflist->list[i]);
     }
     printf("\n");
+}
+
+int32_t buflist_append_all_sub_arrays_by_buffer(BUFLIST_T *buflist, BUFFER_T *buf)
+{
+    int32_t ret = 0;
+    size_t len = 0;
+    int64_t *array = NULL;
+
+    UTILS_CHECK_PTR(buflist);
+    UTILS_CHECK_PTR(buf);
+    UTILS_CHECK_LEN(len = buffer_get_current_len(buf));
+
+    ret = buffer_soft_to_array(buf, &array, &len);
+    UTILS_CHECK_RET(ret);
+
+    ret = buflist_append_all_sub_arrays(buflist, array, len);
+    UTILS_CHECK_RET(ret);
+
+finish:
+    return ret;
 }
 
 int32_t buflist_selftest(void)
