@@ -13,6 +13,7 @@ mod n45_find_the_index_of_the_first_occurrence_in_a_string_28;
 mod n46_multiply_strings_43;
 mod n47_goat_latin_824;
 mod n48_positions_of_large_groups_830;
+mod n49_backspace_string_compare_844;
 fn main() {
     println!("hello leetcode string project!");
 }
