@@ -184,6 +184,24 @@ pub mod str {
         in_vect.sort_by(|a, b| b.partial_cmp(a).unwrap());
         *in_str = format!("{}", in_vect.iter().collect::<String>());
     }
+
+    pub fn is_contains_repeat_element(a:&String, e:char) -> bool {
+        let v_in:Vec<char> = a.chars().collect();
+        let mut i:usize = 0;
+        let mut count:usize = 0;
+
+        while i < v_in.len() {
+            if v_in[i] == e {
+                count += 1;
+                if (count == 2) {
+                    return true;
+                }
+            }
+            i += 1;
+        }
+
+        return false;
+    }
 }
 
 pub mod array {
