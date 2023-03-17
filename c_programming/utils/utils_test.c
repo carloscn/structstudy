@@ -39,5 +39,10 @@ int main(void)
     //hashmap_selftest();
     //buflist_selftest();
 
+    char hello[1024];
+    sprintf(hello, "abcdefghijk");
+    utils_memmove(hello + 3, hello, 4);
+    printf("the output is %s\n", hello);
+
     return 0;
 }
