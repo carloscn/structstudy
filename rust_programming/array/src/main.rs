@@ -12,6 +12,7 @@ mod n48_find_first_and_last_position_of_element_in_sorted_array_34;
 mod n49_count_and_say_38;
 mod n50_flipping_an_image_832;
 mod n51_rectangle_overlap_836;
+mod n52_lemonade_change_860;
 
 fn main() {
     println!("hello leetcode array project!");

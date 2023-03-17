@@ -128,6 +128,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode830：较大分组的位置（positions_of_large_groups_830）](https://github.com/carloscn/structstudy/issues/143) [2023-03-11]
 * [leetcode844：比较含退格的字符串（backspace_string_compare_844](https://github.com/carloscn/structstudy/issues/148) [2023-03-15]
 * [leetcode859：亲密字符串（buddy_strings_859）](https://github.com/carloscn/structstudy/issues/149) [2023-03-16]
+* [leetcode860：柠檬水找零（lemonade_change_860）](https://github.com/carloscn/structstudy/issues/150) [2023-03-17]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
