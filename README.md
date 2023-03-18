@@ -75,6 +75,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode38：外观数列（count-and-say）](https://github.com/carloscn/structstudy/issues/137) [2023-03-02]
 * [leetcode832：翻转图像（flipping_an_image_832)](https://github.com/carloscn/structstudy/issues/145) [2023-03-12]
 * [leetcode836：矩形重叠（rectangle_overlap_836）](https://github.com/carloscn/structstudy/issues/146) [2023-03-13]
+* [leetcode867：转置矩阵（transpose-matrix） ](https://github.com/carloscn/structstudy/issues/152) [2023-03-18]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
@@ -172,3 +173,6 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode509：斐波那契数（fibonacci_number_509）](https://github.com/carloscn/structstudy/issues/147) [2023-02-17]
 ## 贪心算法
 * [leetcode376：摆动序列（wiggle_subsequence）](https://github.com/carloscn/structstudy/issues/144) [2023-03-12]
+
+## utils
+* [user01：实现库函数memmove（memmove implementation）](https://github.com/carloscn/structstudy/issues/151) [2023-03-17]

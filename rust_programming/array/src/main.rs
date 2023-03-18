@@ -13,7 +13,7 @@ mod n49_count_and_say_38;
 mod n50_flipping_an_image_832;
 mod n51_rectangle_overlap_836;
 mod n52_lemonade_change_860;
-
+mod n53_transpose_matrix_867;
 fn main() {
     println!("hello leetcode array project!");
 }
