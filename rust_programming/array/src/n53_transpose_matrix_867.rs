@@ -69,4 +69,5 @@ mod tests {
         let ret_vec = transpose_matrix(in_vec);
         assert_eq!(ret_vec, ot_vec);
     }
+
 }

@@ -15,6 +15,7 @@ mod n47_goat_latin_824;
 mod n48_positions_of_large_groups_830;
 mod n49_backspace_string_compare_844;
 mod n50_buddy_strings_859;
+mod n51_binary_gap_868;
 fn main() {
     println!("hello leetcode string project!");
 }
