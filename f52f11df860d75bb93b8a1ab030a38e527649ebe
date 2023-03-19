@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "50289b14_c4f48a0b",
+        "filename": "rust_programming/array/src/n53_transpose_matrix_867.rs",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1020912
+      },
+      "writtenOn": "2023-03-19T01:10:47Z",
+      "side": 1,
+      "message": "Don\u0027t change this file in the patch.",
+      "range": {
+        "startLine": 71,
+        "startChar": 1,
+        "endLine": 71,
+        "endChar": 5
+      },
+      "revId": "f52f11df860d75bb93b8a1ab030a38e527649ebe",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
