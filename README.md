@@ -139,6 +139,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode141：环形链表（linked-list-cycle）](https://github.com/carloscn/structstudy/issues/51) [2022-11-05]
 * [leetcode160：相交链表（intersection-of-two-linked-lists）](https://github.com/carloscn/structstudy/issues/52) [2022-11-06]
 * [leetcode203：移除链表元素（remove-linked-list-elements）](https://github.com/carloscn/structstudy/issues/61) [2022-11-15]
+* [leetcode876：链表的中间结点（middle_of_the_linked_list_876）](https://github.com/carloscn/structstudy/issues/154) [2023-03-20]
 ## [数学](https://github.com/carloscn/structstudy/tree/master/c_programming/common)：
 * [数值的整数次方](https://github.com/carloscn/structstudy/issues/13)
 * [打印从1到最大的n位数(含回溯方法)](https://github.com/carloscn/structstudy/issues/14)
