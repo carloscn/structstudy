@@ -227,9 +227,24 @@ pub mod array {
     }
 }
 
+pub mod linklist {
+    use crate::linked_list::*;
+
+    pub fn show_i32_list(list: &List<i32>) {
+
+        let mut iter = list.show();
+        print!("List: ");
+        while let Some(node) = iter.next() {
+            print!("[{:?}]->", node);
+        }
+        println!("[None]");
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::linked_list::*;
 
     #[test]
     fn test_filter_letter() {
@@ -264,5 +279,14 @@ mod tests {
         let mut my_str:String = String::from("abcgdef");
         str::sort_by_descend(&mut my_str);
         assert_eq!(my_str, "gfedcba".to_string());
+    }
+
+    #[test]
+    fn test_link_list_show() {
+        let mut list = List::new();
+        list.push(1);
+        list.push(2);
+        list.push(3);
+        linklist::show_i32_list(&list);
     }
 }
