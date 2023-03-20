@@ -38,9 +38,9 @@ impl<T> List<T> {
     }
 
     pub fn pop(&mut self) -> Option<T> {
-        if self.len == 0 {
-            panic!("no value to pop.")
-        }
+        // if self.len == 0 {
+        //     panic!("no value to pop.")
+        // }
 
         self.head.take().map(|node| {
             self.head = node.next;
