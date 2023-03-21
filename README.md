@@ -173,7 +173,9 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode39：组合总和（combination_sum_39）](https://github.com/carloscn/structstudy/issues/138) [2023-03-03]
 * [leetcode40：组合总和 II（combination-sum-ii）](https://github.com/carloscn/structstudy/issues/139) [2023-03-06]
 * [leetcode45： 跳跃游戏 II（jump-game-ii）](https://github.com/carloscn/structstudy/issues/141) [2023-03-11]
-* [leetcode509：斐波那契数（fibonacci_number_509）](https://github.com/carloscn/structstudy/issues/147) [2023-02-17]
+## [动态规划](https://github.com/carloscn/structstudy/tree/master/c_programming/dp)
+* [leetcode509：斐波那契数（fibonacci_number_509）](https://github.com/carloscn/structstudy/issues/147) [2023-03-17]
+* [leetcode70：分割等和子集（partition_equal_subset_sum）](https://github.com/carloscn/structstudy/issues/157) [2023-03-21]
 ## 贪心算法
 * [leetcode376：摆动序列（wiggle_subsequence）](https://github.com/carloscn/structstudy/issues/144) [2023-03-12]
 

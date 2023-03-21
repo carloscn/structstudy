@@ -21,6 +21,7 @@ int32_t buffer_get_by_index(BUFFER_T *buffer, size_t index, int64_t *e);
 int32_t buffer_set_by_index(BUFFER_T *buffer, size_t index, int64_t e);
 bool buffer_is_contain(BUFFER_T *buffer, int64_t e);
 bool buffer_find(BUFFER_T *buffer, size_t *index, int64_t e);
+int64_t buffer_sum(BUFFER_T *buffer);
 int32_t buffer_pop_by_index(BUFFER_T *buffer, size_t index, int64_t *e);
 int32_t buffer_pop_tail(BUFFER_T *buffer, int64_t *e);
 int32_t buffer_pop_head(BUFFER_T *buffer, int64_t *e);

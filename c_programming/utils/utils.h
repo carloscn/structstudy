@@ -148,6 +148,7 @@ int32_t utils_str_to_uppercase(char *str);
 int32_t utils_str_to_lowercase(char *str);
 int32_t utils_str_filter_letter(char *str);
 bool utils_str_contains_char(char *input_str, char e);
+void utils_print_sub_array_int64(const int64_t *array, size_t len);
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/
