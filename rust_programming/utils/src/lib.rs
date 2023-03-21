@@ -241,6 +241,16 @@ pub mod linklist {
     }
 }
 
+pub mod vec {
+    use std::hash::Hash;
+    use std::collections::HashSet;
+
+    pub fn dedup<T: Eq + Hash + Copy>(v: &mut Vec<T>) { // note the Copy constraint
+        let mut uniques = HashSet::new();
+        v.retain(|e| uniques.insert(*e));
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
