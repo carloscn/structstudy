@@ -832,6 +832,39 @@ finish:
     return dest;
 }
 
+void utils_print_sub_array_int64(const int64_t *array, size_t len)
+{
+    size_t num = 0;
+    size_t i = 0;
+    size_t j = 0;
+    size_t k = 0;
+    size_t n = 0;
+    int64_t *temp_buffer = NULL;
+
+    temp_buffer = (int64_t *)calloc(sizeof(int64_t), len);
+    if (temp_buffer == NULL) {
+        return;
+    }
+
+    num = 1 << len;
+    for(i = 0; i < num; i ++) {
+        j = i;
+        k = 0;
+        n = 0;
+        while (j) {
+            if (j & 1) {
+                temp_buffer[n] = array[k];
+                n ++;
+            }
+            j >>= 1;
+            k ++;
+        }
+        utils_print_int64_array(temp_buffer, n, "sub: ");
+    }
+
+    UTILS_SAFE_FREE(temp_buffer);
+}
+
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/

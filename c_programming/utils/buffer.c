@@ -434,6 +434,19 @@ finish:
     return ret;
 }
 
+int64_t buffer_sum(BUFFER_T *buffer)
+{
+    int32_t ret = 0;
+    size_t i = 0;
+    int64_t sum_out = 0;
+
+    for (i = 0; i < buffer->current_len; i ++) {
+        sum_out += buffer->data[i];
+    }
+
+    return sum_out;
+}
+
 int32_t buffer_selftest(void)
 {
     int32_t ret = 0;

@@ -13,9 +13,9 @@
 
 int main(void)
 {
-    size_t i = 8, j = 10;
-    UTILS_SWAP((uint32_t*)&i, (uint32_t*)&j);
-    LOG("the i = %zu, j = %zu\n", i, j);
+    // size_t i = 8, j = 10;
+    // UTILS_SWAP((uint32_t*)&i, (uint32_t*)&j);
+    // LOG("the i = %zu, j = %zu\n", i, j);
     // LOG("queue selftest: \n");
     // LOG_LINE_WITH_TR();
     // queue_selftest();
@@ -39,10 +39,11 @@ int main(void)
     //hashmap_selftest();
     //buflist_selftest();
 
-    char hello[1024];
-    sprintf(hello, "abcdefghijk");
-    utils_memmove(hello + 3, hello, 4);
-    printf("the output is %s\n", hello);
-
+    // char hello[1024];
+    // sprintf(hello, "abcdefghijk");
+    // utils_memmove(hello + 3, hello, 4);
+    // printf("the output is %s\n", hello);
+    int64_t buffer[] = {1,2,3};
+    utils_print_sub_array_int64(buffer, ARRAY_SIZE(buffer));
     return 0;
 }
