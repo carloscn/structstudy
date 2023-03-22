@@ -14,6 +14,7 @@ mod n50_flipping_an_image_832;
 mod n51_rectangle_overlap_836;
 mod n52_lemonade_change_860;
 mod n53_transpose_matrix_867;
+mod n54_monotonic_array_896;
 fn main() {
     println!("hello leetcode array project!");
 }
