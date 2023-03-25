@@ -165,7 +165,7 @@ void utils_print_int32_array(int32_t *a, size_t size, const char *msg)
     size_t i = 0;
     printf("%s", msg);
     for (i = 0; i < size; i ++) {
-        printf("%d, ", a[i]);
+        printf("%4d, ", a[i]);
     }
     printf("\n");
 }
@@ -175,7 +175,7 @@ void utils_print_int64_array(int64_t *a, size_t size, const char *msg)
     size_t i = 0;
     printf("%s", msg);
     for (i = 0; i < size; i ++) {
-        printf("%lld, ", a[i]);
+        printf("%4lld, ", a[i]);
     }
     printf("\n");
 }
@@ -863,6 +863,32 @@ void utils_print_sub_array_int64(const int64_t *array, size_t len)
     }
 
     UTILS_SAFE_FREE(temp_buffer);
+}
+
+void utils_print_two_dim_array_int32_t(int32_t *array, size_t len, size_t depth, size_t len_cap)
+{
+    size_t i = 0;
+
+    if (0 == len || 0 == depth || 0 == len_cap || NULL == array) {
+        return;
+    }
+
+    for (i = 0; i < depth; i ++) {
+        utils_print_int32_array((array + len_cap * i), len, "");
+    }
+}
+
+void utils_print_two_dim_array_int64_t(int64_t *array, size_t len, size_t depth, size_t len_cap)
+{
+    size_t i = 0;
+
+    if (0 == len || 0 == depth || 0 == len_cap || NULL == array) {
+        return;
+    }
+
+    for (i = 0; i < depth; i ++) {
+        utils_print_int64_array((array + len_cap * i), len, "");
+    }
 }
 
 #ifdef __cplusplus
