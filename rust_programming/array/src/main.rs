@@ -16,6 +16,7 @@ mod n52_lemonade_change_860;
 mod n53_transpose_matrix_867;
 mod n54_monotonic_array_896;
 mod n55_sort_array_by_parity_905;
+mod n56_sort_array_by_parity_ii_922;
 fn main() {
     println!("hello leetcode array project!");
 }
