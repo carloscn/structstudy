@@ -19,6 +19,7 @@ mod n51_binary_gap_868;
 mod n52_uncommon_words_from_two_sentences_884;
 mod n53_reverse_only_letters_917;
 mod n54_long_pressed_name_925;
+mod n55_unique_email_addresses_929;
 fn main() {
     println!("hello leetcode string project!");
 }
