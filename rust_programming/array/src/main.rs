@@ -17,6 +17,7 @@ mod n53_transpose_matrix_867;
 mod n54_monotonic_array_896;
 mod n55_sort_array_by_parity_905;
 mod n56_sort_array_by_parity_ii_922;
+mod n57_valid_mountain_array_941;
 fn main() {
     println!("hello leetcode array project!");
 }

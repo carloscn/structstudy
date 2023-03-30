@@ -79,6 +79,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode896：单调数列（monotonic_array）](https://github.com/carloscn/structstudy/issues/159) [2023-03-22]
 * [leetcode905：按奇偶排序数组（sort_array_by_parity）](https://github.com/carloscn/structstudy/issues/160) [2023-03-23]
 * [leetcode922：按奇偶排序数组 II（sort-array-by-parity-ii）](https://github.com/carloscn/structstudy/issues/165) [2023-03-26]
+* [leetcode941：有效的山脉数组（valid_mountain_array）](https://github.com/carloscn/structstudy/issues/169) [2023-03-30]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
