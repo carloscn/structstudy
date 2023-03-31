@@ -891,6 +891,60 @@ void utils_print_two_dim_array_int64_t(int64_t *array, size_t len, size_t depth,
     }
 }
 
+int32_t utils_convert_char_to_nibble(uint8_t inchar, uint8_t *num)
+{
+    int32_t ret = 0;
+
+    UTILS_CHECK_PTR(num);
+
+    /* Convert the char to nibble */
+    if ((inchar >= (uint8_t)'0') && (inchar <= (uint8_t)'9')) {
+        *num = inchar - (uint8_t)'0';
+    } else if ((inchar >= (uint8_t)'a') && (inchar <= (uint8_t)'f')) {
+        *num = inchar - (uint8_t)'a' + 10U;
+    } else if ((inchar >= (uint8_t)'A') && (inchar <= (uint8_t)'F')) {
+        *num = inchar - (uint8_t)'A' + 10U;
+    } else {
+        ret = -1;
+    }
+
+finish:
+    return ret;
+}
+
+int32_t utils_convert_str_to_be(const char *str, uint8_t *buf, size_t len)
+{
+    int32_t ret = -1;
+    size_t c_len = 0;
+    uint8_t lower_nibble, upper_nibble;
+
+    UTILS_CHECK_PTR(str);
+    UTILS_CHECK_PTR(buf);
+
+    /* Len has to be multiple of 2 */
+    if ((0 == len) || (len % 2 == 1)) {
+        goto finish;
+    }
+
+    c_len = 0;
+    while (c_len < len) {
+        if (utils_convert_char_to_nibble(str[c_len], &upper_nibble) == 0) {
+            if (utils_convert_char_to_nibble(str[c_len + 1], &lower_nibble) == 0) {
+                buf[c_len / 2] = (upper_nibble << 4) | lower_nibble;
+            } else {
+                goto finish;
+            }
+        } else {
+            goto finish;
+        }
+        c_len += 2;
+    }
+    ret = 0;
+
+finish:
+    return ret;
+}
+
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/

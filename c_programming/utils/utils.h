@@ -151,6 +151,8 @@ bool utils_str_contains_char(char *input_str, char e);
 void utils_print_sub_array_int64(const int64_t *array, size_t len);
 void utils_print_two_dim_array_int32_t(int32_t *array, size_t len, size_t depth, size_t len_cap);
 void utils_print_two_dim_array_int64_t(int64_t *array, size_t len, size_t depth, size_t len_cap);
+int32_t utils_convert_char_to_nibble(uint8_t inchar, uint8_t *num);
+int32_t utils_convert_str_to_be(const char *str, uint8_t *buf, size_t len);
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/
