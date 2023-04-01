@@ -140,6 +140,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode925：长按键入（long_pressed_name）](https://github.com/carloscn/structstudy/issues/167) [2023-03-27]
 * [leetcode929：独特的电子邮件地址（unique_email_addresses）](https://github.com/carloscn/structstudy/issues/168) [2023-03-28]
 * [leetcode942：增减字符串匹配（di_string_match）](https://github.com/carloscn/structstudy/issues/171) [2023-03-31]
+* [leetcode944：删列造序（delete_columns_to_make_sorted）](https://github.com/carloscn/structstudy/issues/173) [2023-04-01]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]

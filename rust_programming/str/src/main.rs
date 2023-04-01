@@ -21,6 +21,7 @@ mod n53_reverse_only_letters_917;
 mod n54_long_pressed_name_925;
 mod n55_unique_email_addresses_929;
 mod n56_di_string_match_942;
+mod n57_delete_columns_to_make_sorted_944;
 fn main() {
     println!("hello leetcode string project!");
 }
