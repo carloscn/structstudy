@@ -197,6 +197,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode63：不同路径 II（unique_paths_ii）](https://github.com/carloscn/structstudy/issues/166) [2023-03-31]
 ## 贪心算法
 * [leetcode376：摆动序列（wiggle_subsequence）](https://github.com/carloscn/structstudy/issues/144) [2023-03-12]
+* [leetcode343：整数拆分（integer-break）](https://github.com/carloscn/structstudy/issues/170) [2023-04-02]
 
 ## utils
 * [user01：实现库函数memmove（memmove implementation）](https://github.com/carloscn/structstudy/issues/151) [2023-03-17]
