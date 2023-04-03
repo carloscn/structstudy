@@ -63,6 +63,18 @@ pub mod num {
         *a = (*a) ^ (*b);
     }
 
+    pub fn count_demical_field_number<T: std::ops::DivAssign<i32> + std::cmp::PartialEq<i32>>(n:T) -> usize {
+        let mut ret:usize = 0;
+        let mut t_n = n;
+
+        while t_n != 0 {
+            t_n /= 10;
+            ret += 1;
+        }
+
+        return ret;
+    }
+
 }
 
 pub mod str {
