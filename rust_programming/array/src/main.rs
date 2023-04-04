@@ -19,6 +19,7 @@ mod n55_sort_array_by_parity_905;
 mod n56_sort_array_by_parity_ii_922;
 mod n57_valid_mountain_array_941;
 mod n58_add_to_array_form_of_integer_989;
+mod n59_find_the_town_judge_997;
 fn main() {
     println!("hello leetcode array project!");
 }
