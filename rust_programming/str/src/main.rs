@@ -23,6 +23,7 @@ mod n55_unique_email_addresses_929;
 mod n56_di_string_match_942;
 mod n57_delete_columns_to_make_sorted_944;
 mod n58_squares_of_a_sorted_array_977;
+mod n59_find_common_characters_1002;
 fn main() {
     println!("hello leetcode string project!");
 }
