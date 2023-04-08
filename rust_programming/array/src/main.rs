@@ -21,6 +21,7 @@ mod n57_valid_mountain_array_941;
 mod n58_add_to_array_form_of_integer_989;
 mod n59_find_the_town_judge_997;
 mod n60_maximize_sum_of_array_after_k_negations_1005;
+mod n61_last_stone_weight_1046;
 fn main() {
     println!("hello leetcode array project!");
 }
