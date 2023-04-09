@@ -31,6 +31,7 @@ int32_t buffer_get_tail(BUFFER_T *buffer, int64_t *e);
 int32_t buffer_get_head(BUFFER_T *buffer, int64_t *e);
 int32_t buffer_copy(BUFFER_T *dest, BUFFER_T *src);
 int32_t buffer_dup_array(BUFFER_T* buffer, int64_t **array, size_t *o_len);
+int32_t buffer_dup(BUFFER_T *buffer, BUFFER_T **out);
 int32_t buffer_append_array(BUFFER_T *buffer, const int64_t *array, size_t len);
 int32_t buffer_soft_to_array(BUFFER_T *buffer, int64_t **array, size_t *o_len);
 int64_t* buffer_soft_to_array_2(BUFFER_T *buffer);

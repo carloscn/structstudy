@@ -359,6 +359,23 @@ finish:
     return ret;
 }
 
+int32_t buffer_dup(BUFFER_T *buffer, BUFFER_T **out)
+{
+    int32_t ret = 0;
+
+    UTILS_CHECK_PTR(buffer);
+    UTILS_CHECK_PTR(out);
+
+    *out = buffer_malloc(buffer_get_current_len(buffer) + 1);
+    UTILS_CHECK_PTR(*out);
+
+    ret = buffer_copy(*out, buffer);
+    UTILS_CHECK_RET(ret);
+
+finish:
+    return ret;
+}
+
 int32_t buffer_dup_array(BUFFER_T* buffer, int64_t **array, size_t *o_len)
 {
     int32_t ret = 0;

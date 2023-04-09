@@ -181,6 +181,25 @@ BUFFER_T* buflist_get_buffer_at(BUFLIST_T *buflist, size_t index)
     return buflist->list[index];
 }
 
+BUFFER_T* buflist_get_buffer_dup_at(BUFLIST_T *buflist, size_t index)
+{
+    int32_t ret = 0;
+
+    if ((NULL == buflist) ||
+        (index > buflist->size - 1)) {
+        return NULL;
+    }
+    BUFFER_T *ret_buf = NULL;
+
+    ret = buffer_dup(buflist->list[index], &ret_buf);
+    if (0 != ret) {
+        LOG("buffer dup failed!\n");
+        return NULL;
+    }
+
+    return ret_buf;
+}
+
 int32_t buflist_set(BUFLIST_T *buflist)
 {
     int32_t ret = 0;
