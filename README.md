@@ -83,7 +83,8 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode977：有序数组的平方（squares_of_a_sorted_array）](https://github.com/carloscn/structstudy/issues/174) [2023-04-02]
 * [leetcode989：数组形式的整数加法（add_to_array_form_of_integer）](https://github.com/carloscn/structstudy/issues/175) [2023-04-03]
 * [leetcode1005：K 次取反后最大化的数组和（maximize_sum_of_array_after_k_negations）](https://github.com/carloscn/structstudy/issues/178) [2023-04-06]
-* [leetcod1046：最后一块石头的重量（last_stone_weight）](https://github.com/carloscn/structstudy/issues/180) [2023-04-08]
+* [leetcode1046：最后一块石头的重量（last_stone_weight）](https://github.com/carloscn/structstudy/issues/180) [2023-04-08]
+* [leetcode1047：删除字符串中的所有相邻重复项（remove_all_adjacent_duplicates_in_string）](https://github.com/carloscn/structstudy/issues/181) [2023-04-09]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
