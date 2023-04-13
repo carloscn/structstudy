@@ -24,6 +24,7 @@ mod n60_maximize_sum_of_array_after_k_negations_1005;
 mod n61_last_stone_weight_1046;
 mod n62_remove_all_adjacent_duplicates_in_string_1047;
 mod n63_height_checker_1051;
+mod n64_duplicate_zeros_1089;
 fn main() {
     println!("hello leetcode array project!");
 }
