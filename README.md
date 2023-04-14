@@ -88,6 +88,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1051：高度检查器（height_checker）](https://github.com/carloscn/structstudy/issues/183) [2023-04-10]
 * [leetcode56：合并区间（merge_intervals）](https://github.com/carloscn/structstudy/issues/182) [2023-04-09]
 * [leetcode1089：复写零（duplicate_zeros）](https://github.com/carloscn/structstudy/issues/185) [2023-04-13]
+* [leetcode1103：分糖果 II（distribute_candies_to_people）](https://github.com/carloscn/structstudy/issues/186) [2023-04-14]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
