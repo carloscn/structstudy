@@ -63,6 +63,15 @@ pub mod num {
         *a = (*a) ^ (*b);
     }
 
+    pub fn swap_i32(a :&mut i32, b: &mut i32) {
+        if *a == *b {
+            return;
+        }
+        *a = (*a) ^ (*b);
+        *b = (*b) ^ (*a);
+        *a = (*a) ^ (*b);
+    }
+
     pub fn count_demical_field_number<T: std::ops::DivAssign<i32> + std::cmp::PartialEq<i32>>(n:T) -> usize {
         let mut ret:usize = 0;
         let mut t_n = n;
@@ -256,6 +265,7 @@ pub mod linklist {
 pub mod vec {
     use std::hash::Hash;
     use std::collections::HashSet;
+    use std::vec;
 
     pub fn dedup<T: Eq + Hash + Copy>(v: &mut Vec<T>) { // note the Copy constraint
         let mut uniques = HashSet::new();
