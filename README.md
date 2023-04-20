@@ -93,6 +93,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1122：数组的相对排序（relative-sort-array）](https://github.com/carloscn/structstudy/issues/189) [2023-04-16]
 * [leetcode1128：等价多米诺骨牌对的数量（number_of_equivalent_domino_pairs）](https://github.com/carloscn/structstudy/issues/190) [2023-04-17]
 * [leetcode1184：公交站间的距离（distance_between_bus_stops）](https://github.com/carloscn/structstudy/issues/192) [2023-04-19]
+* [leetcode1207：独一无二的出现次数（unique-number-of-occurrences）](https://github.com/carloscn/structstudy/issues/193) [2023-04-20]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
