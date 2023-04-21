@@ -30,6 +30,7 @@ mod n66_relative_sort_array_1122;
 mod n67_number_of_equivalent_domino_pairs_1128;
 mod n68_distance_between_bus_stops_1184;
 mod n69_unique_number_of_occurrences_1207;
+mod n70_minimum_absolute_difference_1200;
 fn main() {
     println!("hello leetcode array project!");
 }
