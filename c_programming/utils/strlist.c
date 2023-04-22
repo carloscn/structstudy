@@ -84,7 +84,7 @@ int32_t strlist_add_split_by_char(STRLIST_T *strlist, const char *str, char c)
     char *dup_str = NULL;
 
     UTILS_CHECK_PTR(strlist);
-    UTILS_CHECK_PTR(head);
+    UTILS_CHECK_PTR(str);
     UTILS_CHECK_LEN(len = strlen(str));
 
     dup_str = strdup(str);
@@ -102,8 +102,8 @@ int32_t strlist_add_split_by_char(STRLIST_T *strlist, const char *str, char c)
         }
     }
 
-    ret = strlist_add(strlist, dup_str);
-    UTILS_CHECK_RET(ret);
+    // ret = strlist_add(strlist, dup_str);
+    // UTILS_CHECK_RET(ret);
 
 finish:
     UTILS_SAFE_FREE(dup_str);
