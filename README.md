@@ -161,6 +161,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1078：Bigram 分词（occurrences_after_bigram）](https://github.com/carloscn/structstudy/issues/184) [2023-04-11]
 * [leetcode1108：IP 地址无效化（defanging_an_ip_address）](https://github.com/carloscn/structstudy/issues/187) [2023-04-15]
 * [leetcode1160：拼写单词（find_words_that_can_be_formed_by_characters）](https://github.com/carloscn/structstudy/issues/191) [2023-04-18]
+* [leetcode1221：分割平衡字符串（split-a-string-in-balanced-strings）](https://github.com/carloscn/structstudy/issues/195) [2023-04-22]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
