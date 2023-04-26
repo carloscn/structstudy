@@ -95,6 +95,8 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1184：公交站间的距离（distance_between_bus_stops）](https://github.com/carloscn/structstudy/issues/192) [2023-04-19]
 * [leetcode1207：独一无二的出现次数（unique-number-of-occurrences）](https://github.com/carloscn/structstudy/issues/193) [2023-04-20]
 * [leetcode1200：最小绝对差（minimum_absolute_difference）](https://github.com/carloscn/structstudy/issues/194) [2023-04-21]
+* [leetcode1252：奇数值单元格的数目（cells_with_odd_values_in_a_matrix）](https://github.com/carloscn/structstudy/issues/198) [2023-04-24]
+* [leetcode1260：二维网格迁移（shift_2d_grid）](https://github.com/carloscn/structstudy/issues/199) [2023-04-25]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
@@ -189,6 +191,8 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode476：数字的补数（number-complement）](https://github.com/carloscn/structstudy/issues/104) [2023-01-25]
 * [leetcode693：交替位二进制数（binary-number-with-alternating-bits）](https://github.com/carloscn/structstudy/issues/121) [2023-02-11]
 * [leetcode908：最小差值 I（smallest_range_i）](https://github.com/carloscn/structstudy/issues/162) [2023-03-24]
+* [leetcode1232：缀点成线（check-if-it-is-a-straight-line）](https://github.com/carloscn/structstudy/issues/197) [2023-04-23]
+* [leetcode1281：整数的各位积和之差（subtract-the-product-and-sum-of-digits-of-an-integer）](https://github.com/carloscn/structstudy/issues/200) [2023-04-26]
 ## [二叉树](https://github.com/carloscn/structstudy/tree/master/c_programming/tree)
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)

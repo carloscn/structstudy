@@ -65,8 +65,7 @@ int32_t simplify_path(char path[])
                 ret = strlist_remove_last(new_list);
                 UTILS_CHECK_RET(ret);
             } else {
-                ret = -1;
-                LOG("the path input is error!\n");
+                strcpy(path, "/");
                 goto finish;
             }
         } else if (0 == strcmp(str, ".")) {
@@ -105,23 +104,28 @@ int32_t main(void)
 
     sprintf(path, "/home/");
     simplify_path(path);
-    assert(strcmp(path, "/home"));
+    LOG("the output is %s\n", path);
+    assert(!strcmp(path, "/home"));
 
     sprintf(path, "/../");
     simplify_path(path);
-    assert(strcmp(path, "/"));
+    LOG("the output is %s\n", path);
+    assert(!strcmp(path, "/"));
 
     sprintf(path, "/home//foo");
     simplify_path(path);
-    assert(strcmp(path, "/home/foo"));
+    LOG("the output is %s\n", path);
+    assert(!strcmp(path, "/home/foo"));
 
     sprintf(path, "/home//foo/");
     simplify_path(path);
-    assert(strcmp(path, "/home/foo"));
+    LOG("the output is %s\n", path);
+    assert(!strcmp(path, "/home/foo"));
 
     sprintf(path, "/a/./b/../../c/");
     simplify_path(path);
-    assert(strcmp(path, "/c"));
+    LOG("the output is %s\n", path);
+    assert(!strcmp(path, "/c"));
 
 finish:
     return ret;
