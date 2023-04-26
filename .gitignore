@@ -12,3 +12,4 @@ CMakeFiles/*
 *.elf
 cmake_install.cmake
 *.out*
+*.exe
