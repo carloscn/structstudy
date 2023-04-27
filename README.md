@@ -97,6 +97,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1200：最小绝对差（minimum_absolute_difference）](https://github.com/carloscn/structstudy/issues/194) [2023-04-21]
 * [leetcode1252：奇数值单元格的数目（cells_with_odd_values_in_a_matrix）](https://github.com/carloscn/structstudy/issues/198) [2023-04-24]
 * [leetcode1260：二维网格迁移（shift_2d_grid）](https://github.com/carloscn/structstudy/issues/199) [2023-04-25]
+* [leetcode1287：有序数组中出现次数超过25%的元素（element-appearing-more-than-25-in-sorted-array）](https://github.com/carloscn/structstudy/issues/201) [2023-04-27]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
