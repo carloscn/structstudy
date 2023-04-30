@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d070c2d2_7bb34211",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020912
+      },
+      "writtenOn": "2023-04-30T00:45:11Z",
+      "side": 1,
+      "message": "the patch is submited by github. pushed this commit using master directly.",
+      "revId": "887a660d290aeb543fedd24fc9a58bbece45dab2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
