@@ -99,6 +99,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1260：二维网格迁移（shift_2d_grid）](https://github.com/carloscn/structstudy/issues/199) [2023-04-25]
 * [leetcode1287：有序数组中出现次数超过25%的元素（element-appearing-more-than-25-in-sorted-array）](https://github.com/carloscn/structstudy/issues/201) [2023-04-27]
 * [leetcode1299：将每个元素替换为右侧最大元素（replace-elements-with-greatest-element-on-right-side）](https://github.com/carloscn/structstudy/issues/204) [2023-04-30]
+* [leetcode1313：解压缩编码列表（decompress-run-length-encoded-list）](https://github.com/carloscn/structstudy/issues/206) [2023-05-02]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
