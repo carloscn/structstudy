@@ -36,6 +36,7 @@ mod n72_shift_2d_grid_1260;
 mod n73_element_appearing_more_than_25_in_sorted_array_1287;
 mod n74_replace_elements_with_greatest_element_on_right_side_1299;
 mod n75_decompress_run_length_encoded_list_1313;
+mod n76_rank_transform_of_an_array_1331;
 fn main() {
     println!("hello leetcode array project!");
 }
