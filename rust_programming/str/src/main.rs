@@ -30,6 +30,7 @@ mod n62_defanging_an_ip_address_1108;
 mod n63_find_words_that_can_be_formed_by_characters_1160;
 mod n64_split_a_string_in_balanced_strings_1221;
 mod n65_decrypt_string_from_alphabet_to_integer_mapping_1309;
+mod n66_remove_palindromic_subsequences_1332;
 fn main() {
     println!("hello leetcode string project!");
 }
