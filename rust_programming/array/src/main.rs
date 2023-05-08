@@ -38,6 +38,7 @@ mod n74_replace_elements_with_greatest_element_on_right_side_1299;
 mod n75_decompress_run_length_encoded_list_1313;
 mod n76_rank_transform_of_an_array_1331;
 mod n77_rank_transform_of_an_array_1331;
+mod n78_check_if_n_and_its_double_exist_1346;
 fn main() {
     println!("hello leetcode array project!");
 }

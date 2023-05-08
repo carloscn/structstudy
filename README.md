@@ -101,6 +101,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1299：将每个元素替换为右侧最大元素（replace-elements-with-greatest-element-on-right-side）](https://github.com/carloscn/structstudy/issues/204) [2023-04-30]
 * [leetcode1313：解压缩编码列表（decompress-run-length-encoded-list）](https://github.com/carloscn/structstudy/issues/206) [2023-05-02]
 * [leetcode1331：数组序号转换（rank-transform-of-an-array）](https://github.com/carloscn/structstudy/issues/209) [2023-05-05]
+* [leetcode1346： 检查整数及其两倍数是否存在（check-if-n-and-its-double-exist）](https://github.com/carloscn/structstudy/issues/212) [2023-05-08]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
