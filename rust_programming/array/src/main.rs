@@ -39,6 +39,7 @@ mod n75_decompress_run_length_encoded_list_1313;
 mod n76_rank_transform_of_an_array_1331;
 mod n77_rank_transform_of_an_array_1331;
 mod n78_check_if_n_and_its_double_exist_1346;
+mod n79_count_negative_numbers_in_a_sorted_matrix_1351;
 fn main() {
     println!("hello leetcode array project!");
 }
