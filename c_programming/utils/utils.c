@@ -75,6 +75,64 @@ inline int64_t utils_int64_abs(int64_t base)
     return base;
 }
 
+#define DUMP_WIDTH	16
+static void bio_dump(const char *s, int len)
+{
+    char buf[160+1] = {0};
+    char tmp[20] = {0};
+    unsigned char ch;
+    int32_t i, j, rows;
+
+#ifdef TRUNCATE
+    int32_t trunc = 0;
+    for(; (len > 0) && ((s[len-1] == ' ') || (s[len-1] == '\0')); len--)
+        trunc++;
+#endif
+
+    rows = (len / DUMP_WIDTH);
+    if ((rows * DUMP_WIDTH) < len)
+        rows ++;
+    for (i = 0; i < rows; i ++) {
+        /* start with empty string */
+        buf[0] = '\0';
+        sprintf(tmp, "%04x - ", i * DUMP_WIDTH);
+        strcpy(buf, tmp);
+        for (j = 0; j < DUMP_WIDTH; j ++) {
+            if (((i * DUMP_WIDTH) + j) >= len) {
+                strcat(buf,"   ");
+            } else {
+                ch = ((unsigned char)*(s + i * DUMP_WIDTH + j)) & 0xff;
+                sprintf(tmp, "%02x%c" , ch, j == 7 ? '-':' ');
+                strcat(buf, tmp);
+            }
+        }
+        strcat(buf, "  ");
+        for(j = 0;j < DUMP_WIDTH;j ++) {
+            if (((i * DUMP_WIDTH) + j) >= len)
+                break;
+            ch = ((unsigned char)*(s + i * DUMP_WIDTH + j)) & 0xff;
+            sprintf(tmp, "%c", ((ch >= ' ')&&(ch <= '~')) ? ch : '.');
+            strcat(buf, tmp);
+        }
+        strcat(buf, "\n");
+        printf("%s", buf);
+    }
+#ifdef TRUNCATE
+    if (trunc > 0) {
+        sprintf(buf,"%04x - <SPACES/NULS>\n",len+trunc);
+        printf("%s", buf);
+    }
+#endif
+}
+
+void utils_print_bio_array(uint8_t *buffer, size_t len, char* msg)
+{
+    printf("\n");
+    printf("%s: the len is %zu\n", msg, len);
+    bio_dump((const char *)buffer, len);
+    printf("\n");
+}
+
 inline int32_t utils_int32_abs(int32_t base)
 {
     base = base * (((base >> 31) << 1) + 1);
