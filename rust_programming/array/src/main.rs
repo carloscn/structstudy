@@ -41,6 +41,7 @@ mod n77_rank_transform_of_an_array_1331;
 mod n78_check_if_n_and_its_double_exist_1346;
 mod n79_count_negative_numbers_in_a_sorted_matrix_1351;
 mod n80_sort_integers_by_the_number_of_1_bits_1356;
+mod n81_how_many_numbers_are_smaller_than_the_current_number_1365;
 fn main() {
     println!("hello leetcode array project!");
 }

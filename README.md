@@ -104,6 +104,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1346： 检查整数及其两倍数是否存在（check-if-n-and-its-double-exist）](https://github.com/carloscn/structstudy/issues/212) [2023-05-08]
 * [leetcode1351：统计有序矩阵中的负数（count-negative-numbers-in-a-sorted-matrix）](https://github.com/carloscn/structstudy/issues/213) [2023-05-09]
 * [leetcode1356：根据数字二进制下 1 的数目排序（sort-integers-by-the-number-of-1-bits）](https://github.com/carloscn/structstudy/issues/214) [2023-05-10]
+* [leetcode1365：有多少小于当前数字的数字（how-many-numbers-are-smaller-than-the-current-number）](https://github.com/carloscn/structstudy/issues/215) [2023-05-11]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
