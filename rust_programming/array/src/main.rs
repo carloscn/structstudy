@@ -43,6 +43,7 @@ mod n79_count_negative_numbers_in_a_sorted_matrix_1351;
 mod n80_sort_integers_by_the_number_of_1_bits_1356;
 mod n81_how_many_numbers_are_smaller_than_the_current_number_1365;
 mod n82_lucky_numbers_in_a_matrix_1380;
+mod n83_find_the_distance_value_between_two_arrays_1385;
 fn main() {
     println!("hello leetcode array project!");
 }
