@@ -109,6 +109,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1385：两个数组间的距离值（find-the-distance-value-between-two-arrays）](https://github.com/carloscn/structstudy/issues/217) [2023-05-13]
 * [leetcode1389：按既定顺序创建目标数组（create-target-array-in-the-given-order）](https://github.com/carloscn/structstudy/issues/219) [2023-05-14]
 * [leetcode73：矩阵置零（set-matrix-zeroes）](https://github.com/carloscn/structstudy/issues/218) [2023-05-13]
+* [leetcode1394：找出数组中的幸运数（find-lucky-integer-in-an-array）](https://github.com/carloscn/structstudy/issues/220) [2023-05-15]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
