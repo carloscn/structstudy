@@ -46,6 +46,7 @@ mod n82_lucky_numbers_in_a_matrix_1380;
 mod n83_find_the_distance_value_between_two_arrays_1385;
 mod n84_create_target_array_in_the_given_order_1389;
 mod n85_find_lucky_integer_in_an_array_1394;
+mod n86_minimum_subsequence_in_non_increasing_order_1403;
 fn main() {
     println!("hello leetcode array project!");
 }
