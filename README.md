@@ -180,6 +180,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1221：分割平衡字符串（split-a-string-in-balanced-strings）](https://github.com/carloscn/structstudy/issues/195) [2023-04-22]
 * [leetcode71：简化路径（simplify-path）](https://github.com/carloscn/structstudy/issues/196) [2023-04-22]
 * [leetcode1332：删除回文子序列（remove-palindromic-subsequences）](https://github.com/carloscn/structstudy/issues/210) [2023-05-06]
+* [leetcode1408：数组中的字符串匹配（string-matching-in-an-array）](https://github.com/carloscn/structstudy/issues/222) [2023-05-17]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
