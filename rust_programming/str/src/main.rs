@@ -32,6 +32,7 @@ mod n64_split_a_string_in_balanced_strings_1221;
 mod n65_decrypt_string_from_alphabet_to_integer_mapping_1309;
 mod n66_remove_palindromic_subsequences_1332;
 mod n67_string_matching_in_an_array_1408;
+mod n68_maximum_score_after_splitting_a_string_1422;
 fn main() {
     println!("hello leetcode string project!");
 }
