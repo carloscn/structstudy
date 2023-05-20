@@ -113,6 +113,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1403：非递增顺序的最小子序列（minimum-subsequence-in-non-increasing-order）](https://github.com/carloscn/structstudy/issues/221) [2023-05-16]
 * [leetcode1417： 重新格式化字符串（reformat-the-string）](https://github.com/carloscn/structstudy/issues/223) [2023-05-18]
 * [leetcode1431：拥有最多糖果的孩子（kids-with-the-greatest-number-of-candies）](https://github.com/carloscn/structstudy/issues/225) [2023-05-20]
+* [leetcode82：删除排序链表中的重复元素 II（remove-duplicates-from-sorted-list-ii）](https://github.com/carloscn/structstudy/issues/226) [2023-05-20]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
