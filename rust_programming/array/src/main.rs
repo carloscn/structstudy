@@ -49,6 +49,7 @@ mod n85_find_lucky_integer_in_an_array_1394;
 mod n86_minimum_subsequence_in_non_increasing_order_1403;
 mod n87_reformat_the_string_1417;
 mod n88_kids_with_the_greatest_number_of_candies_1431;
+mod n89_check_if_all_1s_are_at_least_length_k_places_away_1437;
 fn main() {
     println!("hello leetcode array project!");
 }
