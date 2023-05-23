@@ -35,6 +35,7 @@ mod n67_string_matching_in_an_array_1408;
 mod n68_maximum_score_after_splitting_a_string_1422;
 mod n69_destination_city_1436;
 mod n70_consecutive_characters_1446;
+mod n71_check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence_1455;
 fn main() {
     println!("hello leetcode string project!");
 }
