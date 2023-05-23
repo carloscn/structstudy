@@ -187,6 +187,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1408：数组中的字符串匹配（string-matching-in-an-array）](https://github.com/carloscn/structstudy/issues/222) [2023-05-17]
 * [leetcode1422：分割字符串的最大得分（maximum-score-after-splitting-a-string）](https://github.com/carloscn/structstudy/issues/224) [2023-05-19]
 * [leetcode1436：旅行终点站（destination-city）](https://github.com/carloscn/structstudy/issues/227) [2023-05-21]
+* [leetcode1446：连续字符（consecutive-characters）](https://github.com/carloscn/structstudy/issues/229) [2023-05-23]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
