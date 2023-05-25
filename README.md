@@ -115,6 +115,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1431：拥有最多糖果的孩子（kids-with-the-greatest-number-of-candies）](https://github.com/carloscn/structstudy/issues/225) [2023-05-20]
 * [leetcode82：删除排序链表中的重复元素 II（remove-duplicates-from-sorted-list-ii）](https://github.com/carloscn/structstudy/issues/226) [2023-05-20]
 * [leetcode1437：是否所有 1 都至少相隔 k 个元素（check-if-all-1s-are-at-least-length-k-places-away）](https://github.com/carloscn/structstudy/issues/228) [2023-05-22]
+* [leetcode1460：通过翻转子数组使两个数组相等（make-two-arrays-equal-by-reversing-subarrays）](https://github.com/carloscn/structstudy/issues/231#top) [2023-05-25]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
