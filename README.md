@@ -118,6 +118,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1460：通过翻转子数组使两个数组相等（make-two-arrays-equal-by-reversing-subarrays）](https://github.com/carloscn/structstudy/issues/231#top) [2023-05-25]
 * [leetcode1464：数组中两元素的最大乘积（maximum-product-of-two-elements-in-an-array）](https://github.com/carloscn/structstudy/issues/232) [2023-05-26]
 * [leetcode1470：重新排列数组（shuffle-the-array）](https://github.com/carloscn/structstudy/issues/233) [2023-05-27]
+* [leetcode1475：商品折扣后的最终价格（final-prices-with-a-special-discount-in-a-shop）](https://github.com/carloscn/structstudy/issues/234) [2023-05-28]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]

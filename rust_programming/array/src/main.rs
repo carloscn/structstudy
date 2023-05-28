@@ -53,6 +53,7 @@ mod n89_check_if_all_1s_are_at_least_length_k_places_away_1437;
 mod n90_make_two_arrays_equal_by_reversing_subarrays_1460;
 mod n91_maximum_product_of_two_elements_in_an_array_1464;
 mod n92_shuffle_the_array_1470;
+mod n93_final_prices_with_a_special_discount_in_a_shop_1475;
 fn main() {
     println!("hello leetcode array project!");
 }
