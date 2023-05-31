@@ -55,6 +55,7 @@ mod n91_maximum_product_of_two_elements_in_an_array_1464;
 mod n92_shuffle_the_array_1470;
 mod n93_final_prices_with_a_special_discount_in_a_shop_1475;
 mod n94_running_sum_of_1d_array_1480;
+mod n95_can_make_arithmetic_progression_from_sequence_1502;
 fn main() {
     println!("hello leetcode array project!");
 }
