@@ -37,6 +37,7 @@ mod n69_destination_city_1436;
 mod n70_consecutive_characters_1446;
 mod n71_check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence_1455;
 mod n72_path_crossing_1496;
+mod n73_shuffle_string_1528;
 fn main() {
     println!("hello leetcode string project!");
 }
