@@ -123,6 +123,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1502：判断能否形成等差数列（can-make-arithmetic-progression-from-sequence）](https://github.com/carloscn/structstudy/issues/237) [2023-05-31]
 * [leetcode1534：统计好三元组（count-good-triplets）](https://github.com/carloscn/structstudy/issues/240) [2023-06-03]
 * [leetcode1539：第 k 个缺失的正整数（kth-missing-positive-number）](https://github.com/carloscn/structstudy/issues/242) [2023-06-04]
+* [leetcode89：格雷编码（gray-code）](https://github.com/carloscn/structstudy/issues/241) [2023-06-03]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
