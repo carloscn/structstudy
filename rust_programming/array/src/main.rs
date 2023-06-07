@@ -58,6 +58,7 @@ mod n94_running_sum_of_1d_array_1480;
 mod n95_can_make_arithmetic_progression_from_sequence_1502;
 mod n96_count_good_triplets_1534;
 mod n97_kth_missing_positive_number_1539;
+mod n98_three_consecutive_odds_1550;
 fn main() {
     println!("hello leetcode array project!");
 }
