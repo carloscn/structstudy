@@ -39,6 +39,7 @@ mod n71_check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence_1455;
 mod n72_path_crossing_1496;
 mod n73_shuffle_string_1528;
 mod n74_make_the_string_great_1544;
+mod n75_thousand_separator_1556;
 fn main() {
     println!("hello leetcode string project!");
 }
