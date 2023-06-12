@@ -60,6 +60,7 @@ mod n96_count_good_triplets_1534;
 mod n97_kth_missing_positive_number_1539;
 mod n98_three_consecutive_odds_1550;
 mod n99_most_visited_sector_in_a_circular_track_1560;
+mod n100_matrix_diagonal_sum_1572;
 fn main() {
     println!("hello leetcode array project!");
 }
