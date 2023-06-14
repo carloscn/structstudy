@@ -41,6 +41,7 @@ mod n73_shuffle_string_1528;
 mod n74_make_the_string_great_1544;
 mod n75_thousand_separator_1556;
 mod n76_replace_all_s_to_avoid_consecutive_repeating_characters_1576;
+mod n77_special_positions_in_a_binary_matrix_1582;
 fn main() {
     println!("hello leetcode string project!");
 }

@@ -206,6 +206,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1544：整理字符串（make-the-string-great）](https://github.com/carloscn/structstudy/issues/243) [2023-06-06]
 * [leetcode1556：千位分隔数（thousand-separator）](https://github.com/carloscn/structstudy/issues/245) [2023-06-08]
 * [leetcode1576：替换所有的问号（replace-all-s-to-avoid-consecutive-repeating-characters）](https://github.com/carloscn/structstudy/issues/248) [2023-06-13]
+* [leetcode1582：二进制矩阵中的特殊位置（special-positions-in-a-binary-matrix）](https://github.com/carloscn/structstudy/issues/249) [2023-06-14]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
