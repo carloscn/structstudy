@@ -43,6 +43,7 @@ mod n75_thousand_separator_1556;
 mod n76_replace_all_s_to_avoid_consecutive_repeating_characters_1576;
 mod n77_special_positions_in_a_binary_matrix_1582;
 mod n78_rearrange_spaces_between_words_1592;
+mod n79_crawler_log_folder_1598;
 fn main() {
     println!("hello leetcode string project!");
 }
