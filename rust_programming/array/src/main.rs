@@ -62,6 +62,7 @@ mod n98_three_consecutive_odds_1550;
 mod n99_most_visited_sector_in_a_circular_track_1560;
 mod n100_matrix_diagonal_sum_1572;
 mod n101_sum_of_all_odd_length_subarrays_1588;
+mod n102_special_array_with_x_elements_greater_than_or_equal_x_1608;
 fn main() {
     println!("hello leetcode array project!");
 }
