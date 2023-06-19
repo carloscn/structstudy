@@ -211,6 +211,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1582：二进制矩阵中的特殊位置（special-positions-in-a-binary-matrix）](https://github.com/carloscn/structstudy/issues/249) [2023-06-14]
 * [leetcode1592：重新排列单词间的空格（rearrange-spaces-between-words）](https://github.com/carloscn/structstudy/issues/251) [2023-06-16]
 * [leetcode1598：文件夹操作日志搜集器（crawler-log-folder）](https://github.com/carloscn/structstudy/issues/252) [2023-06-17]
+* [leetcode1614：括号的最大嵌套深度（maximum-nesting-depth-of-the-parentheses）](https://github.com/carloscn/structstudy/issues/254) [2023-06-19]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
