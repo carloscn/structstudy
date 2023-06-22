@@ -46,6 +46,7 @@ mod n78_rearrange_spaces_between_words_1592;
 mod n79_crawler_log_folder_1598;
 mod n80_maximum_nesting_depth_of_the_parentheses_1614;
 mod n81_largest_substring_between_two_equal_characters_1624;
+mod n82_slowest_key_1629;
 fn main() {
     println!("hello leetcode string project!");
 }

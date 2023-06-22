@@ -214,6 +214,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1598：文件夹操作日志搜集器（crawler-log-folder）](https://github.com/carloscn/structstudy/issues/252) [2023-06-17]
 * [leetcode1614：括号的最大嵌套深度（maximum-nesting-depth-of-the-parentheses）](https://github.com/carloscn/structstudy/issues/254) [2023-06-19]
 * [leetcode1624：两个相同字符之间的最长子字符串（largest-substring-between-two-equal-characters）](https://github.com/carloscn/structstudy/issues/256) [2023-06-21]
+* [leetcode1629：按键持续时间最长的键（slowest-key）](https://github.com/carloscn/structstudy/issues/257) [2023-06-22]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
