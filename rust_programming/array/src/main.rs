@@ -65,6 +65,7 @@ mod n101_sum_of_all_odd_length_subarrays_1588;
 mod n102_special_array_with_x_elements_greater_than_or_equal_x_1608;
 mod n103_mean_of_array_after_removing_some_elements_1619;
 mod n104_sort_array_by_increasing_frequency_1636;
+mod n105_check_array_formation_through_concatenation_1640;
 fn main() {
     println!("hello leetcode array project!");
 }
