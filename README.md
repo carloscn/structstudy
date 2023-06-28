@@ -132,6 +132,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1619：删除某些元素后的数组均值（mean-of-array-after-removing-some-elements）](https://github.com/carloscn/structstudy/issues/255) [2023-06-20]
 * [leetcode1636：按照频率将数组升序排序（sort-array-by-increasing-frequency）](https://github.com/carloscn/structstudy/issues/258) [2023-06-26]
 * [leetcode1640：能否连接形成数组（check-array-formation-through-concatenation）](https://github.com/carloscn/structstudy/issues/259) [2023-06-27]
+* [leetcode1646：获取生成数组中的最大值（get-maximum-in-generated-array）](https://github.com/carloscn/structstudy/issues/260) [2023-06-28]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
