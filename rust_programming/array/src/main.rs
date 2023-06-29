@@ -67,6 +67,7 @@ mod n103_mean_of_array_after_removing_some_elements_1619;
 mod n104_sort_array_by_increasing_frequency_1636;
 mod n105_check_array_formation_through_concatenation_1640;
 mod n106_get_maximum_in_generated_array_1646;
+mod n107_defuse_the_bomb_1652;
 fn main() {
     println!("hello leetcode array project!");
 }
