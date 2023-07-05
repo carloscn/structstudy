@@ -50,6 +50,7 @@ mod n82_slowest_key_1629;
 mod n83_check_if_two_string_arrays_are_equivalent_1662;
 mod n84_maximum_repeating_substring_1668;
 mod n85_goal_parser_interpretation_1678;
+mod n86_count_the_number_of_consistent_strings_1684;
 fn main() {
     println!("hello leetcode string project!");
 }
