@@ -223,6 +223,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1668：最大重复子字符串（maximum-repeating-substring）](https://github.com/carloscn/structstudy/issues/263) [2023-07-03]
 * [leetcode1678：设计 Goal 解析器（goal-parser-interpretation）](https://github.com/carloscn/structstudy/issues/264) [2023-07-04]
 * [leetcode1684： 统计一致字符串的数目（count-the-number-of-consistent-strings）](https://github.com/carloscn/structstudy/issues/265) [2023-07-05]
+* [leetcode1694：重新格式化电话号码（reformat-phone-number）](https://github.com/carloscn/structstudy/issues/266) [2023-07-06]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
