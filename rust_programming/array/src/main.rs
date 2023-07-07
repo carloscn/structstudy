@@ -68,6 +68,7 @@ mod n104_sort_array_by_increasing_frequency_1636;
 mod n105_check_array_formation_through_concatenation_1640;
 mod n106_get_maximum_in_generated_array_1646;
 mod n107_defuse_the_bomb_1652;
+mod n108_number_of_students_unable_to_eat_lunch_1700;
 fn main() {
     println!("hello leetcode array project!");
 }
