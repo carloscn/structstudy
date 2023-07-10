@@ -135,6 +135,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1646：获取生成数组中的最大值（get-maximum-in-generated-array）](https://github.com/carloscn/structstudy/issues/260) [2023-06-28]
 * [leetcode1652：拆炸弹（defuse-the-bomb）](https://github.com/carloscn/structstudy/issues/261) [2023-06-29]
 * [leetcode1700：无法吃午餐的学生数量（number-of-students-unable-to-eat-lunch）](https://github.com/carloscn/structstudy/issues/267) [2023-07-07]
+* [leetcode1710：卡车上的最大单元数（maximum-units-on-a-truck）](https://github.com/carloscn/structstudy/issues/269) [2023-07-10]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
