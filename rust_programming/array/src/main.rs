@@ -70,6 +70,7 @@ mod n106_get_maximum_in_generated_array_1646;
 mod n107_defuse_the_bomb_1652;
 mod n108_number_of_students_unable_to_eat_lunch_1700;
 mod n109_maximum_units_on_a_truck_1710;
+mod n110_decode_xored_array_1720;
 fn main() {
     println!("hello leetcode array project!");
 }
