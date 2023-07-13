@@ -72,6 +72,7 @@ mod n108_number_of_students_unable_to_eat_lunch_1700;
 mod n109_maximum_units_on_a_truck_1710;
 mod n110_decode_xored_array_1720;
 mod n111_number_of_rectangles_that_can_form_the_largest_square_1725;
+mod n112_find_the_highest_altitude_1732;
 fn main() {
     println!("hello leetcode array project!");
 }
