@@ -140,6 +140,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1725：可以形成最大正方形的矩形数目（number-of-rectangles-that-can-form-the-largest-square）](https://github.com/carloscn/structstudy/issues/271) [2023-07-12]
 * [leetcode1732：找到最高海拔（find-the-highest-altitude）](https://github.com/carloscn/structstudy/issues/272) [2023-07-13]
 * [leetcode1742：盒子中小球的最大数量（maximum-number-of-balls-in-a-box）](https://github.com/carloscn/structstudy/issues/273) [2023-07-14]
+* [leetcode1748：唯一元素的和（sum-of-unique-elements）](https://github.com/carloscn/structstudy/issues/274) [2023-07-15]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
