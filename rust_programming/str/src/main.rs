@@ -53,6 +53,7 @@ mod n85_goal_parser_interpretation_1678;
 mod n86_count_the_number_of_consistent_strings_1684;
 mod n87_reformat_phone_number_1694;
 mod n88_determine_if_string_halves_are_alike_1704;
+mod n89_minimum_changes_to_make_alternating_binary_string_1758;
 fn main() {
     println!("hello leetcode string project!");
 }
