@@ -1,6 +1,10 @@
 # Leetcode and Algo Daily Training
 
 ## Direction
+截止到2023年7月21日，做一下规则变更：
+* 使用英文题目
+* 程序命名格式不变
+* issue题目命名直接写英文即可
 截止到2023年3月10日，做以下规则变更：
 * 不再RUST和C进行同步；
 * 为了熟悉RUST语言，RUST继续进行leetcode简单等级的题目；
