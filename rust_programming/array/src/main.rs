@@ -76,6 +76,7 @@ mod n112_find_the_highest_altitude_1732;
 mod n113_maximum_number_of_balls_in_a_box_1742;
 mod n114_sum_of_unique_elements_1748;
 mod n115_check_if_array_is_sorted_and_rotated_1752;
+mod n116_count_items_matching_a_rule_1773;
 fn main() {
     println!("hello leetcode array project!");
 }
