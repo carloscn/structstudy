@@ -78,6 +78,7 @@ mod n114_sum_of_unique_elements_1748;
 mod n115_check_if_array_is_sorted_and_rotated_1752;
 mod n116_count_items_matching_a_rule_1773;
 mod n117_find_nearest_point_that_has_the_same_x_or_y_coordinate_1779;
+mod n118_find_center_of_star_graph_1791;
 fn main() {
     println!("hello leetcode array project!");
 }
