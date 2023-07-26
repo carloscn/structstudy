@@ -208,6 +208,16 @@ void utils_print_uchar_array(unsigned char *a, size_t size, const char *msg)
     printf("\n");
 }
 
+void utils_print_char_array(char *a, size_t size, const char *msg)
+{
+    size_t i = 0;
+    printf("%s", msg);
+    for (i = 0; i < size; i ++) {
+        printf("%c,", a[i]);
+    }
+    printf("\n");
+}
+
 void utils_print_size_t_array(size_t *a, size_t size, const char *msg)
 {
     size_t i = 0;

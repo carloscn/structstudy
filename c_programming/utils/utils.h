@@ -108,6 +108,7 @@ void utils_print_int64_array(int64_t *a, size_t size, const char *msg);
 void utils_print_int32_array(int32_t *a, size_t size, const char *msg);
 void utils_print_size_t_array(size_t *a, size_t size, const char *msg);
 void utils_print_uchar_array(unsigned char *a, size_t size, const char *msg);
+void utils_print_char_array(char *a, size_t size, const char *msg);
 #define UTILS_PRINT_ARRAY(_v, _b, _c)                      \
         _Generic((_v),                                     \
             int64_t*:   utils_print_int64_array,           \
