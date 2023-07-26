@@ -244,8 +244,9 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1704：判断字符串的两半是否相似（determine-if-string-halves-are-alike）](https://github.com/carloscn/structstudy/issues/268) [2023-07-09]
 * [leetcode1758： 生成交替二进制字符串的最少操作数（minimum-changes-to-make-alternating-binary-string）](https://github.com/carloscn/structstudy/issues/276) [2023-07-18]
 * [leetcode1763：最长的美好子字符串（longest-nice-substring-description）](https://github.com/carloscn/structstudy/issues/277) [2023-07-19]
-* [leetcode1784:Check if Binary String Has at Most One Segment of Ones](https://github.com/carloscn/structstudy/issues/280) [2023-07-22]
-* [leetcode1790:Check if One String Swap Can Make Strings Equal](https://github.com/carloscn/structstudy/issues/281) [2023-07-24]
+* [leetcode1784: Check if Binary String Has at Most One Segment of Ones](https://github.com/carloscn/structstudy/issues/280) [2023-07-22]
+* [leetcode1790: Check if One String Swap Can Make Strings Equal](https://github.com/carloscn/structstudy/issues/281) [2023-07-24]
+* [leetcode1796: Second Largest Digit in a String](https://github.com/carloscn/structstudy/issues/284) [2023-07-26]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]

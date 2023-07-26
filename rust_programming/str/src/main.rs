@@ -57,6 +57,7 @@ mod n89_minimum_changes_to_make_alternating_binary_string_1758;
 mod n90_longest_nice_substring_1763;
 mod n91_check_if_binary_string_has_at_most_one_segment_of_ones_1784;
 mod n92_check_if_one_string_swap_can_make_strings_equal_1790;
+mod n93_second_largest_digit_in_a_string_1796;
 fn main() {
     println!("hello leetcode string project!");
 }
