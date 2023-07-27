@@ -20,6 +20,7 @@ int32_t linklist_copy_node(LINKLIST_T *node_dest, LINKLIST_T *node_src);
 int32_t linklist_dup_node(LINKLIST_T **node_dest, LINKLIST_T *node_src);
 int32_t linklist_get_len(LINKLIST_T *list, size_t *o_len);
 int32_t linklist_revert(LINKLIST_T **list);
+int32_t linklist_swap_value(LINKLIST_T *n0, LINKLIST_T *n1);
 void linklist_free(LINKLIST_T **node);
 void linklist_print(LINKLIST_T *list);
 void linklist_print_revert(LINKLIST_T *list);

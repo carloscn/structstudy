@@ -260,6 +260,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode876：链表的中间结点（middle_of_the_linked_list_876）](https://github.com/carloscn/structstudy/issues/154) [2023-03-20]
 * [leetcode1290：二进制链表转整数（convert-binary-number-in-a-linked-list-to-integer）](https://github.com/carloscn/structstudy/issues/203) [2023-04-28]
 * [leetcode1309：解码字母到整数映射（decrypt-string-from-alphabet-to-integer-mapping）](https://github.com/carloscn/structstudy/issues/205) [2023-05-01]
+* [leetcode92: Reverse Linked List II](https://github.com/carloscn/structstudy/issues/287) [2023-07-27]
 ## [数学](https://github.com/carloscn/structstudy/tree/master/c_programming/common)：
 * [数值的整数次方](https://github.com/carloscn/structstudy/issues/13)
 * [打印从1到最大的n位数(含回溯方法)](https://github.com/carloscn/structstudy/issues/14)
