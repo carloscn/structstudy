@@ -295,6 +295,21 @@ void linklist_print_revert(LINKLIST_T *list)
     }
 }
 
+int32_t linklist_swap_value(LINKLIST_T *n0, LINKLIST_T *n1)
+{
+    int64_t t = 0;
+
+    if (n0 == NULL || n1 == NULL) {
+        return -1;
+    }
+
+    t = n0->val;
+    n0->val = n1->val;
+    n1->val = t;
+
+    return 0;
+}
+
 int32_t linklist_selftest(void)
 {
     LINKLIST_T *test_node = NULL;
