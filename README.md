@@ -248,6 +248,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1784: Check if Binary String Has at Most One Segment of Ones](https://github.com/carloscn/structstudy/issues/280) [2023-07-22]
 * [leetcode1790: Check if One String Swap Can Make Strings Equal](https://github.com/carloscn/structstudy/issues/281) [2023-07-24]
 * [leetcode1796: Second Largest Digit in a String](https://github.com/carloscn/structstudy/issues/284) [2023-07-26]
+* [leetcode1805: Number of Different Integers in a String](https://github.com/carloscn/structstudy/issues/288) [2023-07-28]
 * [leetcode91: Decode Ways](https://github.com/carloscn/structstudy/issues/285) [2023-07-26]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
