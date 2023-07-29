@@ -59,6 +59,7 @@ mod n91_check_if_binary_string_has_at_most_one_segment_of_ones_1784;
 mod n92_check_if_one_string_swap_can_make_strings_equal_1790;
 mod n93_second_largest_digit_in_a_string_1796;
 mod n94_number_of_different_integers_in_a_string_1805;
+mod n95_determine_color_of_a_chessboard_square_1812;
 fn main() {
     println!("hello leetcode string project!");
 }
