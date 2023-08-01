@@ -81,6 +81,7 @@ mod n117_find_nearest_point_that_has_the_same_x_or_y_coordinate_1779;
 mod n118_find_center_of_star_graph_1791;
 mod n119_maximum_ascending_subarray_sum_1800;
 mod n120_sign_of_the_product_of_an_array_1822;
+mod n121_minimum_operations_to_make_the_array_increasing_1827;
 fn main() {
     println!("hello leetcode array project!");
 }
