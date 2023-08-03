@@ -291,6 +291,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1323：6 和 9 组成的最大数字（maximum-69-number）](https://github.com/carloscn/structstudy/issues/208) [2023-05-04]
 * [leetcode1342：将数字变成 0 的操作次数（number-of-steps-to-reduce-a-number-to-zero）](https://github.com/carloscn/structstudy/issues/211) [2023-05-07]
 * [leetcode1518：换水问题（water-bottles）](https://github.com/carloscn/structstudy/issues/238) [2023-06-01]
+* [leetcode1837: Sum of Digits in Base K](https://github.com/carloscn/structstudy/issues/294) [2023-08-03]
 ## [二叉树](https://github.com/carloscn/structstudy/tree/master/c_programming/tree)
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)
