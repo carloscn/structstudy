@@ -255,6 +255,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1812: Determine Color of a Chessboard Square](https://github.com/carloscn/structstudy/issues/289) [2023-07-29]
 * [leetcode1816: Truncate Sentence](https://github.com/carloscn/structstudy/issues/290) [2023-07-30]
 * [leetcode1832: Check if the Sentence Is Pangram](https://github.com/carloscn/structstudy/issues/293) [2023-08-02]
+* [leetcode1844: Replace All Digits with Characters](https://github.com/carloscn/structstudy/issues/295) [2023-08-04]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
