@@ -154,6 +154,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1800: Maximum Ascending Subarray Sum](https://github.com/carloscn/structstudy/issues/286) [2023-07-27]
 * [leetcode1822: Sign of the Product of an Array](https://github.com/carloscn/structstudy/issues/291) [2023-07-31]
 * [leetcode1827: Minimum Operations to Make the Array Increasing](https://github.com/carloscn/structstudy/issues/292) [2023-08-01]
+* [leetcode1848: Minimum Distance to the Target Element](https://github.com/carloscn/structstudy/issues/296) [2023-08-05]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]

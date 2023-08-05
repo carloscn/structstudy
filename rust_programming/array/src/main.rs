@@ -82,6 +82,7 @@ mod n118_find_center_of_star_graph_1791;
 mod n119_maximum_ascending_subarray_sum_1800;
 mod n120_sign_of_the_product_of_an_array_1822;
 mod n121_minimum_operations_to_make_the_array_increasing_1827;
+mod n122_minimum_distance_to_the_target_element_1848;
 fn main() {
     println!("hello leetcode array project!");
 }
