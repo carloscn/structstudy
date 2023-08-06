@@ -63,6 +63,7 @@ mod n95_determine_color_of_a_chessboard_square_1812;
 mod n96_truncate_sentence_1816;
 mod n97_check_if_the_sentence_is_pangram_1832;
 mod n98_replace_all_digits_with_characters_1844;
+mod n99_sorting_the_sentence_1859;
 fn main() {
     println!("hello leetcode string project!");
 }
