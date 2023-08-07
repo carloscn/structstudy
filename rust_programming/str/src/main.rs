@@ -64,6 +64,7 @@ mod n96_truncate_sentence_1816;
 mod n97_check_if_the_sentence_is_pangram_1832;
 mod n98_replace_all_digits_with_characters_1844;
 mod n99_sorting_the_sentence_1859;
+mod n100_longer_contiguous_segments_of_ones_than_zeros_1869;
 fn main() {
     println!("hello leetcode string project!");
 }
