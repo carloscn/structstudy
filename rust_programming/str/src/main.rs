@@ -67,6 +67,7 @@ mod n99_sorting_the_sentence_1859;
 mod n100_longer_contiguous_segments_of_ones_than_zeros_1869;
 mod n101_substrings_of_size_three_with_distinct_characters_1876;
 mod n102_check_if_word_equals_summation_of_two_words_1880;
+mod n103_redistribute_characters_to_make_all_strings_equal_1897;
 fn main() {
     println!("hello leetcode string project!");
 }

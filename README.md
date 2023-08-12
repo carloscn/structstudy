@@ -262,6 +262,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1859: Sorting the Sentence](https://github.com/carloscn/structstudy/issues/297) [2023-08-06]
 * [leetcode1869: Longer Contiguous Segments of Ones than Zeros](https://github.com/carloscn/structstudy/issues/299) [2023-08-08]
 * [leetcode1880: Check if Word Equals Summation of Two Words](https://github.com/carloscn/structstudy/issues/301) [2023-08-10]
+* [leetcode1897: Redistribute Characters to Make All Strings Equal](https://github.com/carloscn/structstudy/issues/303) [2023-08-12]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
