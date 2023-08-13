@@ -85,6 +85,7 @@ mod n121_minimum_operations_to_make_the_array_increasing_1827;
 mod n122_minimum_distance_to_the_target_element_1848;
 mod n123_sum_of_all_subset_xor_totals_1863;
 mod n124_check_if_all_the_integers_in_a_range_are_covered_1886;
+mod n125_remove_one_element_to_make_the_array_strictly_increasing_1909;
 fn main() {
     println!("hello leetcode array project!");
 }

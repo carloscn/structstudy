@@ -157,6 +157,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1848: Minimum Distance to the Target Element](https://github.com/carloscn/structstudy/issues/296) [2023-08-05]
 * [leetcode1863: Sum of All Subset XOR Totals](https://github.com/carloscn/structstudy/issues/298) [2023-08-07]
 * [leetcode1886: Determine Whether Matrix Can Be Obtained By Rotation](https://github.com/carloscn/structstudy/issues/302) [2023-08-11]
+* [leetcode1909: Remove One Element to Make the Array Strictly Increasing](https://github.com/carloscn/structstudy/issues/305) [2023-08-14]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
