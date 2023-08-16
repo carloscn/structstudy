@@ -88,6 +88,7 @@ mod n124_check_if_all_the_integers_in_a_range_are_covered_1886;
 mod n125_remove_one_element_to_make_the_array_strictly_increasing_1909;
 mod n126_maximum_product_difference_between_two_pairs_1913;
 mod n127_build_array_from_permutation_1920;
+mod n128_count_square_sum_triples_1925;
 fn main() {
     println!("hello leetcode array project!");
 }
