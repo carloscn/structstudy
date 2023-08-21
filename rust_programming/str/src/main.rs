@@ -70,6 +70,7 @@ mod n102_check_if_word_equals_summation_of_two_words_1880;
 mod n103_redistribute_characters_to_make_all_strings_equal_1897;
 mod n104_largest_odd_number_in_string_1903;
 mod n105_maximum_number_of_words_you_can_type_1935;
+mod n106_check_if_all_characters_have_equal_number_of_occurrences_1941;
 fn main() {
     println!("hello leetcode string project!");
 }
