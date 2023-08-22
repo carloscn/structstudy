@@ -269,7 +269,8 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1897: Redistribute Characters to Make All Strings Equal](https://github.com/carloscn/structstudy/issues/303) [2023-08-12]
 * [leetcode1903: Largest Odd Number in String](https://github.com/carloscn/structstudy/issues/304) [2023-08-13]
 * [leetcode1935: Maximum Number of Words You Can Type](https://github.com/carloscn/structstudy/issues/309) [2023-08-18]
-* [leetcode1941: Check if All Characters Have Equal Number of Occurrences](https://github.com/carloscn/structstudy/issues/310)
+* [leetcode1941: Check if All Characters Have Equal Number of Occurrences](https://github.com/carloscn/structstudy/issues/310) [2023-08-21]
+* [leetcode1945: Sum of Digits of String After Convert](https://github.com/carloscn/structstudy/issues/311) [2023-08-22]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
