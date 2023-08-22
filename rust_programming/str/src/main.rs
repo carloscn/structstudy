@@ -72,6 +72,7 @@ mod n104_largest_odd_number_in_string_1903;
 mod n105_maximum_number_of_words_you_can_type_1935;
 mod n106_check_if_all_characters_have_equal_number_of_occurrences_1941;
 mod n107_sum_of_digits_of_string_after_convert_1945;
+mod n108_delete_characters_to_make_fancy_string_1957;
 fn main() {
     println!("hello leetcode string project!");
 }
