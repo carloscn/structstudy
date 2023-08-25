@@ -89,6 +89,7 @@ mod n125_remove_one_element_to_make_the_array_strictly_increasing_1909;
 mod n126_maximum_product_difference_between_two_pairs_1913;
 mod n127_build_array_from_permutation_1920;
 mod n128_count_square_sum_triples_1925;
+mod n129_find_if_path_exists_in_graph_1971;
 fn main() {
     println!("hello leetcode array project!");
 }

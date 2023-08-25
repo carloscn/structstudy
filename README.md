@@ -161,6 +161,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1913: Maximum Product Difference Between Two Pairs](https://github.com/carloscn/structstudy/issues/306) [2023-08-15]
 * [leetcode1920: Build Array from Permutation](https://github.com/carloscn/structstudy/issues/307) [2023-08-16]
 * [leetcode1925: Count Square Sum Triples](https://github.com/carloscn/structstudy/issues/308) [2023-08-17]
+* [leetcode1971: Find if Path Exists in Graph](https://github.com/carloscn/structstudy/issues/314) [2023-08-25]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
