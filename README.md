@@ -273,6 +273,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1945: Sum of Digits of String After Convert](https://github.com/carloscn/structstudy/issues/311) [2023-08-22]
 * [leetcode1957: Delete Characters to Make Fancy String](https://github.com/carloscn/structstudy/issues/312) [2023-08-23]
 * [leetcode1961: Check If String Is a Prefix of Array](https://github.com/carloscn/structstudy/issues/313) [2023-08-24]
+* [leetcode1974: Minimum Time to Type Word Using Special Typewriter](https://github.com/carloscn/structstudy/issues/315) [2023-08-28]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
