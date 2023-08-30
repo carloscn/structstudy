@@ -91,6 +91,7 @@ mod n127_build_array_from_permutation_1920;
 mod n128_count_square_sum_triples_1925;
 mod n129_find_if_path_exists_in_graph_1971;
 mod n130_find_greatest_common_divisor_of_array_1979;
+mod n131_minimum_difference_between_highest_and_lowest_of_k_scores_1984;
 fn main() {
     println!("hello leetcode array project!");
 }
