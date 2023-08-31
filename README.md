@@ -164,6 +164,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1971: Find if Path Exists in Graph](https://github.com/carloscn/structstudy/issues/314) [2023-08-25]
 * [leetcode1979: Find Greatest Common Divisor of Array](https://github.com/carloscn/structstudy/issues/316) [2023-08-29]
 * [leetcode1984: Minimum Difference Between Highest and Lowest of K Scores](https://github.com/carloscn/structstudy/issues/317) [2023-08-30]
+* [leetcode1991: Find the Middle Index in Array](https://github.com/carloscn/structstudy/issues/318) [2023-08-31]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
