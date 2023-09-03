@@ -76,6 +76,7 @@ mod n108_delete_characters_to_make_fancy_string_1957;
 mod n109_check_if_string_is_a_prefix_of_array_1961;
 mod n110_minimum_time_to_type_word_using_special_typewriter_1974;
 mod n111_reverse_prefix_of_word_2000;
+mod n112_final_value_of_variable_after_performing_operations_2011;
 fn main() {
     println!("hello leetcode string project!");
 }
