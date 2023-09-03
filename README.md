@@ -166,6 +166,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1984: Minimum Difference Between Highest and Lowest of K Scores](https://github.com/carloscn/structstudy/issues/317) [2023-08-30]
 * [leetcode1991: Find the Middle Index in Array](https://github.com/carloscn/structstudy/issues/318) [2023-08-31]
 * [leetcode1995: Count Special Quadruplets](https://github.com/carloscn/structstudy/issues/319) [2023-09-01]
+* [leetcode2006: Count Number of Pairs With Absolute Difference K](https://github.com/carloscn/structstudy/issues/321) [2023-09-03]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
