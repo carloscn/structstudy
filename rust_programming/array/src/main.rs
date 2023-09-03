@@ -95,6 +95,7 @@ mod n131_minimum_difference_between_highest_and_lowest_of_k_scores_1984;
 mod n132_find_the_middle_index_in_array_1991;
 mod n133_count_special_quadruplets_1995;
 mod n134_count_number_of_pairs_with_absolute_difference_k_2006;
+mod n135_convert_1d_array_into_2d_array_2022;
 fn main() {
     println!("hello leetcode array project!");
 }
