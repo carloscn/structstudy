@@ -295,6 +295,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2027: Minimum Moves to Convert String](https://github.com/carloscn/structstudy/issues/325) [2023-09-04]
 * [leetcode2042: Check if Numbers Are Ascending in a Sentence](https://github.com/carloscn/structstudy/issues/328) [2023-09-05]
 * [leetcode2047: Number of Valid Words in a Sentence](https://github.com/carloscn/structstudy/issues/329) [2023-09-06]
+* [leetcode2053: Kth Distinct String in an Array](https://github.com/carloscn/structstudy/issues/330) [2023-09-06]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
