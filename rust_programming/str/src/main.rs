@@ -79,6 +79,7 @@ mod n111_reverse_prefix_of_word_2000;
 mod n112_final_value_of_variable_after_performing_operations_2011;
 mod n113_minimum_moves_to_convert_string_2027;
 mod n114_kth_distinct_string_in_an_array_2053;
+mod n115_count_vowel_substrings_of_a_string_2062;
 fn main() {
     println!("hello leetcode string project!");
 }
