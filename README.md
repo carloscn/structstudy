@@ -300,6 +300,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2053: Kth Distinct String in an Array](https://github.com/carloscn/structstudy/issues/330) [2023-09-06]
 * [leetcode2062: Count Vowel Substrings of a String](https://github.com/carloscn/structstudy/issues/332) [2023-09-07]
 * [leetcode2068: Check Whether Two Strings are Almost Equivalent](https://github.com/carloscn/structstudy/issues/333) [2023-09-08]
+* [leetcode2085: Count Common Words With One Occurrence](https://github.com/carloscn/structstudy/issues/335) [2023-09-09]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
