@@ -180,6 +180,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2057: Smallest Index With Equal Value](https://github.com/carloscn/structstudy/issues/331) [2023-09-07]
 * [leetcode2078: Two Furthest Houses With Different Colors](https://github.com/carloscn/structstudy/issues/334) [2023-09-08]
 * [leetcode2089: Find Target Indices After Sorting Array](https://github.com/carloscn/structstudy/issues/336) [2023-09-09]
+* [leetcode2094: Finding 3-Digit Even Numbers](https://github.com/carloscn/structstudy/issues/337) [2023-09-10]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]

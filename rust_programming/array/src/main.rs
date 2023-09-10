@@ -99,6 +99,7 @@ mod n135_convert_1d_array_into_2d_array_2022;
 mod n136_two_out_of_three_2032;
 mod n137_minimum_number_of_moves_to_seat_everyone_2037;
 mod n138_two_furthest_houses_with_different_colors_2078;
+mod n139_finding_3_digit_even_numbers_2094;
 fn main() {
     println!("hello leetcode array project!");
 }
