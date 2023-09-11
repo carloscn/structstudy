@@ -81,6 +81,7 @@ mod n113_minimum_moves_to_convert_string_2027;
 mod n114_kth_distinct_string_in_an_array_2053;
 mod n115_count_vowel_substrings_of_a_string_2062;
 mod n116_count_common_words_with_one_occurrence_2085;
+mod n117_rings_and_rods_2103;
 fn main() {
     println!("hello leetcode string project!");
 }
