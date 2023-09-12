@@ -345,6 +345,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode1518：换水问题（water-bottles）](https://github.com/carloscn/structstudy/issues/238) [2023-06-01]
 * [leetcode1837: Sum of Digits in Base K](https://github.com/carloscn/structstudy/issues/294) [2023-08-03]
 * [leetcode1876: Substrings of Size Three with Distinct Characters](https://github.com/carloscn/structstudy/issues/300) [2023-08-09]
+* [leetcode2119: A Number After a Double Reversal](https://github.com/carloscn/structstudy/issues/342) [2023-09-13]
 ## [二叉树](https://github.com/carloscn/structstudy/tree/master/c_programming/tree)
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)
