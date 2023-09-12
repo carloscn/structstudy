@@ -307,6 +307,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2103: Rings and Rods](https://github.com/carloscn/structstudy/issues/339) [2023-09-11]
 * [leetcode2108: Find First Palindromic String in the Array](https://github.com/carloscn/structstudy/issues/340) [2023-09-12]
 * [leetcode2114: Maximum Number of Words Found in Sentences](https://github.com/carloscn/structstudy/issues/341) [2023-09-12]
+* [leetcode2124: Check if All A's Appears Before All B's](https://github.com/carloscn/structstudy/issues/343) [2023-09-13]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]

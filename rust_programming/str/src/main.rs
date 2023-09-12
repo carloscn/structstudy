@@ -83,6 +83,7 @@ mod n115_count_vowel_substrings_of_a_string_2062;
 mod n116_count_common_words_with_one_occurrence_2085;
 mod n117_rings_and_rods_2103;
 mod n118_maximum_number_of_words_found_in_sentences_2114;
+mod n119_check_if_all_as_appears_before_all_bs_2124;
 fn main() {
     println!("hello leetcode string project!");
 }
