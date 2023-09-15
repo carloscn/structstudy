@@ -101,6 +101,7 @@ mod n137_minimum_number_of_moves_to_seat_everyone_2037;
 mod n138_two_furthest_houses_with_different_colors_2078;
 mod n139_finding_3_digit_even_numbers_2094;
 mod n140_check_if_every_row_and_column_contains_all_numbers_2133;
+mod n141_count_elements_with_strictly_smaller_and_greater_elements_2148;
 fn main() {
     println!("hello leetcode array project!");
 }
