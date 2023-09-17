@@ -184,6 +184,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2099: Find Subsequence of Length K With the Largest Sum](https://github.com/carloscn/structstudy/issues/338) [2023-09-11]
 * [leetcode2133: Check if Every Row and Column Contains All Numbers](https://github.com/carloscn/structstudy/issues/345) [2023-09-14]
 * [leetcode2148: Count Elements With Strictly Smaller and Greater Elements](https://github.com/carloscn/structstudy/issues/347) [2023-09-15]
+* [leetcode2154: Keep Multiplying Found Values by Two](https://github.com/carloscn/structstudy/issues/348) [2023-09-17]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
