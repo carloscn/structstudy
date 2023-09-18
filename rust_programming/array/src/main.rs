@@ -102,6 +102,7 @@ mod n138_two_furthest_houses_with_different_colors_2078;
 mod n139_finding_3_digit_even_numbers_2094;
 mod n140_check_if_every_row_and_column_contains_all_numbers_2133;
 mod n141_count_elements_with_strictly_smaller_and_greater_elements_2148;
+mod n142_count_equal_and_divisible_pairs_in_an_array_2176;
 fn main() {
     println!("hello leetcode array project!");
 }

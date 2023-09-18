@@ -186,6 +186,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2148: Count Elements With Strictly Smaller and Greater Elements](https://github.com/carloscn/structstudy/issues/347) [2023-09-15]
 * [leetcode2154: Keep Multiplying Found Values by Two](https://github.com/carloscn/structstudy/issues/348) [2023-09-17]
 * [leetcode2164: Sort Even and Odd Indices Independently](https://github.com/carloscn/structstudy/issues/350) [2023-09-18]
+* [leetcode2176: Count Equal and Divisible Pairs in an Array](https://github.com/carloscn/structstudy/issues/352) [2023-09-19]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
