@@ -190,6 +190,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2190: Most Frequent Number Following Key In an Array](https://github.com/carloscn/structstudy/issues/355) [2023-09-21]
 * [leetcode2200: Find All K-Distant Indices in an Array](https://github.com/carloscn/structstudy/issues/357) [2023-09-22]
 * [leetcode2206: Divide Array Into Equal Pairs](https://github.com/carloscn/structstudy/issues/358) [2023-09-22]
+* [leetcode2210: Count Hills and Valleys in an Array](https://github.com/carloscn/structstudy/issues/359) [2023-09-23]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
