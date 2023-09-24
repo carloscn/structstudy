@@ -322,6 +322,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2138: Divide a String Into Groups of Size k](https://github.com/carloscn/structstudy/issues/346) [2023-09-15]
 * [leetcode2185: Counting Words With a Given Prefix](https://github.com/carloscn/structstudy/issues/354) [2023-09-20]
 * [leetcode2194: Cells in a Range on an Excel Sheet](https://github.com/carloscn/structstudy/issues/356) [2023-09-21]
+* [leetcode2224: Minimum Number of Operations to Convert Time](https://github.com/carloscn/structstudy/issues/362) [2023-09-24]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]

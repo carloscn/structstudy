@@ -86,6 +86,7 @@ mod n118_maximum_number_of_words_found_in_sentences_2114;
 mod n119_check_if_all_as_appears_before_all_bs_2124;
 mod n120_counting_words_with_a_given_prefix_2185;
 mod n121_cells_in_a_range_on_an_excel_sheet_2194;
+mod n122_minimum_number_of_operations_to_convert_time_2224;
 fn main() {
     println!("hello leetcode string project!");
 }
