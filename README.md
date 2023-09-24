@@ -364,6 +364,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2160: Minimum Sum of Four Digit Number After Splitting Digits](https://github.com/carloscn/structstudy/issues/349) [2023-09-18]
 * [leetcode2169: Count Operations to Obtain Zero](https://github.com/carloscn/structstudy/issues/351) [2023-09-19]
 * [leetcode2180: Count Integers With Even Digit Sum](https://github.com/carloscn/structstudy/issues/353) [2023-09-20]
+* [leetcode2220: Minimum Bit Flips to Convert Number](https://github.com/carloscn/structstudy/issues/361) [2023-09-24]
 ## [二叉树](https://github.com/carloscn/structstudy/tree/master/c_programming/tree)
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)
