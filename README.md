@@ -330,6 +330,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2255: Count Prefixes of a Given String](https://github.com/carloscn/structstudy/issues/368) [2023-09-27]
 * [leetcode2259: Remove Digit From Number to Maximize Result](https://github.com/carloscn/structstudy/issues/369) [2023-09-28]
 * [leetcode2264: Largest 3-Same-Digit Number in String](https://github.com/carloscn/structstudy/issues/370) [2023-09-28]
+* [leetcode2269: Find the K-Beauty of a Number](https://github.com/carloscn/structstudy/issues/371) [2023-10-07]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
