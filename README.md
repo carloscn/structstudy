@@ -196,6 +196,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2239: Find Closest Number to Zero](https://github.com/carloscn/structstudy/issues/365) [2023-09-26]
 * [leetcode2248: Intersection of Multiple Arrays](https://github.com/carloscn/structstudy/issues/367) [2023-09-24]
 * [leetcode2283: Check if Number Has Equal Digit Count and Digit Value](https://github.com/carloscn/structstudy/issues/374) [2023-10-10]
+* [leetcode2293: Min Max Game](https://github.com/carloscn/structstudy/issues/376) [2023-10-11]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]

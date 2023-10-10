@@ -106,6 +106,7 @@ mod n142_count_equal_and_divisible_pairs_in_an_array_2176;
 mod n143_divide_array_into_equal_pairs_2206;
 mod n144_find_the_difference_of_two_arrays_2215;
 mod n145_intersection_of_multiple_arrays_2248;
+mod n146_min_max_game_2293;
 fn main() {
     println!("hello leetcode array project!");
 }
