@@ -90,6 +90,7 @@ mod n122_minimum_number_of_operations_to_convert_time_2224;
 mod n123_calculate_digit_sum_of_a_string_2243;
 mod n124_largest_3_same_digit_number_in_string_2264;
 mod n125_find_resultant_array_after_removing_anagrams_2273;
+mod n126_rearrange_characters_to_make_target_string_2287;
 fn main() {
     println!("hello leetcode string project!");
 }
