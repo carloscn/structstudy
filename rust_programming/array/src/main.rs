@@ -107,6 +107,7 @@ mod n143_divide_array_into_equal_pairs_2206;
 mod n144_find_the_difference_of_two_arrays_2215;
 mod n145_intersection_of_multiple_arrays_2248;
 mod n146_min_max_game_2293;
+mod n147_calculate_amount_paid_in_taxes_2303;
 fn main() {
     println!("hello leetcode array project!");
 }
