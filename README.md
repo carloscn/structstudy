@@ -199,6 +199,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2293: Min Max Game](https://github.com/carloscn/structstudy/issues/376) [2023-10-11]
 * [leetcode2303: Calculate Amount Paid in Taxes](https://github.com/carloscn/structstudy/issues/378) [2023-10-12]
 * [leetcode2319: Check if Matrix Is X-Matrix](https://github.com/carloscn/structstudy/issues/381) [2023-10-13]
+* [leetcode2335: Minimum Amount of Time to Fill Cups](https://github.com/carloscn/structstudy/issues/383) [2023-10-14]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
