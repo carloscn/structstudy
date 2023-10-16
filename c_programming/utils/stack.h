@@ -19,6 +19,7 @@ int32_t stack_init(STACK_T *stack, size_t size);
 void stack_deinit(STACK_T *stack);
 int32_t stack_push(STACK_T *stack, int64_t val);
 int32_t stack_pop(STACK_T *stack, int64_t *e);
+int32_t stack_peek(STACK_T *stack, int64_t *e);
 int32_t stack_clear(STACK_T *stack);
 size_t stack_get_top(STACK_T *stack);
 size_t stack_count(STACK_T *stack);

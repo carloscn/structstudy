@@ -99,6 +99,27 @@ int32_t stack_pop(STACK_T *stack, int64_t *e)
 
     return 0;
 }
+
+int32_t stack_peek(STACK_T *stack, int64_t *e)
+{
+    int64_t *p = NULL;
+
+    if (NULL == stack || NULL == stack->space) {
+        LOG("input parameter error\n");
+        return -1;
+    }
+    if (stack->top_index == 0) {
+        LOG("stack overflow. (empty)\n");
+        return -1;
+    }
+    p = stack->space;
+    if (e != NULL) {
+        *e = p[stack->top_index - 1];
+    }
+
+    return 0;
+}
+
 int32_t stack_clear(STACK_T *stack)
 {
     if (NULL == stack || NULL == stack->space) {
