@@ -203,6 +203,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2341: Maximum Number of Pairs in Array](https://github.com/carloscn/structstudy/issues/384) [2023-10-16]
 * [leetcode2357: Make Array Zero by Subtracting Equal Amounts](https://github.com/carloscn/structstudy/issues/386) [2023-10-17]
 * [leetcode2363: Merge Similar Items](https://github.com/carloscn/structstudy/issues/387) [2023-10-18]
+* [leetcode2367: Number of Arithmetic Triplets](https://github.com/carloscn/structstudy/issues/388) [2023-10-18]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
