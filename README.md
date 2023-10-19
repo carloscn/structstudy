@@ -348,6 +348,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2315: Count Asterisks](https://github.com/carloscn/structstudy/issues/380) [2023-10-13]
 * [leetcode2325: Decode the Message](https://github.com/carloscn/structstudy/issues/382) [2023-10-14]
 * [leetcode2351: First Letter to Appear Twice](https://github.com/carloscn/structstudy/issues/385) [2023-10-17]
+* [leetcode2379: Minimum Recolors to Get K Consecutive Black Blocks](https://github.com/carloscn/structstudy/issues/389) [2023-10-19]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
