@@ -93,6 +93,7 @@ mod n125_find_resultant_array_after_removing_anagrams_2273;
 mod n126_rearrange_characters_to_make_target_string_2287;
 mod n127_count_asterisks_2315;
 mod n128_merge_similar_items_2363;
+mod n129_check_distances_between_same_letters_2399;
 fn main() {
     println!("hello leetcode string project!");
 }
