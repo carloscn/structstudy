@@ -397,6 +397,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2180: Count Integers With Even Digit Sum](https://github.com/carloscn/structstudy/issues/353) [2023-09-20]
 * [leetcode2220: Minimum Bit Flips to Convert Number](https://github.com/carloscn/structstudy/issues/361) [2023-09-24]
 * [leetcode2231: Largest Number After Digit Swaps by Parity](https://github.com/carloscn/structstudy/issues/363) [2023-09-25]
+* [leetcode2413: Smallest Even Multiple](https://github.com/carloscn/structstudy/issues/394) [2023-10-21]
 ## [二叉树](https://github.com/carloscn/structstudy/tree/master/c_programming/tree)
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)
