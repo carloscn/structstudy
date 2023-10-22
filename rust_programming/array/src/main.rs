@@ -111,6 +111,7 @@ mod n147_calculate_amount_paid_in_taxes_2303;
 mod n148_minimum_amount_of_time_to_fill_cups_2335;
 mod n149_make_array_zero_by_subtracting_equal_amounts_2357;
 mod n150_longest_subsequence_with_limited_sum_2389;
+mod n151_sort_the_people_2418;
 fn main() {
     println!("hello leetcode array project!");
 }
