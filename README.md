@@ -212,6 +212,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2441: Largest Positive Integer That Exists With Its Negative](https://github.com/carloscn/structstudy/issues/399) [2023-10-24]
 * [leetcode2455: Average Value of Even Numbers That Are Divisible by Three](https://github.com/carloscn/structstudy/issues/401) [2023-10-25]
 * [leetcode2460: Apply Operations to an Array](https://github.com/carloscn/structstudy/issues/402) [2023-10-26]
+* [leetcode2465: Number of Distinct Averages](https://github.com/carloscn/structstudy/issues/403) [2023-10-26]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
@@ -360,7 +361,6 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2399: Check Distances Between Same Letters](https://github.com/carloscn/structstudy/issues/392) [2023-10-20]
 * [leetcode2423: Remove Letter To Equalize Frequency](https://github.com/carloscn/structstudy/issues/396) [2023-10-23]
 * [leetcode2451: Odd String Difference](https://github.com/carloscn/structstudy/issues/400) [2023-10-25]
-
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]

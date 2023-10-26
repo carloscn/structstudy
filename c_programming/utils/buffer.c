@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 #include "buffer.h"
 #include "utils.h"
 
@@ -298,6 +299,84 @@ int32_t buffer_remove_element(BUFFER_T *buffer, int64_t e)
         LOG("find e= %lld failed\n", e);
         return -1;
     }
+    return ret;
+}
+
+int32_t buffer_remove(BUFFER_T *buffer, size_t index, int64_t *removed_e)
+{
+    int32_t ret = 0;
+
+    if (NULL == buffer) {
+        ret = -1;
+        LOG("buffer is NULL\n");
+        return ret;
+    }
+    if (___buffer_check_index(buffer, index) == false) {
+        ret = -1;
+        LOG("index is error \n");
+        return ret;
+    }
+
+    if (NULL != removed_e) {
+        *removed_e = buffer->data[index];
+    }
+
+    for (size_t i = index; i < buffer->current_len - 1; i ++) {
+        buffer->data[i] = buffer->data[i + 1];
+    }
+
+    buffer->current_len --;
+
+    return ret;
+}
+
+int32_t buffer_get_max_value(BUFFER_T *buffer, size_t *max_index, int64_t *max_e)
+{
+    int32_t ret = 0;
+
+    if (NULL == buffer) {
+        ret = -1;
+        LOG("buffer is NULL\n");
+        return ret;
+    }
+
+    int64_t _max;
+    size_t _index;
+    int64_t *max = (max_e != NULL)?max_e:(&_max);
+    size_t *m_index = (max_index != NULL)?max_index:(&_index);
+
+    *max = INT64_MIN, *m_index = 0;
+
+    for (size_t i = 0; i < buffer->current_len; i ++) {
+        *max = (*max < buffer->data[i])?
+              (*m_index = i, *max = buffer->data[i], *max):*max;
+    }
+
+    return ret;
+}
+
+int32_t buffer_get_min_value(BUFFER_T *buffer, size_t *min_index, int64_t *min_e)
+{
+    int32_t ret = 0;
+
+    if (NULL == buffer) {
+        ret = -1;
+        LOG("buffer is NULL\n");
+        return ret;
+    }
+
+    int64_t _min;
+    size_t _index;
+    int64_t *min = (min_e != NULL)?min_e:(&_min);
+    size_t *m_index = (min_index != NULL)?min_index:(&_index);
+
+    *min = INT64_MAX, *m_index = 0;
+
+    for (size_t i = 0; i < buffer->current_len; i ++) {
+        *min = (*min > buffer->data[i])?
+              (*m_index = i, *min = buffer->data[i], *min):*min;
+    }
+
     return ret;
 }
 
