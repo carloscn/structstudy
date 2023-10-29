@@ -114,6 +114,7 @@ mod n150_longest_subsequence_with_limited_sum_2389;
 mod n151_sort_the_people_2418;
 mod n152_the_employee_that_worked_on_the_longest_task_2432;
 mod n153_apply_operations_to_an_array_2460;
+mod n154_number_of_unequal_triplets_in_array_2475;
 fn main() {
     println!("hello leetcode array project!");
 }
