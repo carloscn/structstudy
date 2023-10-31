@@ -97,6 +97,7 @@ mod n129_check_distances_between_same_letters_2399;
 mod n130_remove_letter_to_equalize_frequency_2423;
 mod n131_odd_string_difference_2451;
 mod n132_circular_sentence_2490;
+mod n133_maximum_value_of_a_string_in_an_array_2496;
 fn main() {
     println!("hello leetcode string project!");
 }
