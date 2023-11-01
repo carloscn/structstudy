@@ -115,6 +115,7 @@ mod n151_sort_the_people_2418;
 mod n152_the_employee_that_worked_on_the_longest_task_2432;
 mod n153_apply_operations_to_an_array_2460;
 mod n154_number_of_unequal_triplets_in_array_2475;
+mod n155_delete_greatest_value_in_each_row_2500;
 fn main() {
     println!("hello leetcode array project!");
 }
