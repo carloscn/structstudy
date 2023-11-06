@@ -216,6 +216,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2475: Number of Unequal Triplets in Array](https://github.com/carloscn/structstudy/issues/405) [2023-10-29]
 * [leetcode2496: Maximum Value of a String in an Array](https://github.com/carloscn/structstudy/issues/408) [2023-11-01]
 * [leetcode2511: Maximum Enemy Forts That Can Be Captured](https://github.com/carloscn/structstudy/issues/410) [2023-11-03]
+* [leetcode2529: Maximum Count of Positive Integer and Negative Integer](https://github.com/carloscn/structstudy/issues/413) [2023-11-06]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
