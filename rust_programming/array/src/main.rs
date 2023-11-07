@@ -117,6 +117,7 @@ mod n153_apply_operations_to_an_array_2460;
 mod n154_number_of_unequal_triplets_in_array_2475;
 mod n155_delete_greatest_value_in_each_row_2500;
 mod n156_maximum_count_of_positive_integer_and_negative_integer_2529;
+mod n157_minimum_common_value_2540;
 fn main() {
     println!("hello leetcode array project!");
 }
