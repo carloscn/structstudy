@@ -219,6 +219,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2529: Maximum Count of Positive Integer and Negative Integer](https://github.com/carloscn/structstudy/issues/413) [2023-11-06]
 * [leetcode2535: Difference Between Element Sum and Digit Sum of an Array](https://github.com/carloscn/structstudy/issues/414) [2023-11-07]
 * [leetcode2540: Minimum Common Value](https://github.com/carloscn/structstudy/issues/415) [2023-11-08]
+* [leetcode2553: Separate the Digits in an Array](https://github.com/carloscn/structstudy/issues/417) [2023-11-10]
 ## [字符串](https://github.com/carloscn/structstudy/tree/master/c_programming/str)：
 * [替换字符串空格（双指针法）](https://github.com/carloscn/structstudy/issues/8)
 * [最后一个单词的长度 (leetcode-58) ](https://github.com/carloscn/structstudy/issues/26) [2022-10-12]
