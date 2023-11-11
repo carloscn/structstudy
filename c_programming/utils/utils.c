@@ -1013,6 +1013,26 @@ finish:
     return ret;
 }
 
+double utils_sqrt(double x)
+{
+    if (x < 0) {
+        return -1.0;
+    }
+
+    if (x == 0 || x == 1) {
+        return x;
+    }
+
+    double epsilon = 0.00001;
+    double guess = x / 2;
+
+    while (utils_float_abs(guess * guess - x) > epsilon) {
+        guess = 0.5 * (guess + x / guess);
+    }
+
+    return guess;
+}
+
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/
