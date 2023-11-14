@@ -120,6 +120,7 @@ mod n156_maximum_count_of_positive_integer_and_negative_integer_2529;
 mod n157_minimum_common_value_2540;
 mod n158_separate_the_digits_in_an_array_2553;
 mod n159_find_the_array_concatenation_value_2562;
+mod n160_merge_two_2d_arrays_by_summing_values_2570;
 fn main() {
     println!("hello leetcode array project!");
 }
