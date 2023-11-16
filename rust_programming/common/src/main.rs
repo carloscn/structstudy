@@ -11,6 +11,7 @@ mod n27_sum_of_digits_in_base_k_1837;
 mod n28_minimum_sum_of_four_digit_number_after_splitting_digits_2160;
 mod n29_add_two_integers_2235;
 mod n30_smallest_even_multiple_2413;
+mod n31_split_with_minimum_sum_2578;
 fn main() {
     n18_binary_number_with_alternating_bits_693::test_has_alternating_bits();
     println!("common list executed!");
