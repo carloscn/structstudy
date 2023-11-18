@@ -121,6 +121,7 @@ mod n157_minimum_common_value_2540;
 mod n158_separate_the_digits_in_an_array_2553;
 mod n159_find_the_array_concatenation_value_2562;
 mod n160_merge_two_2d_arrays_by_summing_values_2570;
+mod n161_number_of_even_and_odd_bits_2595;
 fn main() {
     println!("hello leetcode array project!");
 }
