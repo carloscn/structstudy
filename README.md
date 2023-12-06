@@ -385,6 +385,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2515: Shortest Distance to Target String in a Circular Array](https://github.com/carloscn/structstudy/issues/411) [2023-11-4]
 * [leetcode2586: Count the Number of Vowel Strings in Range](https://github.com/carloscn/structstudy/issues/424) [2023-11-17]
 * [leetcode2609: Find the Longest Balanced Substring of a Binary String](https://github.com/carloscn/structstudy/issues/427) [2023-11-21]
+* [leetcode2678: Number of Senior Citizens](https://github.com/carloscn/structstudy/issues/434) [2023-12-06]
 ## [链表](https://github.com/carloscn/structstudy/tree/master/c_programming/linklist)：
 * [删除链表的节点](https://github.com/carloscn/structstudy/issues/15)
 * [反转链表（leetcode-206）reverse-linked-list](https://github.com/carloscn/structstudy/issues/31) [2022-10-14]
