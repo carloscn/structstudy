@@ -441,6 +441,7 @@ C语言无法像是高级计算机语言对基础数据结构有一部分的实�
 * [leetcode2566: Maximum Difference by Remapping a Digit](https://github.com/carloscn/structstudy/issues/420) [2023-11-13]
 * [leetcode2578: Split With Minimum Sum](https://github.com/carloscn/structstudy/issues/423) [2023-11-16]
 * [leetcode2614: Prime In Diagonal](https://github.com/carloscn/structstudy/issues/428) [2023-11-22]
+* [leetcode2894: Divisible and Non-divisible Sums Difference](https://github.com/carloscn/structstudy/issues/438) [2023-12-11]
 ## [二叉树](https://github.com/carloscn/structstudy/tree/master/c_programming/tree)
 * [二叉树的层次/前序/中序/后续遍历](https://github.com/carloscn/structstudy/issues/22)
 * [二叉树展开为链表（leetcode-114）](https://github.com/carloscn/structstudy/issues/23)
