@@ -104,6 +104,7 @@ mod n136_find_the_longest_balanced_substring_of_a_binary_string_2609;
 mod n137_number_of_senior_citizens_description_2678;
 mod n138_lexicographically_smallest_palindrome_2697;
 mod n139_remove_trailing_zeros_from_a_string_2710;
+mod n140_last_visited_integers_2899;
 fn main() {
     println!("hello leetcode string project!");
 }
